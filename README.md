@@ -87,3 +87,78 @@ Query String Parameter:
 ```shell
 GET /sso-unisdr-development/logout?=redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.org%2Fauth%2Flogout
 ```
+
+
+
+
+## Client Credentials Flow OAuth2 API
+
+### Retrieve PreventionWeb.net published organization
+
+#### Step1, request access token
+
+```shell
+GET /sso-unisdr-development/logout?=redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.org%2Fauth%2Flogout
+```
+
+#### Step2, call organizations API. Use the access token received from step 1 in the request header.
+
+```shell
+GET /sso-unisdr/public/api/organization/get
+```
+
+JSON Response
+
+```shell
+{
+   "current_page": 1,
+   "data": [
+      {
+         "org_id": 1127,
+         "org_title_long": "Save the Children U.S.",
+         "org_title_acronym": "",
+         "org_is_local_gov": 0,
+         "orgtype_id": 3,
+         "orgtype_title": "Non-Governmental Organization",
+         "orgtype_short": "NGO",
+         "address_street": "2000 M Street NW; Suite 500",
+         "address_town": "Washington D.C.",
+         "address_zip_cde": "20036",
+         "country_id": 185,
+         "country_iso3": "USA",
+         "country_un_code": "840",
+         "country_title": "United States of America"
+      },
+      {
+         "org_id": 3099,
+         "org_title_long": "UN Office for the Coordination of Humanitarian Affairs - Geneva Office",
+         "org_title_acronym": "OCHA",
+         "org_is_local_gov": 0,
+         "orgtype_id": 1,
+         "orgtype_title": "UN & International Organization",
+         "orgtype_short": "UN & Intl",
+         "address_street": "8-14 Palais de Nations",
+         "address_town": "Geneva 10",
+         "address_zip_cde": "1211",
+         "country_id": 167,
+         "country_iso3": "CHE",
+         "country_un_code": "756",
+         "country_title": "Switzerland"
+      },
+      ...
+   ],
+   "first_page_url": "/api/organization/get?page=1",
+   "from": 1,
+   "last_page": 871,
+   "last_page_url": "/api/organization/get?page=871",
+   "next_page_url": "/api/organization/get?page=2",
+   "path": "/api/organization/get",
+   "per_page": 15,
+   "prev_page_url": null,
+   "to": 15,
+   "total": 13065,
+   "status": 200,
+   "success": 1
+}
+```
+
