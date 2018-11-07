@@ -25,7 +25,7 @@ When user entered the correct login credentials the systen redirects to the call
 
 
 
-### Step2, exchange authorization code to access token
+### Step 2, exchange authorization code to access token
 
 The authorization code that was received from step 1 should be exchanged with the access token by calling the post request with the appropriate form fields, the server will respond with the access token credentials in json format.
 
@@ -54,7 +54,7 @@ scope:
 
 
 
-### Step3, retrieve user information
+### Step 3, retrieve user information
 
 Retrieve logged-in users information.
 
@@ -74,7 +74,7 @@ Returns an users information in json format:
 ```
 
 
-### Step4, logout
+### Step 4, logout
 
 Revoke active session, cookies and token. e.g. https://program.unisdr.org/sso-unisdr-development/logout?=redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.org%2Fauth%2Flogout
 
@@ -95,16 +95,32 @@ GET /sso-unisdr-development/logout?=redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.or
 
 ### Retrieve PreventionWeb.net published organization
 
-#### Step1, request access token
+#### Step 1, request access token
+
+Form Post Parameters:
+
+* grant_type string, value should be ‘client_credentials’
+* client_id  integer,  client ID given by UNISDR
+* client_secret  string, secret provided by UNISDR
+* scope string (optional), value should be ‘*’ or null 
 
 ```shell
-GET /sso-unisdr-development/logout?=redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.org%2Fauth%2Flogout
+POST /oauth/token
 ```
 
-#### Step2, call organizations API. Use the access token received from step 1 in the request header.
+#### Step 2, call organizations API. Use the access token received from step 1 in the request header.
+
+Query String Parameter:
+
+* page integer, page number
+
+Header Parameters:
+
+* Accept string, value ‘application/json’
+* Authorization  string, value 'Bearer [ACCESS TOKEN received from step 1]'
 
 ```shell
-GET /sso-unisdr/public/api/organization/get
+GET /api/organization/get?page=1
 ```
 
 JSON Response
