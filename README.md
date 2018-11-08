@@ -39,15 +39,17 @@ Form Post Parameters:
 
 ```shell
 POST /sso-unisdr-development/oauth/token
+```
 
 Returns an access credentials in json format:
 
-{
-access_token: ACCESS_TOKEN,
-token_type: bearer,
-expires_in: 2592000,
-refresh_token: REFRESH_TOKEN,
-scope:
+```shell
+{  
+   access_token:[ACCESS_TOKEN],
+   token_type:bearer,
+   expires_in:2592000,
+   refresh_token:[REFRESH_TOKEN],
+   scope:
 }
 ```
 
@@ -65,7 +67,7 @@ Header Parameters:
 
 ```shell
 GET /sso-unisdr-development/api/user
-```shell
+```
 
 Returns an users information in json format:
 
@@ -74,13 +76,13 @@ Returns an users information in json format:
    "status":200,
    "success":1,
    "data":{  
-      "con_id":38282399,
-      "con_fname":"Joel",
-      "con_lname":"Margate",
+      "con_id":123321,
+      "con_fname":"Nho",
+      "con_lname":"Eod",
       "con_org":"UNISDR",
       "con_position":"Programmer",
-      "con_email":"margate@un.org",
-      "name":"Joel Margate"
+      "con_email":"some_email@email.com",
+      "name":"Nho Eod"
    }
 }
 ```
