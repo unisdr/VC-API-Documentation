@@ -65,11 +65,23 @@ Header Parameters:
 
 ```shell
 GET /sso-unisdr-development/api/user
+```shell
 
 Returns an users information in json format:
 
-{
-
+```shell
+{  
+   "status":200,
+   "success":1,
+   "data":{  
+      "con_id":38282399,
+      "con_fname":"Joel",
+      "con_lname":"Margate",
+      "con_org":"UNISDR",
+      "con_position":"Programmer",
+      "con_email":"margate@un.org",
+      "name":"Joel Margate"
+   }
 }
 ```
 
