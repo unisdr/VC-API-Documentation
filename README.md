@@ -41,7 +41,7 @@ Form Post Parameters:
 POST /sso-unisdr-development/oauth/token
 ```
 
-Returns an access credentials in json format:
+Returns an access credentials in JSON format:
 
 ```shell
 {  
@@ -69,7 +69,7 @@ Header Parameters:
 GET /sso-unisdr-development/api/user
 ```
 
-Returns an users information in json format:
+Returns users information in JSON format:
 
 ```shell
 {  
