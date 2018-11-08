@@ -192,3 +192,54 @@ JSON Response
 }
 ```
 
+
+## PreventionWeb Public API
+
+### Retrieve organization type
+
+```shell
+GET https://www.preventionweb.net/v2/api/v1/org_type/get/output.json
+```
+JSON Response
+
+```shell
+{  
+   "results":[  
+      {  
+         "id":1,
+         "name":"UN & International Organization"
+      },
+      {  
+         "id":2,
+         "name":"Governments"
+      },
+      {  
+         "id":8,
+         "name":"Regional Intergovernmental Organization"
+      },
+      {  
+         "id":3,
+         "name":"Non-Governmental Organization"
+      },
+      {  
+         "id":7,
+         "name":"Academic & Research Institution"
+      },
+      {  
+         "id":4,
+         "name":"Private Sector"
+      },
+      {  
+         "id":5,
+         "name":"News & Media"
+      },
+      {  
+         "id":6,
+         "name":"Networks & Other"
+      }
+   ],
+   "total":8,
+   "status":200
+}
+```
+
