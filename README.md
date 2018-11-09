@@ -1,6 +1,7 @@
 
 # UNISDR Common Login Documentation
 
+Part of the documentation are specific to Voluntary Commitments project.
 
 ## Authorization Code Flow OAuth2 API
 
