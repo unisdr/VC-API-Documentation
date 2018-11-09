@@ -124,7 +124,7 @@ POST /sso-unisdr-development/oauth/token
 
 #### Step 2, call organizations API. Use the access token received from step 1 in the request header.
 
-API call have hit rate of 60 per minutes. Unique resultset are cached in two minutes.
+API call have hit rate of 60 per minute. Unique resultset are cached in two minutes.
 
 Query String Parameter:
 
