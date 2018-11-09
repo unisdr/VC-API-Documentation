@@ -4,6 +4,8 @@
 
 ## Authorization Code Flow OAuth2 API
 
+Requires read/write database permission
+
 ### Step 1, login to common login screen
 
 Request oAuth2 authorization code from the server, here is an example of the request URL https://program.unisdr.org/sso-unisdr-development/oauth/authorize?client_id=CLIENT_ID&response_type=code&scope=*&redirect_uri=CALLBACK_URL
@@ -106,6 +108,8 @@ GET /sso-unisdr-development/logout?=redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.or
 
 
 ## Client Credentials Flow OAuth2 API
+
+Requires read database permission
 
 ### Retrieve PreventionWeb.net published organization
 
