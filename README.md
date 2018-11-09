@@ -92,7 +92,7 @@ Returns users information in JSON format:
 
 ### Step 4, logout
 
-Revoke active session, cookies and token. e.g. https://program.unisdr.org/sso-unisdr-development/logout?=redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.org%2Fauth%2Flogout
+Revoke active session, cookies and token. e.g. https://program.unisdr.org/sso-unisdr-development/logout?redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.org%2Fauth%2Flogout
 
 
 
@@ -101,7 +101,7 @@ Query String Parameter:
 * redirect_uri string, vURL to redirect after calling the logout function. Value should be a valid URL otherwise the redirect will be ignored.
 
 ```shell
-GET /sso-unisdr-development/logout?=redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.org%2Fauth%2Flogout
+GET /sso-unisdr-development/logout?redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.org%2Fauth%2Flogout
 ```
 
 
