@@ -109,7 +109,7 @@ GET /sso-unisdr-development/logout?=redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.or
 
 ## Client Credentials Flow OAuth2 API
 
-Requires read database permission
+Requires read permission to main database server
 
 ### Retrieve PreventionWeb.net published organization
 
@@ -124,6 +124,12 @@ Form Post Parameters:
 
 ```shell
 POST /sso-unisdr-development/oauth/token
+```
+
+Response Body
+
+```shell
+[ACCESS TOKEN]
 ```
 
 #### Step 2, call organizations API. Use the access token received from step 1 in the request header.
