@@ -119,10 +119,12 @@ Form Post Parameters:
 * scope string (optional), value should be ‘*’ or null 
 
 ```shell
-POST /oauth/token
+POST /sso-unisdr-development/oauth/token
 ```
 
 #### Step 2, call organizations API. Use the access token received from step 1 in the request header.
+
+API call have hit rate of 60 per minutes. Unique resultset are cached in two minutes.
 
 Query String Parameter:
 
@@ -134,7 +136,7 @@ Header Parameters:
 * Authorization  string, value 'Bearer [ACCESS TOKEN received from step 1]'
 
 ```shell
-GET /api/organization/get?page=1
+GET /sso-unisdr-development/api/organization/get?page=1
 ```
 
 JSON Response
