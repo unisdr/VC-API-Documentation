@@ -202,7 +202,7 @@ JSON Response
    "last_page_url": "/sso-unisdr-development/api/organization/get?page=871",
    "next_page_url": "/sso-unisdr-development/api/organization/get?page=2",
    "path": "/sso-unisdr-development/api/organization/get",
-   "per_page": 50,
+   "per_page": 200,
    "prev_page_url": null,
    "to": 50,
    "total": 13065,
