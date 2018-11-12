@@ -141,6 +141,7 @@ Query String Parameter:
 
 * page integer (optional), page number
 * per_page integer (optional), number of records per page (200 is the default value and maximum value)
+* q string (optional), perform simple search on organization name and acronym (minimum characters 3 and maximum characters 30)
 
 Header Parameters:
 
