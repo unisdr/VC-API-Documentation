@@ -139,7 +139,8 @@ API call have hit rate of 60 per minute. Unique resultset are cached in two minu
 
 Query String Parameter:
 
-* page integer, page number
+* page integer (optional), page number
+* per_page integer (optional), number of records per page (200 is the default value and maximum value)
 
 Header Parameters:
 
@@ -161,6 +162,7 @@ JSON Response
          "org_title_long": "Save the Children U.S.",
          "org_title_acronym": "",
          "org_is_local_gov": 0,
+         "org_url": "https://www.unisdr.org",
          "orgtype_id": 3,
          "orgtype_title": "Non-Governmental Organization",
          "orgtype_short": "NGO",
@@ -170,13 +172,15 @@ JSON Response
          "country_id": 185,
          "country_iso3": "USA",
          "country_un_code": "840",
-         "country_title": "United States of America"
+         "country_title": "United States of America",
+         "checksum":"4bc79ee14bbb1641d8ae5ec4cbc4beae"
       },
       {
          "org_id": 3099,
          "org_title_long": "UN Office for the Coordination of Humanitarian Affairs - Geneva Office",
          "org_title_acronym": "OCHA",
          "org_is_local_gov": 0,
+         "org_url": "https://www.preventionweb.net",
          "orgtype_id": 1,
          "orgtype_title": "UN & International Organization",
          "orgtype_short": "UN & Intl",
@@ -186,7 +190,8 @@ JSON Response
          "country_id": 167,
          "country_iso3": "CHE",
          "country_un_code": "756",
-         "country_title": "Switzerland"
+         "country_title": "Switzerland",
+         "checksum":"c261b4c6817b936b20ccca815cc0f166"
       },
       ...
    ],
