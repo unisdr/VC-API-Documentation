@@ -142,6 +142,7 @@ Query String Parameter:
 * page integer (optional), page number
 * per_page integer (optional), number of records per page (200 is the default value and maximum value)
 * q string (optional), perform simple search on organization name and acronym (minimum characters 3 and maximum characters 30)
+* modified_since date format yyyy-mm-dd (optional), this condition will filter result equal or beyond given date correct format is yyyy-mm-dd
 
 Header Parameters:
 
@@ -164,6 +165,7 @@ JSON Response
          "org_title_acronym": "",
          "org_is_local_gov": 0,
          "org_url": "https://www.unisdr.org",
+         "org_datemodified": "2018-02-24",
          "orgtype_id": 3,
          "orgtype_title": "Non-Governmental Organization",
          "orgtype_short": "NGO",
@@ -182,6 +184,7 @@ JSON Response
          "org_title_acronym": "OCHA",
          "org_is_local_gov": 0,
          "org_url": "https://www.preventionweb.net",
+         "org_datemodified": "2018-11-02",
          "orgtype_id": 1,
          "orgtype_title": "UN & International Organization",
          "orgtype_short": "UN & Intl",
