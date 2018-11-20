@@ -140,8 +140,8 @@ API call have hit rate of 100 per minute. Unique api call are cached in two minu
 Query String Parameter:
 
 * page integer (optional), page number
-* per_page integer (optional), number of records per page (200 is the default value and maximum value)
-* q string (optional), perform simple search on organization name and acronym (minimum characters 3 and maximum characters 30)
+* per_page integer (optional), number of records per page (200 is the default and maximum value)
+* q string (optional), perform simple search on organization name and acronym (minimum 3 and maximum 30 characters)
 * modified_since date format yyyy-mm-dd (optional), this condition will filter result equal or beyond given date correct format is yyyy-mm-dd
 
 Header Parameters:
@@ -151,6 +151,8 @@ Header Parameters:
 
 ```shell
 GET /sso-unisdr-development/api/organization/get?page=1
+
+GET /sso-unisdr-development/api/organization/get?modified_since=2018-02-14
 ```
 
 JSON Response
