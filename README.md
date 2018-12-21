@@ -14,7 +14,7 @@ Request oAuth2 authorization code from the server, here is an example of the req
 Querystring Parameters:
 
 * client_id integer, client ID provided by UNISDR 
-* redirect_uri string,  edirect URI or callback URL provided by the client
+* redirect_uri string,  redirect URI or callback URL provided by the client
 * response_type string, value should be ‘code’ 
 * scope string, value should be ‘*’ or null 
 * state string (optional)
@@ -219,6 +219,13 @@ JSON Response
 ## Common Login API
 
 ### Retrieve Client Name
+
+Querystring Parameters:
+
+* client_id integer, client ID provided by UNISDR
+* client_home_url string, client application home URL
+
+
 ```shell
 GET /sso-unisdr-development/api/client/get_name?client_id=[CLIENT ID]&client_home_url=[CLIENT HOME URL]
 ```
