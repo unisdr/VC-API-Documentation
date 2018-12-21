@@ -9,7 +9,7 @@ Requires read/write database permission
 
 ### Step 1, login to common login screen
 
-Request oAuth2 authorization code from the server, here is an example of the request URL https://program.unisdr.org/sso-unisdr-development/oauth/authorize?client_id=CLIENT_ID&response_type=code&scope=*&redirect_uri=CALLBACK_URL
+Request oAuth2 authorization code from the server, here is an example of the request URL https://program.unisdr.org/sso-unisdr/oauth/authorize?client_id=CLIENT_ID&response_type=code&scope=*&redirect_uri=CALLBACK_URL
 
 Querystring Parameters:
 
@@ -21,7 +21,7 @@ Querystring Parameters:
 
 
 ```shell
-GET /sso-unisdr-development/oauth/authorize?client_id=CLIENT_ID&response_type=code&scope=*&redirect_uri=CALLBACK_URL
+GET /sso-unisdr/oauth/authorize?client_id=CLIENT_ID&response_type=code&scope=*&redirect_uri=CALLBACK_URL
 ```
 
 When user entered the correct login credentials the systen redirects to the callback URL, the ‘autorization code’ is in the URL querystring 'code’, syntax [client call back URL]?code=AUTHORIZATION_CODE, example https://eac.bkk/callback?code=AUTHORIZATION_CODE
@@ -41,7 +41,7 @@ Form Post Parameters:
 * code string, the code (AUTHORIZATION_CODE) received from step 1
 
 ```shell
-POST /sso-unisdr-development/oauth/token
+POST /sso-unisdr/oauth/token
 ```
 
 Returns an access credentials in JSON format:
@@ -69,7 +69,7 @@ Header Parameters:
 * Authorization  string, value 'Bearer [ACCESS TOKEN received from step 2]'
 
 ```shell
-GET /sso-unisdr-development/api/user
+GET /sso-unisdr/api/user
 ```
 
 Returns users information in JSON format:
@@ -93,7 +93,7 @@ Returns users information in JSON format:
 
 ### Step 4, logout
 
-Revoke active session, cookies and token. e.g. https://program.unisdr.org/sso-unisdr-development/logout?redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.org%2Fauth%2Flogout
+Revoke active session, cookies and token. e.g. https://program.unisdr.org/sso-unisdr/logout?redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.org%2Fauth%2Flogout
 
 
 
@@ -102,7 +102,7 @@ Query String Parameter:
 * redirect_uri string, vURL to redirect after calling the logout function. Value should be a valid URL otherwise the redirect will be ignored.
 
 ```shell
-GET /sso-unisdr-development/logout?redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.org%2Fauth%2Flogout
+GET /sso-unisdr/logout?redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.org%2Fauth%2Flogout
 ```
 
 
@@ -124,7 +124,7 @@ Form Post Parameters:
 * scope string (optional), value should be ‘*’ or null 
 
 ```shell
-POST /sso-unisdr-development/oauth/token
+POST /sso-unisdr/oauth/token
 ```
 
 Response Body
@@ -150,9 +150,9 @@ Header Parameters:
 * Authorization  string, value 'Bearer [ACCESS TOKEN received from step 1]'
 
 ```shell
-GET /sso-unisdr-development/api/organization/get?page=1
+GET /sso-unisdr/api/organization/get?page=1
 
-GET /sso-unisdr-development/api/organization/get?modified_since=2018-02-14
+GET /sso-unisdr/api/organization/get?modified_since=2018-02-14
 ```
 
 JSON Response
@@ -201,12 +201,12 @@ JSON Response
       },
       ...
    ],
-   "first_page_url": "/sso-unisdr-development/api/organization/get?page=1",
+   "first_page_url": "/sso-unisdr/api/organization/get?page=1",
    "from": 1,
    "last_page": 871,
-   "last_page_url": "/sso-unisdr-development/api/organization/get?page=871",
-   "next_page_url": "/sso-unisdr-development/api/organization/get?page=2",
-   "path": "/sso-unisdr-development/api/organization/get",
+   "last_page_url": "/sso-unisdr/api/organization/get?page=871",
+   "next_page_url": "/sso-unisdr/api/organization/get?page=2",
+   "path": "/sso-unisdr/api/organization/get",
    "per_page": 200,
    "prev_page_url": null,
    "to": 50,
@@ -227,7 +227,7 @@ Querystring Parameters:
 
 
 ```shell
-GET /sso-unisdr-development/api/client/get_name?client_id=[CLIENT ID]&client_home_url=[CLIENT HOME URL]
+GET /sso-unisdr/api/client/get_name?client_id=[CLIENT ID]&client_home_url=[CLIENT HOME URL]
 ```
 
 JSON Response
