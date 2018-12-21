@@ -216,6 +216,25 @@ JSON Response
 }
 ```
 
+## Common Login API
+
+### Retrieve Client Name
+```shell
+GET /sso-unisdr-development/api/client/get_name?client_id=[CLIENT ID]&client_home_url=[CLIENT HOME URL]
+```
+
+JSON Response
+
+```shell
+{  
+   "status":200,
+   "success":true,
+   "data":{  
+      "name":"Name of the client application"
+   }
+}
+```
+
 
 ## PreventionWeb Public API
 
