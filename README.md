@@ -152,6 +152,8 @@ Header Parameters:
 ```shell
 GET /sso-unisdr/api/organization/get?page=1
 
+GET /sso-unisdr/api/organization/get?q=UNISDR
+
 GET /sso-unisdr/api/organization/get?modified_since=2018-02-14
 ```
 
