@@ -220,6 +220,33 @@ JSON Response
 }
 ```
 
+
+
+
+
+| Field             	| Description                        	| Type/Value                                                      	|
+|-------------------	|------------------------------------	|-----------------------------------------------------------------	|
+| org_id            	| ID                                 	| int,                                                             	|
+| org_title_long    	| Name of the organization           	|                                                                 	|
+| org_title_acronym 	| Acronym of the organization        	|                                                                 	|
+| org_is_local_gov  	| Organization is a local government 	| int, 0 = false; 1 = true                                         	|
+| org_url           	|                                    	|                                                                 	|
+| org_datemodified  	|                                    	|                                                                 	|
+| org_mission       	|                                    	| text, max length 64kb, value can be in HTML format or plain text 	|
+| orgtype_id        	|                                    	| int                                                             	|
+| orgtype_title     	|                                    	|                                                                 	|
+| orgtype_short     	|                                    	|                                                                 	|
+| address_street    	|                                    	|                                                                 	|
+| address_town      	|                                    	|                                                                 	|
+| address_zip_cde   	|                                    	|                                                                 	|
+| country_id        	|                                    	| int                                                             	|
+| country_iso3      	|                                    	|                                                                 	|
+| country_un_code   	|                                    	|                                                                 	|
+| country_title     	|                                    	|                                                                 	|
+| checksum          	|                                    	|                                                                 	|
+
+
+
 ## Common Login API
 
 ### Retrieve Client Name
