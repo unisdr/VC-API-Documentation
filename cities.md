@@ -135,7 +135,15 @@ Post Parameters:
 POST /sso-unisdr/api/cities/edit/{id}
 ```
 
+Return in JSON format
 
-
+```shell
+{  
+   "status":200,
+   "success":true,
+   "message":"Record saved.",
+   "cty_id":4771
+}
+```
 
 
