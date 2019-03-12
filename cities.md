@@ -106,7 +106,7 @@ GET /sso-unisdr/api/cities/get/isdr_region/id/{id}
 
 
 
-#### Add new city
+### Add new city
 
 Post Parameters:
 
@@ -130,7 +130,7 @@ Return in JSON format
 }
 ```
 
-#### Edit city information
+### Edit city information
 
 Post Parameters:
 
