@@ -1,12 +1,8 @@
 # Cities API Documentation
 
-## Client Credentials Flow OAuth2 API
+Client Credentials Flow OAuth2 API
 
-Requires read permission to main database server
-
-### Retrieve PreventionWeb.net published organization
-
-#### Step 1, request access token
+## Step 1, request access token
 
 Form Post Parameters:
 
@@ -26,7 +22,7 @@ Response Body
 ```
 
 
-### Retrieve cities records.
+## Retrieve cities records.
 
 API call have hit rate of 100 per minute. Unique api call are cached in two minutes.
 
@@ -77,21 +73,21 @@ JSON Response
 }
 ```
 
-#### Retrieve specific city record.
+### Retrieve specific city record.
 
 ```shell
 GET /sso-unisdr/api/cities/get/id/{id}
 ```
 
 
-#### Retrieve cities of a country.
+### Retrieve cities of a country.
 
 ```shell
 GET /sso-unisdr/api/cities/get/country/id/{id}
 ```
 
 
-#### Retrieve cities under a specific geographical region.
+### Retrieve cities under a specific geographical region.
 
 ```shell
 GET /sso-unisdr/api/cities/get/geo_region/id/{id}
@@ -106,7 +102,7 @@ GET /sso-unisdr/api/cities/get/isdr_region/id/{id}
 
 
 
-### Add new city
+## Add new city
 
 Post Parameters:
 
@@ -130,7 +126,7 @@ Return in JSON format
 }
 ```
 
-### Edit city information
+## Edit city information
 
 Post Parameters:
 
