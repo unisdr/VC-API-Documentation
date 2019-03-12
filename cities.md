@@ -119,6 +119,17 @@ POST /sso-unisdr/api/cities/add
 ```
 
 
+Return in JSON format
+
+```shell
+{  
+   "status":200,
+   "success":true,
+   "message":"Record saved.",
+   "cty_id":4771
+}
+```
+
 #### Edit city information
 
 Post Parameters:
@@ -142,7 +153,6 @@ Return in JSON format
    "status":200,
    "success":true,
    "message":"Record saved.",
-   "cty_id":4771
 }
 ```
 
