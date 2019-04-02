@@ -1,2 +1,102 @@
-![alt text](https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#G1iSPxhAi9kIFyslCkf3BjaRCXtIjV43kk)
+# Global Platform 2019 API Documentation
+
+Client Credentials Flow OAuth2 API
+
+## Step 1, request access token
+
+Form Post Parameters:
+
+* grant_type string, value should be ‘client_credentials’
+* client_id  integer,  client ID given by UNISDR
+* client_secret  string, secret provided by UNISDR
+* scope string (optional), value should be ‘*’ or null 
+
+```shell
+POST /sso-unisdr/oauth/token
+```
+
+Response Body
+
+```shell
+[ACCESS TOKEN]
+```
+
+
+## Retrieve programme records.
+
+API call have hit rate of 100 per minute. Unique api call are cached in two minutes.
+
+Query String Parameter:
+
+* q string (optional), perform simple search on organization name and acronym (minimum 3 and maximum 30 characters)
+
+Header Parameters:
+
+* Accept string, value ‘application/json’
+* Authorization  string, value 'Bearer [ACCESS TOKEN received from step 1]'
+
+```shell
+GET /sso-unisdr/api/globalplatform/2019/program/get/all
+
+GET /sso-unisdr/api/globalplatform/2019/program/get/all?q=Geneva
+```
+
+JSON Response
+
+```shell
+{  
+   "current_page":1,
+   "data":[  
+      {  
+         "gpe_id":916,
+         "gpe_title":"Global Risk Assessment Framework",
+         "gpe_event_id":"WS-10",
+         "gpe_date":"2019-05-16",
+         "gpe_time_from":"16:30:00",
+         "gpe_time_to":"18:00:00",
+         "gpe_room":"CICG - Room 4",
+         "gpe_organizer":"UNISDR",
+         "gpe_partner_orgs":"",
+         "gpe_chair":"",
+         "gpe_focal_point":"Marc (gordon6@un.org); Adam (adam.fysh@un.org)",
+         "gpe_description":"<p>The Global Risk Assessment Framework (GRAF) aims to improve the understanding and management of current and future risks, at all scales, to better manage uncertainties and mobilize people, innovation and finance by: a) fostering interdisciplinary systems thinking with shared metrics and understanding and, b) enabling the identification of anomalies and precursor signals, as well as the correlations and dependencies of risks and actors to enable decision makers to act. Through actionable insights, tools and demonstrations at relevant scales to decision makers on a timely basis, the GRAF can build collective intelligence to steer societies towards an enhanced understanding and management of risk in all its dimensions, thereby realizing the goals and outcomes of the 2030 Agenda, the Sendai Framework, the Paris Agreement and the New Urban Agenda.<\/p>",
+         "gpe_expected_results":"",
+         "gpe_facilitator":"",
+         "gpe_panelists":"",
+         "gpe_agenda":"",
+         "gpe_agenda_use_attachment":0,
+         "gpe_agenda_filename":"",
+         "gpe_datemodified":"2019-03-28 11:37:18",
+         "gpe_year":2019,
+         "gpe_lang_id":1,
+         "floor_language":"English",
+         "gpe_interpretation_lng_id":"6,5,1,2,8,4",
+         "interpretation_en":3,
+         "gpe_cart":"Yes",
+         "gpe_isl_interpretation":"No",
+         "gpe_accessible":"Yes",
+         "gpe_livebroadcast":"No",
+         "gpe_interpretation":"Yes",
+         "gpe_remoteparticipation":"No",
+         "gpe_participation":"Public",
+         "\"type_id":2,
+         "type_title":"Working Sessions"
+      },
+	  ...
+   ],
+   "first_page_url":"\/api\/globalplatform\/2019\/program\/get\/all?page=1",
+   "from":1,
+   "last_page":1,
+   "last_page_url":"\/api\/globalplatform\/2019\/program\/get\/all?page=1",
+   "next_page_url":null,
+   "path":"\/api\/globalplatform\/2019\/program\/get\/all",
+   "per_page":200,
+   "prev_page_url":null,
+   "to":28,
+   "total":28,
+   "status":200,
+   "success":1
+}
+```
+
 
