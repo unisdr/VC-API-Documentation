@@ -28,7 +28,10 @@ API call have hit rate of 100 per minute. Unique api call are cached in two minu
 
 Query String Parameter:
 
-* q string (optional), perform simple search on organization name and acronym (minimum 3 and maximum 30 characters)
+* page integer (optional), page number
+* per_page integer (optional), number of records per page (200 is the default and maximum value)
+* q string (optional), perform simple search on the title/name of the programme (minimum 3 and maximum 30 characters)
+* modified_since date format yyyy-mm-dd (optional), this condition will filter result equal or beyond given date correct format is yyyy-mm-dd
 
 Header Parameters:
 
@@ -38,7 +41,11 @@ Header Parameters:
 ```shell
 GET /sso-unisdr/api/globalplatform/2019/program/get/all
 
+GET /sso-unisdr/api/globalplatform/2019/program/get/all?page=2
+
 GET /sso-unisdr/api/globalplatform/2019/program/get/all?q=Geneva
+
+GET /sso-unisdr/api/globalplatform/2019/program/get/all?modified_since=2018-02-14
 ```
 
 JSON Response
