@@ -77,13 +77,12 @@ JSON Response
          "gpe_year":2019,
          "gpe_lang_id":1,
          "floor_language":"English",
-         "gpe_interpretation_lng_id":"6,5,1,2,8,4",
-         "interpretation_en":3,
          "gpe_cart":"Yes",
          "gpe_isl_interpretation":"No",
          "gpe_accessible":"Yes",
          "gpe_livebroadcast":"No",
          "gpe_interpretation":"Yes",
+         "gpe_interpretation_lng_id":"6,5,1,2,8,4",
          "gpe_remoteparticipation":"No",
          "gpe_participation":"Public",
          "\"type_id":2,
@@ -106,4 +105,36 @@ JSON Response
 }
 ```
 
-
+| Field                     	| Description                        	| Type/Value                                                                                                                	|
+|---------------------------	|------------------------------------	|---------------------------------------------------------------------------------------------------------------------------	|
+| gpe_id                    	| ID                                 	| int                                                                                                                       	|
+| gpe_title                 	| Name or title of the programme     	| plain text                                                                                                                	|
+| gpe_event_id              	| Programme reference code           	|                                                                                                                           	|
+| gpe_date                  	| Date of the session or programme   	| date (yyyy-mm-dd)                                                                                                         	|
+| gpe_time_from             	| Start time of the session          	| time (hh:ss), do not display to milliseconds                                                                              	|
+| gpe_time_to               	| End time of the session            	| time (hh:ss), do not display to milliseconds                                                                              	|
+| gpe_room                  	| Location of the session            	| plain text                                                                                                                	|
+| gpe_organizer             	| Organizers of the session          	| plain text, multiple line                                                                                                 	|
+| gpe_partner_orgs          	|                                    	|                                                                                                                           	|
+| gpe_chair                 	|                                    	|                                                                                                                           	|
+| gpe_focal_point           	|                                    	|                                                                                                                           	|
+| gpe_description           	|                                    	| plain text, multiple line, data can be in HTML format                                                                     	|
+| gpe_expected_results      	|                                    	| plain text, multiple line, data can be in HTML format                                                                     	|
+| gpe_facilitator           	|                                    	| plain text, multiple line, data can be in HTML format                                                                     	|
+| gpe_panelists             	|                                    	| plain text, multiple line, data can be in HTML format                                                                     	|
+| gpe_agenda                	|                                    	|                                                                                                                           	|
+| gpe_agenda_use_attachment 	|                                    	|                                                                                                                           	|
+| gpe_agenda_filename       	|                                    	|                                                                                                                           	|
+| gpe_datemodified          	|                                    	|                                                                                                                           	|
+| gpe_lang_id               	| Primary floor language ID          	| int                                                                                                                       	|
+| floor_language            	| Primary floor language             	| plain text                                                                                                                	|
+| gpe_cart                  	|                                    	| plain text, value is either Yes or No                                                                                     	|
+| gpe_isl_interpretation    	|                                    	| plain text, value is either Yes or No                                                                                     	|
+| gpe_accessible            	|                                    	| plain text, value is either Yes or No                                                                                     	|
+| gpe_livebroadcast         	|                                    	| plain text, value is either Yes or No                                                                                     	|
+| gpe_interpretation        	|                                    	| plain text, value is either Yes or No                                                                                     	|
+| gpe_interpretation_lng_id 	|                                    	| value should be converted to respective equivalent  6 = AR 5 = ZH 1 = EN 2 = FR 8 = RU 4 = ES   sample value: 6,5,1,2,8,4 	|
+| gpe_remoteparticipation   	|                                    	| plain text, value is either Yes or No                                                                                     	|
+| gpe_participation         	|                                    	| plain text, value is either Yes or No                                                                                     	|
+| type_id                   	|                                    	| int                                                                                                                       	|
+| type_title                	| Programme category or session type 	| plain text                                                                                                                	|
