@@ -153,3 +153,18 @@ Return in JSON format
 ```
 
 
+
+
+## Retrieve PreventionWeb tagged events content
+
+
+```shell
+GET /sso-unisdr/api/mcr/tagged/pw_events/get/all
+```
+
+
+## Retrieve UNISDR tagged news content
+
+```shell
+GET /sso-unisdr/api/mcr/tagged/isdr_news/get/all
+```
