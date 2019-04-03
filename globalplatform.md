@@ -107,6 +107,7 @@ JSON Response
 
 
 
+
 | Field                     	| Description                                                  	| Type/Value                                                                                                                      	|
 |---------------------------	|--------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------	|
 | gpe_id                    	| ID                                                           	| int                                                                                                                             	|
@@ -123,7 +124,7 @@ JSON Response
 | gpe_expected_results      	|                                                              	| plain text, multiple line, data can be in HTML format                                                                           	|
 | gpe_facilitator           	|                                                              	| plain text, multiple line, data can be in HTML format                                                                           	|
 | gpe_panelists             	|                                                              	| plain text, multiple line, data can be in HTML format                                                                           	|
-| gpe_agenda                	|                                                              	|                                                                                                                                 	|
+| gpe_agenda                	|                                                              	| plain text, multiple line, data can be in HTML format                                                                           	|
 | gpe_agenda_use_attachment 	|                                                              	| int, value is either 1 or 0                                                                                                     	|
 | gpe_agenda_filename       	| File name of the attachment                                  	| Add the full path to the filename https://www.unisdr.org/files/globalplatform/                                                  	|
 | gpe_datemodified          	| Modification date of the entry                               	| date (yyyy-mm-dd hh:mm:ss)                                                                                                      	|
