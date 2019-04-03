@@ -133,7 +133,7 @@ JSON Response
 | gpe_accessible            	|                                    	| plain text, value is either Yes or No                                                                                     	|
 | gpe_livebroadcast         	|                                    	| plain text, value is either Yes or No                                                                                     	|
 | gpe_interpretation        	|                                    	| plain text, value is either Yes or No                                                                                     	|
-| gpe_interpretation_lng_id 	|                                    	| value should be converted to respective equivalent  6 = AR 5 = ZH 1 = EN 2 = FR 8 = RU 4 = ES   sample value: 6,5,1,2,8,4 	|
+| gpe_interpretation_lng_id 	|                                    	| value should be converted to respective equivalent  6 = AR; 5 = ZH; 1 = EN; 2 = FR; 8 = RU; 4 = ES;   sample value: 6,5,1,2,8,4 	|
 | gpe_remoteparticipation   	|                                    	| plain text, value is either Yes or No                                                                                     	|
 | gpe_participation         	|                                    	| plain text, value is either Yes or No                                                                                     	|
 | type_id                   	|                                    	| int                                                                                                                       	|
