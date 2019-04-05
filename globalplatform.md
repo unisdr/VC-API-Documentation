@@ -85,7 +85,7 @@ JSON Response
          "gpe_interpretation_lng_id":"6,5,1,2,8,4",
          "gpe_remoteparticipation":"No",
          "gpe_participation":"Public",
-         "\"type_id":2,
+         "type_id":2,
          "type_title":"Working Sessions"
       },
 	  ...
@@ -119,8 +119,8 @@ JSON Response
 | gpe_room                  	| Location of the session                                      	| plain text                                                                                                                      	|
 | gpe_organizer             	| Organizers of the session                                    	| plain text, multiple line                                                                                                       	|
 | gpe_partner_orgs          	| Partner organizations. Appears after the the main organizer. 	| plain text, multiple line                                                                                                       	|
-| gpe_focal_point           	|                                                              	| plain text, multiple line                                                                                                       	|
-| gpe_description           	|                                                              	| plain text, multiple line, data can be in HTML format                                                                           	|
+| gpe_focal_point           	| Session focal point or contacts                              	| plain text, multiple line                                                                                                       	|
+| gpe_description           	| Description of the session                                   	| plain text, multiple line, data can be in HTML format                                                                           	|
 | gpe_expected_results      	|                                                              	| plain text, multiple line, data can be in HTML format                                                                           	|
 | gpe_facilitator           	|                                                              	| plain text, multiple line, data can be in HTML format                                                                           	|
 | gpe_panelists             	|                                                              	| plain text, multiple line, data can be in HTML format                                                                           	|
