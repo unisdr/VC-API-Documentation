@@ -140,3 +140,74 @@ JSON Response
 | gpe_participation         	|                                                              	| plain text, value is either Yes or No                                                                                           	|
 | type_id                   	|                                                              	| int                                                                                                                             	|
 | type_title                	| Programme category or session type                           	| plain text                                                                                                                      	|
+
+
+
+
+
+## Retrieve related background documents/presentations/lisks/videos of a programme
+
+API call have hit rate of 100 per minute. Unique api call are cached in a minute.
+
+URL Parameter:
+
+* gpe_id integer (required), entry id of the programme
+
+Header Parameters:
+
+* Accept string, value ‘application/json’
+* Authorization  string, value 'Bearer [ACCESS TOKEN received from step 1]'
+
+```shell
+GET /sso-unisdr/api/globalplatform/2019/program/get/id/[GPE_ID]
+```
+
+JSON Response
+
+```shell
+{  
+   "status":200,
+   "success":true,
+   "data":{  
+      "background_papers":[  
+         {  
+            "id":1045,
+            "title":"Blank presentation",
+            "filename":"entry_bg_paper~blank.pdf",
+            "filesize":"138.91 Kb",
+            "icon":"file-pdf-o",
+            "extension":"PDF"
+         }
+      ],
+      "related_links":[  
+         {  
+            "id":192,
+            "title":"Test URL",
+            "url":"https:\/\/unisdr.org",
+            "icon":"external-link"
+         }
+      ],
+      "presentations":[  
+         {  
+            "id":943,
+            "title":"Presentation 2 ",
+            "speaker":"Joel Margate",
+            "filename":"entry_presentation~blank.pdf",
+            "filesize":"138.91 Kb",
+            "icon":"file-pdf-o",
+            "extension":"PDF"
+         }
+      ],
+      "videos":[  
+         {  
+            "id":902,
+            "title":"Sample Embed",
+            "code":"<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/2dMYR-YIOpU\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>"
+         }
+      ],
+      "outcomes":[  
+
+      ]
+   }
+}
+```
