@@ -216,5 +216,4 @@ JSON Response
 
 | Field                     	| Description                                                  	| Type/Value                                                                                                                      	|
 |---------------------------	|--------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------	|
-| filename                    	| 
-Document filename| string, add the full path to the filename https://www.unisdr.org/files/globalplatform/                                                                                                                             	|
+| filename                    	| Document filename| string, add the full path to the filename https://www.unisdr.org/files/globalplatform/                                                                                                                             	|
