@@ -168,3 +168,18 @@ GET /sso-unisdr/api/mcr/tagged/pw_events/get/all
 ```shell
 GET /sso-unisdr/api/mcr/tagged/isdr_news/get/all
 ```
+
+
+## Retrieve attachments/links of PreventionWeb entry
+
+```shell
+GET /sso-unisdr/api/pw/entry/attachments/get/id/{id}
+```
+
+
+
+## Retrieve cities records with PreventionWeb HFA LGSAT report
+
+```shell
+GET /sso-unisdr/api/cities/pw/policy_plans/get/all
+```
