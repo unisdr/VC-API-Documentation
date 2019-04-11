@@ -265,10 +265,6 @@ Return in JSON format
          "lng_title":"English",
          "eupld_filename_image":"18293_fijilamicampaignsigningwithwomen080.jpg",
          "eupld_filename_image_label":"",
-         "isdr_nws_id":429,
-         "isdr_nws_ent_id":18672,
-         "isdr_nws_title_head":"",
-         "isdr_nws_title_html":null,
          "isdr_nws_lang_id":1,
          "isdr_nws_url":"http:\/\/www.unisdr.org\/news\/v.php?id=18672",
          "isdr_nws_order":0,
@@ -293,6 +289,22 @@ Return in JSON format
    "success":1
 }
 ```
+
+Field definition
+
+| Field                      | Description     | Type/Value                                                      |
+|----------------------------|-----------------|-----------------------------------------------------------------|
+| ent_id                     |                 | int                                                             |
+| ent_title *                | Title of entry  | plain text                                                      |
+| isdr_nws_date_rel *        | Release date    | date (yyyy-mm-dd)                                               |
+| isdr_type_title            |                 | plain text                                                      |
+| isdr_nws_summary           | Summary         | plain text, multiple line, data can be in HTML format           |
+| isdr_nws_content           | Content/body    | plain text, multiple line, data can be in HTML format           |
+| eupld_filename_image       | Image thumbnail | Add the full path to the filename https://www.unisdr.org/files/ |
+| eupld_filename_image_label | Image caption   |                                                                 |
+| isdr_nws_lang_id           | Language ID     |                                                                 |
+
+
 
 ## Retrieve attachments/links of PreventionWeb entry
 
