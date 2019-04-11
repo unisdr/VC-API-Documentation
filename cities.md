@@ -292,17 +292,17 @@ Return in JSON format
 
 Field definition
 
-| Field                      | Description     | Type/Value                                                      |
-|----------------------------|-----------------|-----------------------------------------------------------------|
-| ent_id                     |                 | int                                                             |
-| ent_title *                | Title of entry  | plain text                                                      |
-| isdr_nws_date_rel *        | Release date    | date (yyyy-mm-dd)                                               |
-| isdr_type_title            |                 | plain text                                                      |
-| isdr_nws_summary           | Summary         | plain text, multiple line, data can be in HTML format           |
-| isdr_nws_content           | Content/body    | plain text, multiple line, data can be in HTML format           |
-| eupld_filename_image       | Image thumbnail | Add the full path to the filename https://www.unisdr.org/files/ |
-| eupld_filename_image_label | Image caption   |                                                                 |
-| isdr_nws_lang_id           | Language ID     |                                                                 |
+| Field                      | Description     | Type/Value                                                         |
+|----------------------------|-----------------|--------------------------------------------------------------------|
+| ent_id                     |                 | int                                                                |
+| ent_title *                | Title of entry  | plain text                                                         |
+| isdr_nws_date_rel *        | Release date    | date (yyyy-mm-dd)                                                  |
+| isdr_type_title            |                 | plain text                                                         |
+| isdr_nws_summary           | Summary         | plain text, multiple line, data can be in HTML format              |
+| isdr_nws_content           | Content/body    | plain text, multiple line, data can be in HTML format              |
+| eupld_filename_image       | Image thumbnail | Add the full path to the filename https://www.unisdr.org/files/    |
+| eupld_filename_image_label | Image caption   |                                                                    |
+| isdr_nws_lang_id           | Language ID     |  value equivalent  6 = AR; 5 = ZH; 1 = EN; 2 = FR; 8 = RU; 4 = ES; |
 
 
 
