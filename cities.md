@@ -254,34 +254,7 @@ Return in JSON format
 {  
    "current_page":1,
    "data":[  
-      {  
-         "ent_id":58039,
-         "ent_title":"Capacity Development for Making Cities Resilient to Disasters: Applying the Resilience Scorecard for Cities. Ulaanbaatar, Mongolia.",
-         "ent_datemodified":"2018-04-30 07:35:18",
-         "trn_ismajor_event":0,
-         "trn_desc":"<h3><strong>Background <\/strong><\/h3>\r\n\r\n<p>Cities are hubs of ideas, commerce, culture, science, productivity, social development and much more. At their best, cities have enabled people to advance socially and economically. Yet nowt heat hald of the world&rsquo;s population lives in cities, making sutainable and resilient cities -amidst a chaning climate, rapidly depleting resources, and unplanned urbanization &ndash; is one of the our greates challenges and opportunities.<\/p>\r\n\r\n<p>Current and future challenges of mainstreaming climate change adaptation and disaster risk reduction in development planning demand new approaches, mechanisms, sets of skills and competencies that need to be identified and strengthened in order to form the basis of increasing public demand and political commitment to local actions and budget allocations.<\/p>\r\n\r\n<p>In this regard, building resilience and adapting to climate change is crucial for cities. Efforts to build resilience in cities can benefit from integrating disaster risk reduction and climate change adaptation with existing efforts in disaster risk reduction and other similar planning processes.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<h3><strong>Workshop Objectives and Expected Outcomes<\/strong><\/h3>\r\n\r\n<p>Overall, the training course will provide an opportunity to:<\/p>\r\n\r\n<ul>\r\n\t<li>Learn about the Making Cities Resilient Global Campaign and how its tools, materials and approaches may be used to build local resilience to disasters.<\/li>\r\n\t<li>Capacity development of government officials of Ulaanbaatar with a focus on applying the Disaster Resilience Scorecard<\/li>\r\n<\/ul>\r\n\r\n<p><strong>Expected Outcomes <\/strong><\/p>\r\n\r\n<ul>\r\n\t<li>Draft Scorecard Assessment<\/li>\r\n<\/ul>",
-         "trn_event_url":"",
-         "trn_webcast_url":"",
-         "trn_twitter_hashtag":"",
-         "trn_photovideo_embed":"",
-         "trn_video_embed":"",
-         "trn_type_id":3,
-         "lnk_trn_date_start":"2018-04-30",
-         "lnk_trn_date_end":"2018-05-01",
-         "lnk_trn_type":"1",
-         "lnk_trn_isonline":"0",
-         "lnk_trn_ctry_id":"115",
-         "lnk_trn_city":"Ulaanbaatar",
-         "lnk_trn_venue":"",
-         "lnk_trn_tentative_loc":"0",
-         "lnk_trn_lang_id":"0",
-         "lnk_trn_lang_other":null,
-         "lnk_trn_islivetranslation":"0",
-         "lnk_trn_livetran_info":null,
-         "type_title":"Training",
-         "ent_lang_id":1,
-         "lng_title":"English"
-      }
+      {"ent_id":58039,"ent_title":"Capacity Development for Making Cities Resilient to Disasters: Applying the Resilience Scorecard for Cities. Ulaanbaatar, Mongolia.","ent_datemodified":"2018-04-30 07:35:18","trn_ismajor_event":0,"trn_desc":"<h3><strong>Background <\/strong><\/h3>\r\n\r\n<p>Cities are hubs of ideas, commerce, culture, science, productivity, social development and much more. At their best, cities have enabled people to advance socially and economically. Yet nowt heat hald of the world&rsquo;s population lives in cities, making sutainable and resilient cities -amidst a chaning climate, rapidly depleting resources, and unplanned urbanization &ndash; is one of the our greates challenges and opportunities.<\/p>\r\n\r\n<p>Current and future challenges of mainstreaming climate change adaptation and disaster risk reduction in development planning demand new approaches, mechanisms, sets of skills and competencies that need to be identified and strengthened in order to form the basis of increasing public demand and political commitment to local actions and budget allocations.<\/p>\r\n\r\n<p>In this regard, building resilience and adapting to climate change is crucial for cities. Efforts to build resilience in cities can benefit from integrating disaster risk reduction and climate change adaptation with existing efforts in disaster risk reduction and other similar planning processes.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<h3><strong>Workshop Objectives and Expected Outcomes<\/strong><\/h3>\r\n\r\n<p>Overall, the training course will provide an opportunity to:<\/p>\r\n\r\n<ul>\r\n\t<li>Learn about the Making Cities Resilient Global Campaign and how its tools, materials and approaches may be used to build local resilience to disasters.<\/li>\r\n\t<li>Capacity development of government officials of Ulaanbaatar with a focus on applying the Disaster Resilience Scorecard<\/li>\r\n<\/ul>\r\n\r\n<p><strong>Expected Outcomes <\/strong><\/p>\r\n\r\n<ul>\r\n\t<li>Draft Scorecard Assessment<\/li>\r\n<\/ul>","trn_event_url":"","trn_webcast_url":"","trn_twitter_hashtag":"","trn_photovideo_embed":"","trn_video_embed":"","trn_type_id":3,"lnk_trn_date_start":"2018-04-30","lnk_trn_date_end":"2018-05-01","lnk_trn_type":"1","lnk_trn_isonline":"0","lnk_trn_ctry_id":"115","lnk_trn_city":"Ulaanbaatar","lnk_trn_venue":"","lnk_trn_tentative_loc":"0","lnk_trn_lang_id":"0","lnk_trn_lang_other":null,"lnk_trn_islivetranslation":"0","lnk_trn_livetran_info":null,"type_title":"Training","ent_lang_id":1,"lng_title":"English"}
    ],
    "first_page_url":"\/sso-unisdr\/api\/mcr\/tagged\/pw_events\/get\/all?page=1",
    "from":1,
