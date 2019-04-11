@@ -242,6 +242,36 @@ Return in JSON format
 }
 ```
 
+| Field                        | Description                                   | Type/Value                                                                      |
+|------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------|
+| ent_id                       |                                               | int                                                                             |
+| ent_title *                  | Title of entry                                | plain text                                                                      |
+| ent_datemodified             | Date modified                                 | date (yyyy-mm-dd hh:mm:ss)                                                      |
+| ent_lang_id                  | Language ID of description                    | int                                                                             |
+| lng_title                    | Language of description                       | plain text                                                                      |
+| trn_desc                     |                                               | plain text, multiple line, data can be in HTML format                           |
+| trn_event_url                |                                               |                                                                                 |
+| trn_webcast_url              |                                               |                                                                                 |
+| trn_twitter_hashtag          |                                               |                                                                                 |
+| trn_photovideo_embed         |                                               |                                                                                 |
+| trn_video_embed              |                                               |                                                                                 |
+| trn_type_id                  | type ID                                       |                                                                                 |
+| type_title                   | type title                                    |                                                                                 |
+| lnk_trn_date_start []        | Start date of the event                       | date (yyyy-mm-dd)                                                               |
+| lnk_trn_date_end []          | End date of the event                         | date (yyyy-mm-dd)                                                               |
+| lnk_trn_type []              | Date option                                   | int; value either 1 or 4; 1 = Regular start and end date and 4 = Tentative date |
+| lnk_trn_isonline []          | Online only event (no country, city or venue) | int, value either 1 or 0; 1 = true and 0 = false                                |
+| lnk_trn_ctry_id []           | Country ID                                    | int, match with the country feed                                                |
+| lnk_trn_city []              | City/Town/Village                             |                                                                                 |
+| lnk_trn_venue []             | Venue and Room                                |                                                                                 |
+| lnk_trn_tentative_loc []     |                                               | int, value either 1 or 0; 1 = true and 0 = false                                |
+| lnk_trn_lang_id []           |                                               | int                                                                             |
+| lnk_trn_lang_other []        |                                               | plain text                                                                      |
+| lnk_trn_islivetranslation [] |                                               | int, value either 1 or 0; 1 = true and 0 = false                                |
+| lnk_trn_livetran_info []     |                                               |                                                                                 |
+
+
+
 ## Retrieve UNISDR tagged news content
 
 ```shell
