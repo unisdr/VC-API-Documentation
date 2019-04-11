@@ -263,7 +263,7 @@ Return in JSON format
          "isdr_nws_date_rel":"2011-03-30",
          "isdr_type_title":"News briefs",
          "lng_title":"English",
-         "eupld_filename_image":null,
+         "eupld_filename_image":"18293_fijilamicampaignsigningwithwomen080.jpg",
          "eupld_filename_image_label":"",
          "isdr_nws_id":429,
          "isdr_nws_ent_id":18672,
