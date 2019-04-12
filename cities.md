@@ -345,6 +345,265 @@ GET /sso-unisdr/api/pw/entry/attachments/get/id/{id}
 ```
 
 
+Return in JSON format
+
+```shell
+{
+   "status":200,
+   "success":true,
+   "data":{
+      "attachments":[
+         {
+            "ent_id":57885,
+            "id":79448,
+            "title":"Agenda (Eng)",
+            "filetype":null,
+            "filesize":287187,
+            "scat_id":711,
+            "scat_title":"Agenda",
+            "is_attachment":1,
+            "link":"https:\/\/www.preventionweb.net\/files\/57885_Agenda.pdf"
+         },
+         {
+            "ent_id":57885,
+            "id":79449,
+            "title":"Agenda (\ud55c\uae00)",
+            "filetype":null,
+            "filesize":301340,
+            "scat_id":711,
+            "scat_title":"Agenda",
+            "is_attachment":1,
+            "link":"https:\/\/www.preventionweb.net\/files\/57885_Agenda_Kr.pdf"
+         }
+      ],
+      "links":[
+         {
+            "ent_id":57885,
+            "id":36433,
+            "title":"UNISDR ONEA-GETI",
+            "filetype":"",
+            "is_attachment":0,
+            "link":"https:\/\/www.unisdr.org\/incheon"
+         },
+         {
+            "ent_id":57885,
+            "id":36434,
+            "title":"UNISDR \ub3d9\ubd81\uc544\uc0ac\ubb34\uc18c \ubc0f \uad6d\uc81c\uad50\uc721\ud6c8\ub828\uc5f0\uc218\uc6d0",
+            "filetype":"",
+            "is_attachment":0,
+            "link":"https:\/\/www.unisdr.org\/incheon\/korean"
+         },
+         {
+            "ent_id":57885,
+            "id":36435,
+            "title":"Sendai Framework for Disaster Risk Reduction 2015-2030",
+            "filetype":"",
+            "is_attachment":0,
+            "link":"https:\/\/www.preventionweb.net\/drr-framework\/sendai-framework"
+         },
+         {
+            "ent_id":57885,
+            "id":36436,
+            "title":"Making Cities Resilient: 'My city is getting ready!",
+            "filetype":"",
+            "is_attachment":0,
+            "link":"https:\/\/www.unisdr.org\/campaign\/resilientcities\/"
+         }
+      ],
+      "event_dates":[
+         {
+            "ent_id":57885,
+            "lnk_trn_type":1,
+            "lnk_trn_date_start":"2018-04-03",
+            "lnk_trn_date_end":"2018-04-03",
+            "lnk_trn_ctry_id":139,
+            "lnk_trn_city":"Incheon",
+            "lnk_trn_venue":"GETI",
+            "lnk_trn_lang_id":0,
+            "lnk_trn_lang_other":"Korean",
+            "lnk_trn_islivetranslation":0,
+            "lnk_trn_livetran_info":"",
+            "lnk_trn_date_loc":null,
+            "lnk_trn_tentative_loc":0,
+            "lnk_trn_isonline":0,
+            "lng_title":null,
+            "ctry_title":"Korea, Rep of"
+         },
+         {
+            "ent_id":57885,
+            "lnk_trn_type":1,
+            "lnk_trn_date_start":"2018-04-04",
+            "lnk_trn_date_end":"2018-04-04",
+            "lnk_trn_ctry_id":139,
+            "lnk_trn_city":"Cheonan",
+            "lnk_trn_venue":"",
+            "lnk_trn_lang_id":0,
+            "lnk_trn_lang_other":"Korean",
+            "lnk_trn_islivetranslation":0,
+            "lnk_trn_livetran_info":"",
+            "lnk_trn_date_loc":null,
+            "lnk_trn_tentative_loc":0,
+            "lnk_trn_isonline":0,
+            "lng_title":null,
+            "ctry_title":"Korea, Rep of"
+         },
+         {
+            "ent_id":57885,
+            "lnk_trn_type":1,
+            "lnk_trn_date_start":"2018-04-19",
+            "lnk_trn_date_end":"2018-04-19",
+            "lnk_trn_ctry_id":139,
+            "lnk_trn_city":"Gwangju",
+            "lnk_trn_venue":"",
+            "lnk_trn_lang_id":0,
+            "lnk_trn_lang_other":"Korean",
+            "lnk_trn_islivetranslation":0,
+            "lnk_trn_livetran_info":"",
+            "lnk_trn_date_loc":null,
+            "lnk_trn_tentative_loc":0,
+            "lnk_trn_isonline":0,
+            "lng_title":null,
+            "ctry_title":"Korea, Rep of"
+         },
+         {
+            "ent_id":57885,
+            "lnk_trn_type":1,
+            "lnk_trn_date_start":"2018-04-20",
+            "lnk_trn_date_end":"2018-04-20",
+            "lnk_trn_ctry_id":139,
+            "lnk_trn_city":"Busan",
+            "lnk_trn_venue":"",
+            "lnk_trn_lang_id":0,
+            "lnk_trn_lang_other":"Korean",
+            "lnk_trn_islivetranslation":0,
+            "lnk_trn_livetran_info":"",
+            "lnk_trn_date_loc":null,
+            "lnk_trn_tentative_loc":0,
+            "lnk_trn_isonline":0,
+            "lng_title":null,
+            "ctry_title":"Korea, Rep of"
+         }
+      ],
+      "org_sources":[
+         {
+            "ent_id":57885,
+            "lnk_ini_id":1,
+            "lnk_ini_ent_id":57885,
+            "lnk_ini_type":1,
+            "lnk_ini_org_id":82,
+            "lnk_ini_dept":null,
+            "lnk_ini_dateadded":"2007-08-20 18:09:29",
+            "lnk_ini_usr_id":0,
+            "lnk_ini_order":0,
+            "source_type_id":1,
+            "source_type":"Main owner organization",
+            "org_id":82,
+            "org_title_long":"Secretariat of the Pacific Community",
+            "org_title_acronym":"SPC\/SOPAC",
+            "org_type_id":8,
+            "torg_id":8,
+            "torg_title":"Regional Intergovernmental Organization"
+         },
+         {
+            "ent_id":57885,
+            "lnk_ini_id":9,
+            "lnk_ini_ent_id":57885,
+            "lnk_ini_type":1,
+            "lnk_ini_org_id":123,
+            "lnk_ini_dept":null,
+            "lnk_ini_dateadded":"2007-08-20 18:09:29",
+            "lnk_ini_usr_id":0,
+            "lnk_ini_order":0,
+            "source_type_id":1,
+            "source_type":"Main owner organization",
+            "org_id":123,
+            "org_title_long":"International Telecommunication Union",
+            "org_title_acronym":"ITU",
+            "org_type_id":1,
+            "torg_id":1,
+            "torg_title":"UN & International Organization"
+         },
+         {
+            "ent_id":57885,
+            "lnk_ini_id":2,
+            "lnk_ini_ent_id":57885,
+            "lnk_ini_type":3,
+            "lnk_ini_org_id":126,
+            "lnk_ini_dept":null,
+            "lnk_ini_dateadded":"2007-08-20 18:09:29",
+            "lnk_ini_usr_id":0,
+            "lnk_ini_order":0,
+            "source_type_id":3,
+            "source_type":"Main key partner ",
+            "org_id":126,
+            "org_title_long":"Asian Disaster Preparedness Center",
+            "org_title_acronym":"ADPC",
+            "org_type_id":3,
+            "torg_id":3,
+            "torg_title":"Non-Governmental Organization"
+         },
+         {
+            "ent_id":57885,
+            "lnk_ini_id":3,
+            "lnk_ini_ent_id":57885,
+            "lnk_ini_type":3,
+            "lnk_ini_org_id":129,
+            "lnk_ini_dept":null,
+            "lnk_ini_dateadded":"2007-08-20 18:09:29",
+            "lnk_ini_usr_id":0,
+            "lnk_ini_order":0,
+            "source_type_id":3,
+            "source_type":"Main key partner ",
+            "org_id":129,
+            "org_title_long":"Australian Emergency Management Institute",
+            "org_title_acronym":"AEMI",
+            "org_type_id":2,
+            "torg_id":2,
+            "torg_title":"Governmental"
+         },
+         {
+            "ent_id":57885,
+            "lnk_ini_id":61062,
+            "lnk_ini_ent_id":57885,
+            "lnk_ini_type":6,
+            "lnk_ini_org_id":2899,
+            "lnk_ini_dept":null,
+            "lnk_ini_dateadded":"2018-04-18 10:52:21",
+            "lnk_ini_usr_id":0,
+            "lnk_ini_order":0,
+            "source_type_id":6,
+            "source_type":"Main organizer ",
+            "org_id":2899,
+            "org_title_long":"Ministry of the Interior and Safety",
+            "org_title_acronym":"MOIS",
+            "org_type_id":2,
+            "torg_id":2,
+            "torg_title":"Governmental"
+         },
+         {
+            "ent_id":57885,
+            "lnk_ini_id":61061,
+            "lnk_ini_ent_id":57885,
+            "lnk_ini_type":6,
+            "lnk_ini_org_id":9351,
+            "lnk_ini_dept":null,
+            "lnk_ini_dateadded":"2018-04-18 10:52:21",
+            "lnk_ini_usr_id":0,
+            "lnk_ini_order":0,
+            "source_type_id":6,
+            "source_type":"Main organizer ",
+            "org_id":9351,
+            "org_title_long":"UNISDR Office for Northeast Asia and Global Education and Training Institute for Disaster Risk Reduction at Incheon",
+            "org_title_acronym":"UNISDR ONEA-GETI",
+            "org_type_id":1,
+            "torg_id":1,
+            "torg_title":"UN & International Organization"
+         }
+      ]
+   }
+}
+```
+
 
 ## Retrieve cities records with PreventionWeb HFA LGSAT report
 
