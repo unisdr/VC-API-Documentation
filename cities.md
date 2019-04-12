@@ -498,3 +498,28 @@ Return in JSON format
 ```shell
 GET /sso-unisdr/api/cities/pw/policy_plans/get/all
 ```
+
+
+Return in JSON format
+
+```shell
+{
+   "status":200,
+   "success":true,
+   "data":[
+      {
+         "ent_id":31196,
+         "ent_title":"Aqaba (Jordan): Local progress report on the implementation of the HFA and 10 Essentials for Making Cities Resilient (2011-2013)",
+         "cty_id":1987,
+         "url":"https:\/\/preventionweb.net\/go\/31196"
+      },
+      {
+         "ent_id":31198,
+         "ent_title":"San Francisco Municipality (Philippines): Local progress report on the implementation of the HFA and 10 Essentials for Making Cities Resilient (2011-2013)",
+         "cty_id":2423,
+         "url":"https:\/\/preventionweb.net\/go\/31198"
+      }
+   ],
+   "total":354
+}
+```
