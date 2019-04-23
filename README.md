@@ -21,9 +21,6 @@ Form Post Parameters:
 
 ```shell
 POST /sso-unisdr/oauth/token
-
-
-curl -v -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{"client_id":[client_id],"client_secret":"[client_secret]","grant_type":"client_credentials","scope ":null}' https://program.unisdr.org/sso-unisdr/oauth/token
 ```
 
 Returns an access credentials in JSON format:
