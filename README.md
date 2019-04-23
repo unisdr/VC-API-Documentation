@@ -3,13 +3,29 @@
 
 Part of the documentation are specific to Voluntary Commitments project.
 
-## Client Credentials Flow OAuth2 API
+## Authorization Code Flow OAuth2 API
 
 Requires read/write database permission
 
-### Step 1, client to request for access token
+### Step 1, login to common login screen
 
-The server will respond with the access token credentials in json format.
+Request oAuth2 authorization code from the server, here is an example of the request URL https://program.unisdr.org/sso-unisdr/oauth/authorize?client_id=CLIENT_ID&response_type=code&scope=*&redirect_uri=CALLBACK_URL
+
+Querystring Parameters:
+
+* client_id integer, client ID provided by UNISDR
+* redirect_uri string, redirect URI or callback URL provided by the client
+* response_type string, value should be ‘code’
+* scope string, value should be ‘*’ or null
+* state string (optional)
+
+```shell
+GET /sso-unisdr/oauth/authorize?client_id=CLIENT_ID&response_type=code&scope=*&redirect_uri=CALLBACK_URL
+```
+
+### Step 2, exchange authorization code to access token
+
+The authorization code that was received from step 1 should be exchanged with the access token by calling the post request with the appropriate form fields, the server will respond with the access token credentials in json format.
 
 Form Post Parameters:
 
