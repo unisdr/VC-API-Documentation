@@ -48,6 +48,8 @@ GET /sso-unisdr/api/globalplatform/2019/program/get/all?page=2
 GET /sso-unisdr/api/globalplatform/2019/program/get/all?q=Geneva
 
 GET /sso-unisdr/api/globalplatform/2019/program/get/all?modified_since=2018-02-14
+
+curl -i -H "Accept: application/json" -H "Authorization: Bearer [ACCESS TOKEN]" https://program.unisdr.org/sso-unisdr/api/globalplatform/2019/program/get/all
 ```
 
 JSON Response
