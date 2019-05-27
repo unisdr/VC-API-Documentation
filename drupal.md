@@ -7,7 +7,7 @@ Requires read/write database permission
 
 ### Step 1, login to common login screen
 
-Request oAuth2 authorization code from the server, here is an example of the request URL https://program.unisdr.org/sso-unisdr/oauth/authorize?client_id=CLIENT_ID&response_type=code&scope=*&redirect_uri=CALLBACK_URL
+Request oAuth2 authorization code from the server, here is an example of the request URL https://program.unisdr.org/sso-unisdr/oauth/authorize?client_id=CLIENT_ID&response_type=token&scope=*&redirect_uri=CALLBACK_URL
 
 Querystring Parameters:
 
