@@ -1,9 +1,225 @@
 
 # UNDRR Common Login Documentation
 
-## Implicit Grant Flow OAuth2 API
+## Client Credentials Grant Flow OAuth2
 
-Requires read/write database permission
+https://oauth.net/2/grant-types/client-credentials/
+
+### Client
+
+#### Request access token
+
+Form Post Parameters:
+
+* grant_type string, value should be ‘client_credentials’
+* client_id integer, client ID given by UNDRR
+* client_secret string, secret provided by UNDRR
+* scope string (optional), value should be ‘*’ or null
+
+```shell
+POST /sso-unisdr/oauth/token
+```
+
+Example PHP code:
+
+```shell
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "/sso-unisdr/oauth/token",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => "grant_type=client_credentials&client_id=XX&client_secret=XX&scope=*",
+));
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
+```
+
+Response Body:
+
+```shell
+[ACCESS TOKEN]
+```
+
+#### Registration
+
+Header Parameters:
+
+* Accept string, value ‘application/json’
+* Authorization string, value 'Bearer [Client: ACCESS TOKEN]'
+
+Form Post Parameters:
+
+* email string, value should be a valid email address
+* password string, the encrypted text must use bcrypt encryption
+* con_id integer, foreign key of the contact records in PW.net, this a way for common login to associate the account information
+
+```shell
+POST /sso-unisdr/api/user/registration
+```
+
+Example PHP code:
+
+```shell
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "/sso-unisdr/api/user/registration",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => "email=XX&password=XX&con_id=XX",
+  CURLOPT_HTTPHEADER => array(
+    "accept: application/json",
+    "authorization: Bearer XX",
+    "content-type: application/x-www-form-urlencoded"
+  ),
+));
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
+```
+
+Error response:
+
+```shell
+{  
+   "status":400,
+   "error":[  
+      "The email address field is required.",
+      "The password field is required.",
+      "The Contact ID is required."
+   ]
+}
+```
+
+Success response:
+
+```shell
+{
+  "status": 200,
+  "error": []
+}
+```
+
+
+#### Reset password
+
+Header Parameters:
+
+* Accept string, value ‘application/json’
+* Authorization string, value 'Bearer [Client: ACCESS TOKEN]'
+
+Form Post Parameters:
+
+* email string, value should be a valid email address
+* password_new string, plain text
+
+```shell
+POST /sso-unisdr/api/user/forgot_password_reset
+```
+
+#### Change email
+
+Header Parameters:
+
+* Accept string, value ‘application/json’
+* Authorization string, value 'Bearer [Client: ACCESS TOKEN]'
+
+Form Post Parameters:
+
+* email_current string, value should be a valid email address
+* email_new string, value should be a valid email address that doesn't exists yet in the system
+
+```shell
+POST /sso-unisdr/api/user/change_email
+```
+
+#### Change password (change to USER TOKEN)
+
+Form Post Parameters:
+
+* password_current string, plain text
+* password_new string, plain text
+
+```shell
+POST /sso-unisdr/api/user/reset_password
+```
+
+
+
+## User
+
+### Check email address and password
+
+This function was used to verify the account login credentials for the change password and email.
+
+Header Parameters:
+
+* Accept string, value ‘application/json’
+* Authorization string, value 'Bearer [User: ACCESS TOKEN]'
+
+Post Parameters:
+
+* email string, email address entered by user upon registration
+* password string, password entered by user upon registration
+
+```shell
+POST /sso-unisdr/api/user/check_emailaddress_passsord
+```
+
+
+### Delete Account
+
+Header Parameters:
+
+* Accept string, value ‘application/json’
+* Authorization string, value 'Bearer [User: ACCESS TOKEN]'
+
+```shell
+POST /sso-unisdr/api/user/delete_account
+```
+
+### Revoke User Token
+
+Header Parameters:
+
+* Accept string, value ‘application/json’
+* Authorization string, value 'Bearer [User: ACCESS TOKEN]'
+
+```shell
+POST /sso-unisdr/api/user/revoke_token
+```
+
+## Password Grant Flow OAuth2 API
+
+Todo
+
+## Implicit Grant Flow OAuth2 API
 
 ### Step 1, login to common login screen
 
@@ -11,7 +227,7 @@ Request oAuth2 authorization code from the server, here is an example of the req
 
 Querystring Parameters:
 
-* client_id integer, client ID provided by UNISDR
+* client_id integer, client ID provided by UNDRR
 * redirect_uri string, redirect URI or callback URL provided by the client, must be exactly as saved in the database
 * response_type string, value should be ‘token’
 * scope string, value should be ‘*’ or null
@@ -53,7 +269,7 @@ Returns users information in JSON format:
       "con_id":123321,
       "con_fname":"Nho",
       "con_lname":"Eod",
-      "con_org":"UNISDR",
+      "con_org":"UNDRR",
       "con_position":"Programmer",
       "con_email":"some_email@email.com",
       "name":"Nho Eod"
