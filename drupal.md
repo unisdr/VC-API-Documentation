@@ -1,6 +1,65 @@
 
 # UNDRR Common Login Documentation
 
+Production URL: http://program.unisdr.org/sso-unisdr/
+
+Staging URL: https://program.unisdr.org/sso-unisdr-development/
+
+## General
+
+### Encrypt password
+
+Form Post Parameter:
+
+* password string
+
+```shell
+POST /sso-unisdr/api/user/encrypt_password
+```
+
+Error response:
+
+```shell
+{
+  "status": 400,
+  "error": [
+    "Do not use simple words or patterns for password."
+  ],
+  "success": false
+}
+```
+
+Success response:
+
+```shell
+{
+  "status": 200,
+  "success": true,
+  "password_encrypted": "XX"
+}
+```
+
+### Get application/client name
+
+Querystring Parameters:
+
+* client_id integer
+* client_home_url string
+
+
+```shell
+GET /sso-unisdr/api/client/get_name?client_id=XX&client_home_url=XX
+```
+
+https://program.unisdr.org/sso-unisdr-development/api/client/get_name?client_id=13&client_home_url=http://unisdr.digitalchannels.technology
+
+
+Success response:
+
+```shell
+{"status":200,"success":true,"data":{"name":"XX"}}
+```
+
 ## Client Credentials Grant Flow OAuth2
 
 https://oauth.net/2/grant-types/client-credentials/
@@ -58,7 +117,7 @@ Response Body:
 
 Standard registration URL https://www.preventionweb.net/myprofile/register
 
-Registration coming from other application URL. There will be additional information displayed on the page upon email approval.
+Registration URL coming from other applications e.g. Sendain Framework Voluntary commitments https://sendaicommitments.unisdr.org. There will be additional information displayed on the page upon email approval.
 
 https://www.preventionweb.net/myprofile/register?url=https%3A%2F%2Fsendaicommitments.unisdr.org&client_id=9
 
@@ -70,7 +129,7 @@ Header Parameters:
 Form Post Parameters:
 
 * email string, value should be a valid email address
-* password string, the encrypted text must use bcrypt encryption
+* password string, the encrypted text must use bcrypt encryption, use the API endpoint on the general section to encrpyt the password
 * con_id integer, foreign key of the contact records in PW.net, this a way for common login to associate the account information
 
 ```shell
@@ -161,7 +220,7 @@ Example PHP code:
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "http://localhost/laravel/sso-unisdr/public/api/user/forgot_password_reset",
+  CURLOPT_URL => "/sso-unisdr/api/user/forgot_password_reset",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
