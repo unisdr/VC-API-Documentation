@@ -56,6 +56,12 @@ Response Body:
 
 #### Registration
 
+Standard registration URL https://www.preventionweb.net/myprofile/register
+
+Registration coming from other application URL. There will be additional information displayed on the page upon email approval.
+
+https://www.preventionweb.net/myprofile/register?url=https%3A%2F%2Fsendaicommitments.unisdr.org&client_id=9
+
 Header Parameters:
 
 * Accept string, value ‘application/json’
@@ -107,11 +113,13 @@ if ($err) {
 Error response:
 
 ```shell
-{  
+{
    "status":400,
-   "error":[  
+   "error":[
       "The email address field is required.",
       "The password field is required.",
+      "Password must contain at least one number and one uppercase and lowercase letter, and at least 12 characters.",
+      "Do not use simple words or patterns for password.",
       "The Contact ID is required."
    ]
 }
@@ -129,6 +137,10 @@ Success response:
 
 #### Reset password
 
+Endpoint to call after completing the reset password flow.
+
+https://www.preventionweb.net/myprofile/forgotpassword
+
 Header Parameters:
 
 * Accept string, value ‘application/json’
@@ -143,7 +155,66 @@ Form Post Parameters:
 POST /sso-unisdr/api/user/forgot_password_reset
 ```
 
+Example PHP code:
+
+```shell
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "http://localhost/laravel/sso-unisdr/public/api/user/forgot_password_reset",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => "email=XX&password_new=XX",
+  CURLOPT_HTTPHEADER => array(
+    "accept: application/json",
+    "authorization: Bearer XX",
+    "content-type: application/x-www-form-urlencoded"
+  ),
+));
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
+```
+
+
+Success response:
+
+```shell
+{
+  "status": 200,
+  "error": [],
+  "success": true
+}
+```
+
+Error response:
+
+```shell
+{
+   "status":400,
+   "error":[
+      "The email address doesn't exists.",
+      "New password must contain at least one number, one uppercase and lowercase letter, and at least 12 characters.",
+   ]
+}
+```
+
+
 #### Change email
+
+Endpoint to call after completing the change email flow.
 
 Header Parameters:
 
@@ -159,6 +230,51 @@ Form Post Parameters:
 POST /sso-unisdr/api/user/change_email
 ```
 
+Example PHP code:
+
+```shell
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "/sso-unisdr/api/user/change_email",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => "email_current=XX&email_new=XX",
+  CURLOPT_HTTPHEADER => array(
+    "accept: application/json",
+    "authorization: Bearer XX",
+    "content-type: application/x-www-form-urlencoded"
+  ),
+));
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
+```
+
+Error response:
+
+```shell
+{
+   "status":400,
+   "error":[
+      "The email new and email current must be different.",
+      "The email has already been taken.",
+   ]
+}  
+```
+
 #### Change password (change to USER TOKEN)
 
 Form Post Parameters:
@@ -172,7 +288,7 @@ POST /sso-unisdr/api/user/reset_password
 
 
 
-## User
+## User Authenticated Flow
 
 ### Check email address and password
 
