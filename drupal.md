@@ -216,6 +216,8 @@ Error response:
 
 Endpoint to call after completing the change email flow.
 
+Todo: add revoke token when email address was changed.
+
 Header Parameters:
 
 * Accept string, value ‘application/json’
@@ -275,24 +277,22 @@ Error response:
 }  
 ```
 
-#### Change password (change to USER TOKEN)
 
-Form Post Parameters:
+## User Authenticated Flow using Password Grant
 
-* password_current string, plain text
-* password_new string, plain text
+Info about password grant https://oauth.net/2/grant-types/password/
+
+Return format:
 
 ```shell
-POST /sso-unisdr/api/user/reset_password
+{"token_type":"Bearer","expires_in":86400,"access_token":XX","refresh_token":"XX"}
 ```
 
+The user gets authenticated using the password flow grant https://www.preventionweb.net/myprofile/login. The common login gives the successful authenticated user an access token and refresh token, the application should save this information on the user session.
 
+### Check logged in account email address and password
 
-## User Authenticated Flow
-
-### Check email address and password
-
-This function was used to verify the account login credentials for the change password and email.
+This function was used to verify the logged in account credentials before performing the change password and email function.
 
 Header Parameters:
 
@@ -301,15 +301,59 @@ Header Parameters:
 
 Post Parameters:
 
-* email string, email address entered by user upon registration
-* password string, password entered by user upon registration
+* email string, account email address
+* password string, account password in plain text
 
 ```shell
 POST /sso-unisdr/api/user/check_emailaddress_passsord
 ```
 
+Success response:
+
+```shell
+{
+  "status": 200,
+  "success": true
+}
+```
+
+Error response:
+
+```shell
+{
+  "message": "Server Error"
+}
+```
+
+
+#### Change account password
+
+Please note that when the password was changed all active user tokens will be invalidated by the system.
+
+TODO: add web hooks functionality to notify oAuth2 Clients that token for the account has been invalidated.
+
+Form Post Parameters:
+
+* email string, account email address
+* password string, account password in plain text
+* password_new string, plain text
+
+```shell
+POST /sso-unisdr/api/user/change_password
+```
+
+Success response:
+
+```shell
+{
+  "status": 200,
+  "error": []
+}
+```
 
 ### Delete Account
+
+Active tokens will be set to invalid when request is successful.
 
 Header Parameters:
 
@@ -320,7 +364,19 @@ Header Parameters:
 POST /sso-unisdr/api/user/delete_account
 ```
 
+Success response:
+
+```shell
+{
+  "status": 200,
+  "error": []
+}
+```
+
+
 ### Revoke User Token
+
+When the user logged-out of the system, call this function to invalidate all the active tokens.
 
 Header Parameters:
 
@@ -331,9 +387,14 @@ Header Parameters:
 POST /sso-unisdr/api/user/revoke_token
 ```
 
-## Password Grant Flow OAuth2 API
+Success response:
 
-Todo
+```shell
+{
+  "status": 200,
+  "error": []
+}
+```
 
 ## Implicit Grant Flow OAuth2 API
 
