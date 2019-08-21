@@ -337,6 +337,48 @@ Error response:
 ```
 
 
+
+
+#### Check if email address doesn't exists
+
+Endpoint to call to check if the email address doesn't exists in our database.
+
+Header Parameters:
+
+* Accept string, value ‘application/json’
+* Authorization string, value 'Bearer [Client: ACCESS TOKEN]'
+
+Form Post Parameters:
+
+* email string, value should be a valid email address
+
+```shell
+POST /sso-unisdr/api/user/email_not_exists
+```
+
+Success response:
+
+```shell
+{
+  "status": 200,
+  "error": [],
+  "success": true
+}
+```
+
+Error response:
+
+```shell
+{
+   "status":400,
+   "error":[
+      "The email address is a required field.",
+      "Invalid email address.",
+      "The email address already exists.",
+   ]
+}  
+```
+
 ## User Authenticated Flow using Password Grant
 
 Info about password grant https://oauth.net/2/grant-types/password/
