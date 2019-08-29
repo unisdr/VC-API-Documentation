@@ -406,7 +406,7 @@ Post Parameters:
 * password string, account password in plain text
 
 ```shell
-POST /sso-unisdr/api/user/check_emailaddress_passsord
+POST /sso-unisdr/api/user/check_emailaddress_password
 ```
 
 Success response:
