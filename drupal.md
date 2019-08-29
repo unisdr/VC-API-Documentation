@@ -130,7 +130,7 @@ Form Post Parameters:
 
 * email string, value should be a valid email address
 * password string, the encrypted text must use bcrypt encryption, use the API endpoint on the general section to encrpyt the password
-* con_id integer, foreign key of the contact records in PW.net, this a way for common login to associate the account information
+* con_id integer, foreign key of Drupal user table (user.id), this a way for common login to associate the account information with drupal
 
 ```shell
 POST /sso-unisdr/api/user/registration
