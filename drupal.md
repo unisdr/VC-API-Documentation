@@ -379,6 +379,36 @@ Error response:
 }  
 ```
 
+### Delete Account (by admin) - implementation pending
+
+Drupal admin delete the account of the user from the admin interface of Drupal then sends a remote call to common login to delete the access credentials.
+
+Active tokens will be set to invalid when request is successful.
+
+Header Parameters:
+
+* Accept string, value ‘application/json’
+* Authorization string, value 'Bearer [Client: ACCESS TOKEN]'
+
+Form Post Parameters:
+
+* email string, value should be a valid email address
+* id integer, primary of users table in Drupal
+
+```shell
+POST /sso-unisdr/api/admin/delete_account
+```
+
+Success response:
+
+```shell
+{
+  "status": 200,
+  "error": []
+}
+```
+
+
 ## User Authenticated Flow using Password Grant
 
 Info about password grant https://oauth.net/2/grant-types/password/
@@ -452,7 +482,7 @@ Success response:
 }
 ```
 
-### Delete Account
+### Delete Account (user)
 
 Active tokens will be set to invalid when request is successful.
 
