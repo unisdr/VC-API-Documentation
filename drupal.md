@@ -379,7 +379,7 @@ Error response:
 }  
 ```
 
-### Delete Account (by admin) - implementation pending
+### Delete Account (by admin) - testing on DEV pending
 
 Drupal admin delete the account of the user from the admin interface of Drupal then sends a remote call to common login to delete the access credentials.
 
@@ -393,7 +393,7 @@ Header Parameters:
 Form Post Parameters:
 
 * email string, value should be a valid email address
-* id integer, primary of users table in Drupal
+* con_id integer, primary of users table in Drupal
 
 ```shell
 POST /sso-unisdr/api/admin/delete_account
