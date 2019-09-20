@@ -379,7 +379,7 @@ Error response:
 }  
 ```
 
-### Delete Account (by admin) - testing on DEV pending
+### Delete Account (by admin)
 
 Drupal admin delete the account of the user from the admin interface of Drupal then sends a remote call to common login to delete the access credentials.
 
