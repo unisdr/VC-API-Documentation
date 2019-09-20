@@ -196,7 +196,7 @@ Success response:
 
 #### Reset password
 
-Endpoint to call after completing the reset password flow.
+Endpoint to call after completing the reset password flow. This endpoint can also be use by Drupal administrator to reset the password of the user.
 
 https://www.preventionweb.net/myprofile/forgotpassword
 
