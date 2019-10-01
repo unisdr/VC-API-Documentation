@@ -463,6 +463,11 @@ Please note that when the password was changed all active user tokens will be in
 
 TODO: add web hooks functionality to notify oAuth2 Clients that token for the account has been invalidated.
 
+Header Parameters:
+
+* Accept string, value ‘application/json’
+* Authorization string, value 'Bearer [User: ACCESS TOKEN]'
+
 Form Post Parameters:
 
 * email string, account email address
