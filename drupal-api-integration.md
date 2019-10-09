@@ -4,7 +4,7 @@ Production URL: http://program.unisdr.org/sso-unisdr/
 
 Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
-## Retrieve official Sendai and National Platform focal point
+## Retrieve official Sendai Framework and National Platform focal point
 
 Authentication (Basic Auth?):
 
