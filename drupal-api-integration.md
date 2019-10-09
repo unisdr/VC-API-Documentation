@@ -8,7 +8,9 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 Wireframe URL: https://ijjqd4.axshare.com/#g=1&p=region__americas___carribean_-_countries
 
-### Authentication (Basic Auth?):
+### Authentication:
+
+It will be better if we can use oAuth2 client credentials otherwise basic auth?
 
 * tbd
 
