@@ -92,7 +92,9 @@ GET /sso-unisdr/api/drupal/get/undrr_focalpoints
 ## Hazards (for migration)?
 
 
-## Thumbnail images used by content - UNDRR News & UNDRR Publications (for migration)?
+## Thumbnail images used by content?
+
+UNDRR News & UNDRR Publications (for migration)
 
 
 ## Regions and Countries
@@ -100,13 +102,23 @@ GET /sso-unisdr/api/drupal/get/undrr_focalpoints
 
 ## Organizations
 
-## Publications
+## Vacancies (Jobs)
 
 ## UNDRR News
 
-## Events
+## Event / Training
 
-## Training
+## Terminology
+
+## Documents and publications / Educational material / UN Resolutions and Reports
+
+
+
+
+
+
+
+
 
 
 
