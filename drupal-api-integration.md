@@ -80,13 +80,6 @@ GET /sso-unisdr/api/drupal/get/undrr_focalpoints
 | pw_country_url    	| PreventionWeb country page URL 	| plain text                                                      	|
 
 
-
-## Regions and Countries
-
-
-## Organizations
-
-
 ## CMS Users (for migration)
 
 
@@ -97,4 +90,26 @@ GET /sso-unisdr/api/drupal/get/undrr_focalpoints
 
 
 ## Hazards (for migration)?
+
+
+## Thumbnail images used by content - UNDRR News & UNDRR Publications (for migration)?
+
+
+## Regions and Countries
+
+
+## Organizations
+
+## Publications
+
+## UNDRR News
+
+## Events
+
+## Training
+
+
+
+
+
 
