@@ -78,3 +78,14 @@ GET /sso-unisdr/api/drupal/get/undrr_focalpoints
 | org_url           	| Organization website URL       	| plain text                                                      	|
 | phone1            	| Organization phone 1           	| plain text                                                      	|
 | pw_country_url    	| PreventionWeb country page URL 	| plain text                                                      	|
+
+
+## Regions and Countries
+
+### Resources
+* Wireframe URL: xxx
+
+## Organizations
+
+### Resources
+* Wireframe URL: xxx
