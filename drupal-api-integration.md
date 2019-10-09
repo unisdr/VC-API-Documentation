@@ -4,9 +4,12 @@ Production URL: http://program.unisdr.org/sso-unisdr/
 
 Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
-## Retrieve official Sendai Framework and National Platform focal point
+## Official Sendai Framework and National Platform focal point
 
-Wireframe URL: https://ijjqd4.axshare.com/#g=1&p=region__americas___carribean_-_countries
+This endpoint will retrieve the Official Sendai Framework and National Platform focal point managed through our intranet.
+
+### Resources
+* Wireframe URL: https://ijjqd4.axshare.com/#g=1&p=region__americas___carribean_-_countries
 
 ### Authentication:
 
