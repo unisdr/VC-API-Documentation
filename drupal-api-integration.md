@@ -1,4 +1,4 @@
-# Drupal 8 API Integtegration Documentation
+# Drupal 8 API Integration Documentation
 
 Production URL: http://program.unisdr.org/sso-unisdr/
 
