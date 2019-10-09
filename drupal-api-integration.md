@@ -6,21 +6,23 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ## Retrieve official Sendai Framework and National Platform focal point
 
-Authentication (Basic Auth?):
+Wireframe URL: https://ijjqd4.axshare.com/#g=1&p=region__americas___carribean_-_countries
+
+### Authentication (Basic Auth?):
 
 * tbd
 
-Header Parameters:
+### Header Parameters:
 
 * tbd
 
-URL: /sso-unisdr/api/drupal/get/undrr_focalpoints
+### URL: /sso-unisdr/api/drupal/get/undrr_focalpoints
 
 ```shell
 GET /sso-unisdr/api/drupal/get/undrr_focalpoints
 ```
 
-JSON Response
+### JSON Response
 
 ```shell
 {
@@ -57,7 +59,7 @@ JSON Response
 }
 ```
 
-Field definition
+### Field definition
 
 | Field             	| Description                    	| Type/Value                                                      	|
 |-------------------	|--------------------------------	|-----------------------------------------------------------------	|
