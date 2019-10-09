@@ -56,3 +56,18 @@ JSON Response
    ]
 }
 ```
+
+Field definition
+
+| Field             	| Description                    	| Type/Value                                                      	|
+|-------------------	|--------------------------------	|-----------------------------------------------------------------	|
+| ctry_id           	| Country ID                     	| int                                                             	|
+| ctry_title        	| Country name                   	| plain text                                                      	|
+| ctry_iso3_code    	| ISO3 code                      	| plain text                                                      	|
+| fp_type           	| Focal point type               	| plain text Possible Values: Sendai FW (official), NP (official) 	|
+| org_id            	| Organization ID                	| int                                                             	|
+| org_title_long    	| Organization name              	| plain text                                                      	|
+| org_title_acronym 	| Organization acronym           	| plain text                                                      	|
+| org_url           	| Organization website URL       	| plain text                                                      	|
+| phone1            	| Organization phone 1           	| plain text                                                      	|
+| pw_country_url    	| PreventionWeb country page URL 	| plain text                                                      	|
