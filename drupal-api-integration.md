@@ -30,7 +30,7 @@ JSON Response
    "data":[
       {
          "ctry_id":61,
-         "country":"Finland",
+         "ctry_title":"Finland",
          "ctry_iso3_code":"FIN",
          "fp_type":"Sendai FW (official)",
          "org_id":2442,
@@ -42,7 +42,7 @@ JSON Response
       },
       {
          "ctry_id":266,
-         "country":"Montenegro",
+         "ctry_title":"Montenegro",
          "ctry_iso3_code":"MNE",
          "fp_type":"NP (official)",
          "org_id":12222,
