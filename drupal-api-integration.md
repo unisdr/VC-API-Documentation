@@ -64,7 +64,7 @@ Field definition
 | ctry_id           	| Country ID                     	| int                                                             	|
 | ctry_title        	| Country name                   	| plain text                                                      	|
 | ctry_iso3_code    	| ISO3 code                      	| plain text                                                      	|
-| fp_type           	| Focal point type               	| plain text Possible Values: Sendai FW (official), NP (official) 	|
+| fp_type           	| Focal point type               	| plain text; possible values: Sendai FW (official), NP (official) 	|
 | org_id            	| Organization ID                	| int                                                             	|
 | org_title_long    	| Organization name              	| plain text                                                      	|
 | org_title_acronym 	| Organization acronym           	| plain text                                                      	|
