@@ -83,12 +83,18 @@ GET /sso-unisdr/api/drupal/get/undrr_focalpoints
 
 ## Regions and Countries
 
-### Resources
-* Wireframe URL: xxx
-
-
 
 ## Organizations
 
-### Resources
-* Wireframe URL: xxx
+
+## CMS Users (for migration)
+
+
+## Publication type (for migration)
+
+
+## Themes (for migration)?
+
+
+## Hazards (for migration)?
+
