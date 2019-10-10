@@ -30,11 +30,7 @@ GET /sso-unisdr/api/drupal/get/undrr_focalpoints
 ### JSON Response
 
 ```shell
-{
-   "status":200,
-   "success":true,
-   "total":189,
-   "data":[
+[
       {
          "ctry_id":61,
          "ctry_title":"Finland",
@@ -59,9 +55,8 @@ GET /sso-unisdr/api/drupal/get/undrr_focalpoints
          "phone1":"",
          "pw_country_url":"https:\/\/www.preventionweb.net\/english\/countries\/europe\/mne"
       },
-	  .....
-   ]
-}
+      .....
+]
 ```
 
 ### Field definition
