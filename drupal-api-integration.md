@@ -6,7 +6,7 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ## Official Sendai Framework and National Platform focal point
 
-This endpoint will retrieve the Official Sendai Framework and National Platform focal point managed through our intranet. Resultset is cached for 10 minutes.
+This endpoint will retrieve the Official Sendai Framework and National Platform focal point managed through our intranet. Resultset is cached for 60 minutes.
 
 ### Destination pages
 * https://ijjqd4.axshare.com/#g=1&p=region__americas___carribean_-_countries
