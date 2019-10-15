@@ -13,7 +13,7 @@ This endpoint will retrieve the Official Sendai Framework and National Platform 
 
 ### Authentication:
 
-oAuth2 client credentials, please refer to other documentation how to get the client token.
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
 
 
 ### Header Parameters:
