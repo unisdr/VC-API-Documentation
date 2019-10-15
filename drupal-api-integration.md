@@ -13,13 +13,14 @@ This endpoint will retrieve the Official Sendai Framework and National Platform 
 
 ### Authentication:
 
-It will be better if we can use oAuth2 client credentials otherwise basic auth?
+oAuth2 client credentials, please refer to other documentation how to get the client token.
 
-* tbd
 
 ### Header Parameters:
 
-* tbd
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
 
 ### URL: /sso-unisdr/api/drupal/get/undrr_focalpoints
 
