@@ -198,6 +198,8 @@ Success response:
 
 Endpoint to call after completing the reset password flow. This endpoint can also be use by Drupal administrator to reset the password of the user.
 
+The system will revoke the token automatically.
+
 https://www.preventionweb.net/myprofile/forgotpassword
 
 Header Parameters:
@@ -275,7 +277,7 @@ Error response:
 
 Endpoint to call after completing the change email flow.
 
-Todo: add revoke token when email address was changed.
+The system will revoke the token automatically.
 
 Header Parameters:
 
