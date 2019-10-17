@@ -6,17 +6,56 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 
 
-## Attachment type (for migration)
-
 ## Thumbnail images used by content?
 
-## Language
+
+## Attachment type (taxonomy)
+
+### URL: /sso-unisdr/drupal/migration/taxonomy_attachment_type
+
+```shell
+/api/drupal/migration/taxonomy_attachment_type
+```
+
+### JSON Response
+
+```shell
+[
+   {
+      "scat_id":711,
+      "scat_title":"Agenda"
+   },
+   {
+      "scat_id":712,
+      "scat_title":"Participant list"
+   },
+   {
+      "scat_id":713,
+      "scat_title":"Presentation"
+   },
+   {
+      "scat_id":714,
+      "scat_title":"Outcome document"
+   },
+   {
+      "scat_id":715,
+      "scat_title":"Post-HFA outcome document"
+   },
+   {
+      "scat_id":716,
+      "scat_title":"Other"
+   }
+]
+```
+
+## Language (taxonomy)
 
 ### URL: /sso-unisdr/drupal/migration/taxonomy_languages
 
 ```shell
 GET /sso-unisdr/drupal/migration/taxonomy_languages
 ```
+### JSON Response
 
 ```shell
 [
@@ -50,7 +89,7 @@ GET /sso-unisdr/drupal/migration/taxonomy_languages
 
 
 
-## Hazards
+## Hazards (taxonomy)
 
 ### URL: http://www.preventionweb.net/v2/api/v1/hazard/get/output.json
 
@@ -80,7 +119,7 @@ GET http://www.preventionweb.net/v2/api/v1/hazard/get/output.json
 ```
 
 
-## Themes
+## Themes (taxonomy)
 
 ### URL: http://www.preventionweb.net/v2/api/v1/theme/get/output.json
 
