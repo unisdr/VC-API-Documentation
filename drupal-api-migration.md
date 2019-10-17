@@ -212,8 +212,6 @@ GET /sso-unisdr/api/drupal/migration/organizations
 
 ## Thumbnail images used by content?
 
-## Regions and Countries
-
 ## Publication type (for migration)
 
 ## UNDRR Publications (for migration)
