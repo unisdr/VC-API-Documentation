@@ -8,6 +8,61 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ## Thumbnail images used by content?
 
+## Hazards (taxonomy)
+
+Revise use: scat_id
+
+### URL: 
+
+```shell
+GET 
+```
+
+
+### JSON Response
+
+```shell
+[
+   {
+      "scat_id":67,
+      "scat_title":"Avalanche"
+   },
+   {
+      "scat_id":56,
+      "scat_title":"Cold Wave"
+   },
+   ...
+]
+```
+
+
+## Themes (taxonomy)
+
+Revise use: scat_id
+
+### URL: 
+
+```shell
+GET 
+```
+
+
+### JSON Response
+
+```shell
+[
+   {
+      "scat_id":41,
+      "scat_title":"Advocacy & Media"
+   },
+   {
+      "scat_id":31,
+      "scat_title":"Capacity Development"
+   },
+   ...
+]
+```
+
 
 ## Attachment type (taxonomy)
 
@@ -89,64 +144,7 @@ GET /sso-unisdr/drupal/migration/taxonomy_languages
 
 
 
-## Hazards (taxonomy)
 
-### URL: http://www.preventionweb.net/v2/api/v1/hazard/get/output.json
-
-```shell
-GET http://www.preventionweb.net/v2/api/v1/hazard/get/output.json
-```
-
-
-### JSON Response
-
-```shell
-{
-   "results":[
-      {
-         "id":67,
-         "name":"Avalanche"
-      },
-      {
-         "id":56,
-         "name":"Cold Wave"
-      },
-      ...
-   ],
-   "total":17,
-   "status":200
-}
-```
-
-
-## Themes (taxonomy)
-
-### URL: http://www.preventionweb.net/v2/api/v1/theme/get/output.json
-
-```shell
-GET https://www.preventionweb.net/v2/api/v1/theme/get/output.json
-```
-
-
-### JSON Response
-
-```shell
-{
-   "results":[
-      {
-         "id":41,
-         "name":"Advocacy & Media"
-      },
-      {
-         "id":31,
-         "name":"Capacity Development"
-      },
-      ...
-   ],
-   "total":34,
-   "status":200
-}
-```
 
 ## Vacancies (Jobs) content type
 
