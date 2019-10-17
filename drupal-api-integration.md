@@ -4,6 +4,12 @@ Production URL: http://program.unisdr.org/sso-unisdr/
 
 Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
+
+## Regions and Countries
+
+To be discuss with Diego and Chris
+
+
 ## Official Sendai Framework and National Platform focal point
 
 This endpoint will retrieve the Official Sendai Framework and National Platform focal point managed through our intranet. Resultset is cached for 60 minutes.
@@ -84,8 +90,6 @@ GET /sso-unisdr/api/integration/undrr_focalpoints
 
 
 
-
-## Regions and Countries
 
 
 
