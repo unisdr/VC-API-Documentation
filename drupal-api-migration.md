@@ -8,6 +8,41 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ## Language (for migration)
 
+### URL: /sso-unisdr/drupal/migration/taxonomy_languages
+
+```shell
+GET /sso-unisdr/drupal/migration/taxonomy_languages
+```
+
+```shell
+[
+   {
+      "lng_id":6,
+      "lng_title":"Arabic"
+   },
+   {
+      "lng_id":5,
+      "lng_title":"Chinese"
+   },
+   {
+      "lng_id":1,
+      "lng_title":"English"
+   },
+   {
+      "lng_id":2,
+      "lng_title":"French"
+   },
+   {
+      "lng_id":8,
+      "lng_title":"Russian"
+   },
+   {
+      "lng_id":4,
+      "lng_title":"Spanish"
+   }
+]
+```
+
 ## Organization type (for migration) - discuss fanny
 
 * https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=1168059020
