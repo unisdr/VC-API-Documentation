@@ -9,6 +9,7 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 ### Destination pages
 
 * https://ijjqd4.axshare.com/#g=1&p=vacancy_detail
+* Nick is checking the list page
 
 ### Authentication:
 
