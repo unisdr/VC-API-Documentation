@@ -177,7 +177,7 @@ GET /sso-unisdr/api/drupal/migration/vacancies
 todo
 
 
-
+## Organizations
 
 ## CMS Users (for migration)
 
@@ -186,8 +186,6 @@ todo
 ## Regions and Countries
 
 ## Publication type (for migration)
-
-## Organizations
 
 ## UNDRR Publications (for migration)
 
