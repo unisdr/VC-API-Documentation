@@ -4,6 +4,36 @@ Production URL: http://program.unisdr.org/sso-unisdr/
 
 Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
+## Hazards
+
+### URL: http://www.preventionweb.net/v2/api/v1/hazard/get/output.json
+
+```shell
+GET http://www.preventionweb.net/v2/api/v1/hazard/get/output.json
+```
+
+
+### JSON Response
+
+```shell
+{
+   "results":[
+      {
+         "id":67,
+         "name":"Avalanche"
+      },
+      {
+         "id":56,
+         "name":"Cold Wave"
+      },
+      ...
+   ],
+   "total":17,
+   "status":200
+}
+```
+
+
 ## Themes
 
 ### URL: http://www.preventionweb.net/v2/api/v1/theme/get/output.json
