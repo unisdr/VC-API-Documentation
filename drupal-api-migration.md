@@ -30,8 +30,8 @@ GET /sso-unisdr/api/drupal/migration/vacancies
 ### JSON Response
 
 ```shell
-[ 
-   { 
+[
+   {
       "ent_id":592,
       "field_title":"Disaster management delegate",
       "ent_dateadded":"2007-09-04 16:41:39",
@@ -42,52 +42,67 @@ GET /sso-unisdr/api/drupal/migration/vacancies
       "job_post_url":"https:\/\/jobnet.ifrc.org\/public\/hrd-cl-vac-view.asp?jobinfo_uid_c=498&vaclng=en",
       "field_city_aditional_loc":"Tarija, Bolivia (TBC)",
       "field_closing_date":"2007-09-28",
-      "field_country":[ 
-         { 
+      "field_country":[
+         {
             "ctry_id":129,
             "ctry_iso3_code":"PAK"
          }
       ],
-      "field_organization":[ 
-         { 
+      "field_organization":[
+         {
             "org_id":82
          },
-         { 
+         {
             "org_id":406
          }
       ],
-      "field_region":[ 
-         { 
+      "field_region":[
+         {
             "cont_id":2
          }
       ],
-      "field_hazards":[ 
-			{"scat_id":58},
-			{"scat_id":59},
-			{"scat_id":60},
-			{"scat_id":62},
-			{"scat_id":65},
-			{"scat_id":67},
-			{"scat_id":73}
+      "field_hazards":[
+         {
+            "scat_id":58
+         },
+         {
+            "scat_id":59
+         },
+         {
+            "scat_id":60
+         },
+         {
+            "scat_id":62
+         },
+         {
+            "scat_id":65
+         },
+         {
+            "scat_id":67
+         },
+         {
+            "scat_id":73
+         }
       ],
-      "field_themes":[ 
-         { 
+      "field_themes":[
+         {
             "scat_id":31
          },
-         { 
+         {
             "scat_id":35
          }
       ],
-      "field_related_links":[ 
+      "field_related_links":[
 
       ],
-      "field_links":[ 
-			{
-				"label":"View application form",
-				"url":"https:\/\/www.preventionweb.net\/files\/1280_1284adpcapplicationform.doc"
-			}
+      "field_links":[
+         {
+            "label":"View application form",
+            "url":"https:\/\/www.preventionweb.net\/files\/1280_1284adpcapplicationform.doc"
+         }
       ]
    }
 ]
+```
 
 ### Field definition
