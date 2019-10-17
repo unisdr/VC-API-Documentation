@@ -169,3 +169,34 @@ GET /sso-unisdr/api/drupal/migration/vacancies
 ```
 
 ### Field definition
+
+
+
+
+
+
+## CMS Users (for migration)
+
+
+## Publication type (for migration)
+
+
+## Thumbnail images used by content?
+
+UNDRR News & UNDRR Publications (for migration)
+
+
+## Regions and Countries
+
+
+## Organizations
+
+
+
+## UNDRR News
+
+## Event / Training
+
+## Terminology
+
+## Documents and publications / Educational material / UN Resolutions and Reports
