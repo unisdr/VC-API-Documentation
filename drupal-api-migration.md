@@ -8,6 +8,8 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ## Organization type (for migration) - discuss fanny
 
+* https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=1168059020
+
 ## Thumbnail images used by content?
 
 ## Hazards
