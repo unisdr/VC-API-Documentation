@@ -102,6 +102,35 @@ GET /sso-unisdr/drupal/migration/taxonomy_languages
 
 
 
+## Organizations
+
+### References
+
+* Destination pages
+   * no destination page to corporate website, only use as organization source
+* Content type mapping https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=987855230
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/drupal/migration/organizations
+
+```shell
+GET /sso-unisdr/api/drupal/migration/organizations
+```
+
+### JSON Response
+
+```shell
+```
 
 
 
@@ -219,35 +248,6 @@ GET /sso-unisdr/api/drupal/migration/vacancies
 todo
 
 
-## Organizations
-
-### References
-
-* Destination pages
-   * no destination page to corporate website, only use as organization source
-* Content type mapping https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=987855230
-
-### Authentication:
-
-oAuth2 client credentials, please refer to other documentation how to get the client access token.
-
-
-### Header Parameters:
-
-* Accept string, value "application/json"
-* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
-
-
-### URL: /sso-unisdr/api/drupal/migration/organizations
-
-```shell
-GET /sso-unisdr/api/drupal/migration/organizations
-```
-
-### JSON Response
-
-```shell
-```
 
 
 
