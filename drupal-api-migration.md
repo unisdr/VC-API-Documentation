@@ -93,7 +93,10 @@ GET /sso-unisdr/api/drupal/migration/vacancies
          }
       ],
       "field_related_links":[
-
+         {
+            "label":"More information and application details",
+            "url":"https:\/\/jobnet.ifrc.org\/public\/hrd-cl-vac-view.asp?jobinfo_uid_c=498&vaclng=en"
+         }
       ],
       "field_links":[
          {
