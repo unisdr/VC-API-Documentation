@@ -4,7 +4,11 @@ Production URL: http://program.unisdr.org/sso-unisdr/
 
 Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
+
+
 ## Attachment type (for migration)
+
+## Thumbnail images used by content?
 
 ## Language
 
@@ -43,13 +47,8 @@ GET /sso-unisdr/drupal/migration/taxonomy_languages
 ]
 ```
 
-## Organization type (for migration) - discuss fanny
 
-* https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=1168059020
 
-## Thumbnail images used by content?
-
-## CMS Users (for migration), under discussion with Fanny
 
 ## Hazards
 
