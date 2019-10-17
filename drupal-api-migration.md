@@ -64,45 +64,6 @@ GET /sso-unisdr/public/api/drupal/migration/taxonomy_themes
 ```
 
 
-## Attachment type (taxonomy)
-
-### URL: /sso-unisdr/drupal/migration/taxonomy_attachment_type
-
-```shell
-/api/drupal/migration/taxonomy_attachment_type
-```
-
-### JSON Response
-
-```shell
-[
-   {
-      "scat_id":711,
-      "scat_title":"Agenda"
-   },
-   {
-      "scat_id":712,
-      "scat_title":"Participant list"
-   },
-   {
-      "scat_id":713,
-      "scat_title":"Presentation"
-   },
-   {
-      "scat_id":714,
-      "scat_title":"Outcome document"
-   },
-   {
-      "scat_id":715,
-      "scat_title":"Post-HFA outcome document"
-   },
-   {
-      "scat_id":716,
-      "scat_title":"Other"
-   }
-]
-```
-
 ## Language (taxonomy)
 
 ### URL: /sso-unisdr/drupal/migration/taxonomy_languages
