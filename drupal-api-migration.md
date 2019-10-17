@@ -4,6 +4,10 @@ Production URL: http://program.unisdr.org/sso-unisdr/
 
 Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
+## Attachment type (for migration)
+
+## Organization type (for migration) - discuss fanny
+
 ## Thumbnail images used by content?
 
 ## Hazards
@@ -214,7 +218,7 @@ GET /sso-unisdr/api/drupal/migration/organizations
 
 
 
-## Publication type (for migration)
+
 
 ## UNDRR Publications (for migration)
 
