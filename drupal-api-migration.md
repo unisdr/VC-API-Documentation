@@ -4,6 +4,8 @@ Production URL: http://program.unisdr.org/sso-unisdr/
 
 Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
+## Thumbnail images used by content?
+
 ## Hazards
 
 ### URL: http://www.preventionweb.net/v2/api/v1/hazard/get/output.json
@@ -210,7 +212,7 @@ GET /sso-unisdr/api/drupal/migration/organizations
 
 ## CMS Users (for migration)
 
-## Thumbnail images used by content?
+
 
 ## Publication type (for migration)
 
