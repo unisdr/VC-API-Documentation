@@ -181,23 +181,17 @@ todo
 
 ## CMS Users (for migration)
 
-
-## Publication type (for migration)
-
-
 ## Thumbnail images used by content?
-
-UNDRR News & UNDRR Publications (for migration)
-
 
 ## Regions and Countries
 
+## Publication type (for migration)
 
 ## Organizations
 
+## UNDRR Publications (for migration)
 
-
-## UNDRR News
+## UNDRR News and PW News
 
 ## Event / Training
 
