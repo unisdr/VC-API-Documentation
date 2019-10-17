@@ -4,6 +4,35 @@ Production URL: http://program.unisdr.org/sso-unisdr/
 
 Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
+## Themes
+
+### URL: http://www.preventionweb.net/v2/api/v1/theme/get/output.json
+
+```shell
+GET https://www.preventionweb.net/v2/api/v1/theme/get/output.json
+```
+
+
+### JSON Response
+
+```shell
+{
+   "results":[
+      {
+         "id":41,
+         "name":"Advocacy & Media"
+      },
+      {
+         "id":31,
+         "name":"Capacity Development"
+      },
+      ...
+   ],
+   "total":34,
+   "status":200
+}
+```
+
 ## Vacancies (Jobs) content type
 
 ### Destination pages
