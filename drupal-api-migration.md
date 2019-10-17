@@ -66,6 +66,7 @@ GET https://www.preventionweb.net/v2/api/v1/theme/get/output.json
 ## Vacancies (Jobs) content type
 
 ### References
+
 * Destination pages
 ** https://ijjqd4.axshare.com/#g=1&p=vacancy_detail
 ** Nick is checking the list page
