@@ -76,37 +76,6 @@ GET /sso-unisdr/api/integration/undrr_focalpoints
 | pw_country_url    	| PreventionWeb country page URL 	| plain text                                                      	|
 
 
-## CMS Users (for migration)
-
-
-## Publication type (for migration)
-
-
-## Themes (for migration)?
-
-
-## Hazards (for migration)?
-
-
-## Thumbnail images used by content?
-
-UNDRR News & UNDRR Publications (for migration)
-
-
-## Regions and Countries
-
-
-## Organizations
-
-## Vacancies (Jobs)
-
-## UNDRR News
-
-## Event / Training
-
-## Terminology
-
-## Documents and publications / Educational material / UN Resolutions and Reports
 
 
 
