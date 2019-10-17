@@ -10,8 +10,6 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ## Hazards (taxonomy)
 
-Revise use: scat_id
-
 ### URL: /sso-unisdr/public/api/drupal/migration/taxonomy_hazards
 
 ```shell
