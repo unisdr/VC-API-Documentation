@@ -12,10 +12,10 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 Revise use: scat_id
 
-### URL: 
+### URL: /sso-unisdr/public/api/drupal/migration/taxonomy_hazards
 
 ```shell
-GET 
+GET /sso-unisdr/public/api/drupal/migration/taxonomy_hazards
 ```
 
 
@@ -40,10 +40,10 @@ GET
 
 Revise use: scat_id
 
-### URL: 
+### URL: /sso-unisdr/public/api/drupal/migration/taxonomy_themes
 
 ```shell
-GET 
+GET /sso-unisdr/public/api/drupal/migration/taxonomy_themes
 ```
 
 
