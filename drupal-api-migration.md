@@ -6,7 +6,7 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ## Attachment type (for migration)
 
-## Language (for migration)
+## Language
 
 ### URL: /sso-unisdr/drupal/migration/taxonomy_languages
 
