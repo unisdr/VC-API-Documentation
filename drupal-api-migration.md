@@ -12,6 +12,8 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ## Thumbnail images used by content?
 
+## CMS Users (for migration), under discussion with Fanny
+
 ## Hazards
 
 ### URL: http://www.preventionweb.net/v2/api/v1/hazard/get/output.json
@@ -216,7 +218,7 @@ GET /sso-unisdr/api/drupal/migration/organizations
 ```
 
 
-## CMS Users (for migration)
+
 
 
 
