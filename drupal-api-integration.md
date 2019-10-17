@@ -22,10 +22,10 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * Authorization string, value "Bearer [Client: ACCESS TOKEN]"
 
 
-### URL: /sso-unisdr/api/drupal/get/undrr_focalpoints
+### URL: /sso-unisdr/api/integration/undrr_focalpoints
 
 ```shell
-GET /sso-unisdr/api/drupal/get/undrr_focalpoints
+GET /sso-unisdr/api/integration/undrr_focalpoints
 ```
 
 ### JSON Response
