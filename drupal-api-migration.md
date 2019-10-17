@@ -65,6 +65,8 @@ GET https://www.preventionweb.net/v2/api/v1/theme/get/output.json
 
 ## Vacancies (Jobs) content type
 
+### IMPORTANT: Pending the approach to migrate author
+
 ### References
 
 * Destination pages
