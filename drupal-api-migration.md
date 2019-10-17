@@ -68,8 +68,8 @@ GET https://www.preventionweb.net/v2/api/v1/theme/get/output.json
 ### References
 
 * Destination pages
-** https://ijjqd4.axshare.com/#g=1&p=vacancy_detail
-** Nick is checking the list page
+   * https://ijjqd4.axshare.com/#g=1&p=vacancy_detail
+   * Nick is checking the list page
 * Content type mapping https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=1765529697
 
 ### Authentication:
