@@ -234,4 +234,8 @@ GET /sso-unisdr/api/drupal/migration/organizations
 
 ## Terminology
 
-## Documents and publications / Educational material / UN Resolutions and Reports
+## Documents and publications 
+
+## Educational material 
+
+## UN Resolutions and Reports
