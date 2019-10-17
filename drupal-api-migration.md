@@ -43,7 +43,10 @@ GET /sso-unisdr/api/drupal/migration/vacancies
       "field_city_aditional_loc":"Tarija, Bolivia (TBC)",
       "field_closing_date":"2007-09-28",
       "field_country":[ 
-
+         { 
+            "ctry_id":129,
+            "ctry_iso3_code":"PAK"
+         }
       ],
       "field_organization":[ 
          { 
@@ -59,7 +62,13 @@ GET /sso-unisdr/api/drupal/migration/vacancies
          }
       ],
       "field_hazards":[ 
-
+			{"scat_id":58},
+			{"scat_id":59},
+			{"scat_id":60},
+			{"scat_id":62},
+			{"scat_id":65},
+			{"scat_id":67},
+			{"scat_id":73}
       ],
       "field_themes":[ 
          { 
@@ -73,7 +82,10 @@ GET /sso-unisdr/api/drupal/migration/vacancies
 
       ],
       "field_links":[ 
-
+			{
+				"label":"View application form",
+				"url":"https:\/\/www.preventionweb.net\/files\/1280_1284adpcapplicationform.doc"
+			}
       ]
    }
 ]
