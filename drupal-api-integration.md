@@ -4,6 +4,13 @@ Production URL: http://program.unisdr.org/sso-unisdr/
 
 Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
+## UNDRR Regions
+
+### URL: /sso-unisdr/api/integration/undrr_regions
+
+## PreventionWeb Regions
+
+### URL: /sso-unisdr/api/integration/preventionweb_regions
 
 ## Regions and Countries
 
