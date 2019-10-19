@@ -36,7 +36,6 @@ GET /sso-unisdr/public/api/drupal/migration/taxonomy_hazards
 
 ## Themes (taxonomy)
 
-Revise use: scat_id
 
 ### URL: /sso-unisdr/public/api/drupal/migration/taxonomy_themes
 
