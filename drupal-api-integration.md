@@ -124,19 +124,22 @@ GET /sso-unisdr/public/api/drupal/integration/undrr_focalpoints?undrr_region_id=
 
 ### Field definition
 
-| Field             	| Description                    	| Type/Value                                                      	|
-|-------------------	|--------------------------------	|-----------------------------------------------------------------	|
-| ctry_id           	| Country ID                     	| int                                                             	|
-| ctry_title        	| Country name                   	| plain text                                                      	|
-| ctry_iso3_code    	| ISO3 code                      	| plain text                                                      	|
-| fp_type           	| Focal point type               	| plain text; possible values: Sendai FW (official), NP (official) 	|
-| org_id            	| Organization ID                	| int                                                             	|
-| org_title_long    	| Organization name              	| plain text                                                      	|
-| org_title_acronym 	| Organization acronym           	| plain text                                                      	|
-| org_url           	| Organization website URL       	| plain text                                                      	|
-| phone1            	| Organization phone 1           	| plain text                                                      	|
-| pw_country_url    	| PreventionWeb country page URL 	| plain text                                                      	|
-
+| Field             | Description                    | Type/Value                                                       |
+|-------------------|--------------------------------|------------------------------------------------------------------|
+| ctry_id           | Country ID                     | int                                                              |
+| ctry_title        | Country name                   | plain text                                                       |
+| ctry_iso3_code    | ISO3 code                      | plain text                                                       |
+| fp_type           | Focal point type               | plain text; possible values: Sendai FW (official), NP (official) |
+| org_id            | Organization ID                | int                                                              |
+| org_title_long    | Organization name              | plain text                                                       |
+| org_title_acronym | Organization acronym           | plain text                                                       |
+| org_url           | Organization website URL       | plain text                                                       |
+| phone1            | Organization phone 1           | plain text                                                       |
+| flag_url          | Flag URL                       | plain text; URL                                                  |
+| pw_country_url    | PreventionWeb country page URL | plain text                                                       |
+| undrr_region      | Collection                     | Array                                                            |
+| - isdr_reg_id     | UNDRR region ID                | int                                                              |
+| - isdr_reg_title  | UNDRR region name              | plain text                                                       |
 
 
 
