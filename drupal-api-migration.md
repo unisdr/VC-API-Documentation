@@ -125,6 +125,19 @@ GET /sso-unisdr/api/drupal/migration/images
 ### JSON Response
 
 ```shell
+[
+   {
+      "ent_id":525,
+      "caption":"",
+      "url":"https:\/\/www.preventionweb.net\/files\/525_525.jpg"
+   },
+   {
+      "ent_id":531,
+      "caption":"Lorem ipsum dolor sit amet",
+      "url":"https:\/\/www.preventionweb.net\/files\/531_531.jpg"
+   },
+   ...
+]
 ```
 
 
