@@ -46,6 +46,23 @@ GET /sso-unisdr/api/integration/regions_countries
 ]
 ```
 
+### Field definition
+
+| Field            | Description                    | Type/Value      |
+|------------------|--------------------------------|-----------------|
+| ctry_id          | Country ID                     | int             |
+| ctry_title       | Country name                   | plain text      |
+| ctry_iso3_code   | ISO3 code                      | plain text      |
+| ctry_un_code     | UN Country ID                  | plain text      |
+| cont_id          | PreventionWeb region ID        | int             |
+| cont_title       | PreventionWeb region name      | plain text      |
+| overview_map_url | Overview Map URL               | plain text; URL |
+| flag_url         | Flag URL                       | plain text; URL |
+| pw_country_url   | PreventionWeb country page URL | plain text; URL |
+| undrr_region     | Collection                     | Array           |
+| - isdr_reg_id    | UNDRR region ID                | int             |
+| - isdr_reg_title | UNDRR region name              | plain text      |
+
 
 ## Official Sendai Framework and National Platform focal point
 
@@ -81,15 +98,17 @@ GET /sso-unisdr/public/api/drupal/integration/undrr_focalpoints?undrr_region_id=
 ```shell
 [
    {
-      "ctry_id":5,
-      "ctry_title":"Angola",
-      "ctry_iso3_code":"AGO",
-      "ctry_un_code":"024",
-      "cont_id":1,
-      "cont_title":"Africa",
-      "overview_map_url":"https:\/\/www.preventionweb.net\/english\/images\/countries\/maps\/ago.gif",
-      "flag_url":"https:\/\/www.preventionweb.net\/assets\/shared\/images\/flags\/ago.jpg",
-      "pw_country_url":"https:\/\/www.preventionweb.net\/english\/countries\/africa\/ago",
+      "ctry_id":153,
+      "ctry_title":"Seychelles",
+      "ctry_iso3_code":"SYC",
+      "fp_type":"Sendai FW (official)",
+      "org_id":4985,
+      "org_title_acronym":"DRDM",
+      "org_title_long":"Division of Risk and Disaster Management",
+      "org_url":"http:\/\/www.drdm.gov.sc",
+      "phone1":"+248 4672200 ",
+      "flag_url":"https:\/\/www.preventionweb.net\/assets\/shared\/images\/flags\/syc.jpg",
+      "pw_country_url":"https:\/\/www.preventionweb.net\/english\/countries\/africa\/syc",
       "undrr_region":[
          [
             {
