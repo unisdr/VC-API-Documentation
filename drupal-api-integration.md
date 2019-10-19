@@ -7,7 +7,44 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ## Regions and Countries
 
-To be discuss with Diego and Chris
+Only published coutries on PW are included.
+
+### URL: /sso-unisdr/api/integration/regions_countries
+
+```shell
+GET /sso-unisdr/api/integration/regions_countries
+```
+
+### JSON Response
+
+```shell
+[
+   {
+      "ctry_id":60,
+      "ctry_title":"Fiji",
+      "ctry_iso3_code":"FJI",
+      "ctry_un_code":"242",
+      "cont_id":5,
+      "cont_title":"Oceania",
+      "overview_map_url":"https:\/\/www.preventionweb.net\/english\/images\/countries\/maps\/fji.gif",
+      "flag_url":"https:\/\/www.preventionweb.net\/assets\/shared\/images\/flags\/fji.jpg",
+      "pw_country_url":"https:\/\/www.preventionweb.net\/english\/countries\/oceania\/fji",
+      "undrr_region":[
+         [
+            {
+               "isdr_reg_id":3,
+               "isdr_reg_title":"Asia and Pacific"
+            },
+            {
+               "isdr_reg_id":24,
+               "isdr_reg_title":"Suva"
+            }
+         ]
+      ]
+   },
+   ...
+]
+```
 
 
 ## Official Sendai Framework and National Platform focal point
