@@ -141,6 +141,8 @@ GET /sso-unisdr/api/drupal/migration/images
 
 ## Organizations
 
+Only published organizations and referenced as a source in UNDRR content entry. Resultset is cached for 60 minutes.
+
 ### References
 
 * Destination pages
@@ -323,3 +325,9 @@ todo
 ## Educational material 
 
 ## UN Resolutions and Reports
+
+
+## Response Headers
+
+* X-Total-Records integer
+* X-IsCached 
