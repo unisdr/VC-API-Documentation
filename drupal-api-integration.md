@@ -8,6 +8,41 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ### URL: /sso-unisdr/api/integration/undrr_regions
 
+```shell
+GET /sso-unisdr/api/integration/undrr_regions
+```
+
+### JSON Response
+
+```shell
+[
+   {
+      "isdr_reg_id":1,
+      "isdr_reg_title":"Africa"
+   },
+   {
+      "isdr_reg_id":2,
+      "isdr_reg_title":"Americas"
+   },
+   {
+      "isdr_reg_id":5,
+      "isdr_reg_title":"Arab States"
+   },
+   {
+      "isdr_reg_id":3,
+      "isdr_reg_title":"Asia and Pacific"
+   },
+   {
+      "isdr_reg_id":4,
+      "isdr_reg_title":"Europe"
+   },
+   {
+      "isdr_reg_id":24,
+      "isdr_reg_title":"Suva"
+   }
+]
+```
+
 ## PreventionWeb Regions
 
 ### URL: /sso-unisdr/api/integration/preventionweb_regions
