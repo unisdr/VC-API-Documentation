@@ -6,7 +6,7 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 
 
-## Thumbnail images used by content?
+
 
 ## Hazards (taxonomy)
 
@@ -99,6 +99,33 @@ GET /sso-unisdr/drupal/migration/taxonomy_languages
 ]
 ```
 
+## Thumbnail images used by content?
+
+### References
+
+* Destination pages
+   * https://ijjqd4.axshare.com/#g=1&p=publication_detail
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/drupal/migration/images
+
+```shell
+GET /sso-unisdr/api/drupal/migration/images
+```
+
+### JSON Response
+
+```shell
+```
 
 
 ## Organizations
