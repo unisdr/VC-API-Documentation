@@ -67,39 +67,39 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 
 ### URL: /sso-unisdr/api/integration/undrr_focalpoints
 
+#### Querystring Parameter
+
+* undrr_region_id (optional), integer
+
 ```shell
 GET /sso-unisdr/api/integration/undrr_focalpoints
+GET /sso-unisdr/public/api/drupal/integration/undrr_focalpoints?undrr_region_id=1
 ```
 
 ### JSON Response
 
 ```shell
 [
-      {
-         "ctry_id":61,
-         "ctry_title":"Finland",
-         "ctry_iso3_code":"FIN",
-         "fp_type":"Sendai FW (official)",
-         "org_id":2442,
-         "org_title_acronym":"",
-         "org_title_long":"Ministry of the Interior (Finland)",
-         "org_url":"http:\/\/www.intermin.fi\/intermin\/home.nsf\/pages\/index_eng",
-         "phone1":"",
-         "pw_country_url":"https:\/\/www.preventionweb.net\/english\/countries\/europe\/fin"
-      },
-      {
-         "ctry_id":266,
-         "ctry_title":"Montenegro",
-         "ctry_iso3_code":"MNE",
-         "fp_type":"NP (official)",
-         "org_id":12222,
-         "org_title_acronym":"",
-         "org_title_long":"Ministry of Interior - Directorate for Emergency Situations",
-         "org_url":"http:\/\/www.mup.gov.me",
-         "phone1":"",
-         "pw_country_url":"https:\/\/www.preventionweb.net\/english\/countries\/europe\/mne"
-      },
-      .....
+   {
+      "ctry_id":5,
+      "ctry_title":"Angola",
+      "ctry_iso3_code":"AGO",
+      "ctry_un_code":"024",
+      "cont_id":1,
+      "cont_title":"Africa",
+      "overview_map_url":"https:\/\/www.preventionweb.net\/english\/images\/countries\/maps\/ago.gif",
+      "flag_url":"https:\/\/www.preventionweb.net\/assets\/shared\/images\/flags\/ago.jpg",
+      "pw_country_url":"https:\/\/www.preventionweb.net\/english\/countries\/africa\/ago",
+      "undrr_region":[
+         [
+            {
+               "isdr_reg_id":1,
+               "isdr_reg_title":"Africa"
+            }
+         ]
+      ]
+   },
+   ...
 ]
 ```
 
