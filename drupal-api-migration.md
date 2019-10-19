@@ -6,8 +6,6 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 
 
-
-
 ## Hazards (taxonomy)
 
 ### URL: /sso-unisdr/public/api/drupal/migration/taxonomy_hazards
