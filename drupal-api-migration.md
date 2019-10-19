@@ -169,6 +169,23 @@ GET /sso-unisdr/api/drupal/migration/organizations
 ### JSON Response
 
 ```shell
+[
+   {
+      "org_id":3,
+      "org_dateadded":"2007-08-30 19:05:27",
+      "org_datemodified":"2019-07-23 11:33:39",
+      "field_title":"United Nations Office for Disaster Risk Reduction \u2013 Regional Office for the Americas and the Caribbean",
+      "field_country":131,
+      "field_org_acronym":"UNDRR AM",
+      "field_org_skype":"",
+      "field_org_linkedin":"",
+      "field_org_facebook":"",
+      "field_org_twitter":"",
+      "org_url":"http:\/\/eird.org\/americas\/index.html",
+      "org_type_id":1
+   },
+   ...
+]
 ```
 
 
