@@ -47,6 +47,38 @@ GET /sso-unisdr/api/integration/undrr_regions
 
 ### URL: /sso-unisdr/api/integration/preventionweb_regions
 
+```shell
+GET /sso-unisdr/api/integration/preventionweb_regions
+```
+
+### JSON Response
+
+```shell
+[
+   {
+      "cont_id":1,
+      "cont_title":"Africa"
+   },
+   {
+      "cont_id":2,
+      "cont_title":"Americas"
+   },
+   {
+      "cont_id":4,
+      "cont_title":"Asia"
+   },
+   {
+      "cont_id":3,
+      "cont_title":"Europe"
+   },
+   {
+      "cont_id":5,
+      "cont_title":"Oceania"
+   }
+]
+```
+
+
 ## Regions and Countries
 
 Only published countries on PW are included.
