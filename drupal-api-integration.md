@@ -7,7 +7,7 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ## Regions and Countries
 
-Only published coutries on PW are included.
+Only published countries on PW are included.
 
 ### URL: /sso-unisdr/api/integration/regions_countries
 
