@@ -189,7 +189,7 @@ GET /sso-unisdr/api/drupal/migration/organizations
 ```
 
 
-## Resolutions content type
+## UN Resolutions and Reports content type
 
 ### TODO
 * author
@@ -457,7 +457,7 @@ todo
 
 ## Educational material 
 
-## UN Resolutions and Reports
+
 
 
 ## Response Headers
