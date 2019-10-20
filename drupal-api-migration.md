@@ -143,6 +143,11 @@ GET /sso-unisdr/api/drupal/migration/images
 
 Only published organizations and referenced as a source in UNDRR content entry. Resultset is cached for 60 minutes.
 
+### TODO
+* Org type should display label equivalent https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=1168059020
+* field_org_DRR_activities follow content mapping but will not be exposed until PW migration because this will not be used
+* Note: nothing was mapped to field_body, check with Everis
+
 ### References
 
 * Destination pages
