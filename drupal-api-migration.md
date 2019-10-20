@@ -311,7 +311,9 @@ todo
 
 ## UNDRR News and PW News
 
-## Event / Training
+## Event 
+
+## Training
 
 ## Terminology
 
