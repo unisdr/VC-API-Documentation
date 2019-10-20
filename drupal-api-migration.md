@@ -198,9 +198,9 @@ GET /sso-unisdr/api/drupal/migration/organizations
 ### References
 
 * Destination pages
-   * https://ijjqd4.axshare.com/#g=1&p=vacancy_detail
-   * Nick is checking the list page
-* Content type mapping https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=1765529697
+   * https://ijjqd4.axshare.com/#g=1&p=terminology
+   * https://ijjqd4.axshare.com/#g=1&p=terminology_detail
+
 
 ### Authentication:
 
