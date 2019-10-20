@@ -189,10 +189,80 @@ GET /sso-unisdr/api/drupal/migration/organizations
 ```
 
 
+## Terminology content type
+
+### TODO
+* author
+* internal fields name, email
+
+### References
+
+* Destination pages
+   * https://ijjqd4.axshare.com/#g=1&p=vacancy_detail
+   * Nick is checking the list page
+* Content type mapping https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=1765529697
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/drupal/migration/terminology
+
+```shell
+GET /sso-unisdr/api/drupal/migration/terminology
+```
+
+### JSON Response
+
+```shell
+[
+   {
+      "ent_id":468,
+      "ent_dateadded":"2007-08-30 15:25:34",
+      "field_title":"Building code",
+      "field_user_comments":"",
+      "field_editors_comments":"",
+      "field_body":"<p>A set of ordinances or regulations and associated standards intended to regulate aspects of the design, construction, materials, alteration and occupancy of structures which are necessary to ensure human safety and welfare, including resistance to collapse and damage.<\/p>\n\n<p>Annotation: Building codes can include both technical and functional standards. They should incorporate the lessons of international experience and should be tailored to national and local circumstances. A systematic regime of enforcement is a critical supporting requirement for the effective implementation of building codes.<\/p>",
+      "field_country":[
+
+      ],
+      "field_region":[
+
+      ],
+      "field_hazards":[
+
+      ],
+      "field_themes":[
+         {
+            "scat_id":104
+         },
+         {
+            "scat_id":654
+         }
+      ],
+      "field_related_links":[
+
+      ],
+      "field_links":[
+
+      ]
+   },
+   ...
+]
+```
 
 ## Vacancies (Jobs) content type
 
-### IMPORTANT: Pending the approach to migrate author
+### TODO
+* author
+* internal fields name, email
 
 ### References
 
