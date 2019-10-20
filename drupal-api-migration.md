@@ -196,6 +196,8 @@ GET /sso-unisdr/api/drupal/migration/organizations
 
 ## UN Resolutions and Reports content type
 
+The resultset only includes "Disaster Risk Reduction Mandate".
+
 ### TODO
 * author
 * internal fields name, email
