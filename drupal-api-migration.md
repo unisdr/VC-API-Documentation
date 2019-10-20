@@ -189,6 +189,74 @@ GET /sso-unisdr/api/drupal/migration/organizations
 ```
 
 
+## Resolutions content type
+
+### TODO
+* author
+* internal fields name, email
+
+### References
+
+* Destination pages
+   * Nick will develop a landing page
+
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/drupal/migration/resolutions
+
+```shell
+GET /sso-unisdr/api/drupal/migration/resolutions
+```
+
+### JSON Response
+
+```shell
+[
+   {
+      "ent_id":19034,
+      "ent_dateadded":"2011-04-19 13:31:32",
+      "field_title":"Thematic debate of the 65th session of the General Assembly on disaster risk reduction: President's summary",
+      "field_user_comments":null,
+      "field_editors_comments":null,
+      "res_code":"A\/66\/PV.-",
+      "res_date":"2011-02-09",
+      "field_country":[
+
+      ],
+      "field_region":[
+
+      ],
+      "field_hazards":[
+
+      ],
+      "field_themes":[
+
+      ],
+      "field_related_links":[
+
+      ],
+      "field_links":[
+         {
+            "label":"EN",
+            "url":"https:\/\/www.preventionweb.net\/files\/resolutions\/110225DRR.pdf",
+            "lng_id":1
+         }
+      ]
+   },
+   ...
+]
+```
+
 ## Terminology content type
 
 ### TODO
