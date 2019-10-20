@@ -385,8 +385,6 @@ todo
 
 ## Training
 
-## Terminology
-
 ## Documents and publications 
 
 ## Educational material 
