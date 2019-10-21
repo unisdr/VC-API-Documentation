@@ -66,9 +66,7 @@ https://oauth.net/2/grant-types/client-credentials/
 
 ### Client
 
-#### Request access token
-
-Authentication: Client credentials grant
+#### Request client credential access token
 
 Form Post Parameters:
 
@@ -114,6 +112,7 @@ Response Body:
 ```shell
 [ACCESS TOKEN]
 ```
+
 
 #### Registration
 
@@ -435,9 +434,24 @@ Return format:
 
 The user gets authenticated using the password flow grant https://www.preventionweb.net/myprofile/login. The common login gives the successful authenticated user an access token and refresh token, the application should save this information on the user session.
 
+
+### Update Drupal ID
+
+Update existing common login account with Drupal ID.
+
+TODO: Discuss with Everis if this is okay
+
+Form Post Parameters:
+
+* email string, value should be a valid email address
+* drupal_id integer, primary key of Drupal user table (user.id), this a way for common login to associate the account information with drupal
+
+
 ### Check logged in account email address and password
 
 This function was used to verify the logged in account credentials before performing the change password and email function.
+
+Authentication: Password grant
 
 Header Parameters:
 
@@ -477,6 +491,8 @@ Please note that when the password was changed all active user tokens will be in
 
 TODO: add web hooks functionality to notify oAuth2 Clients that token for the account has been invalidated.
 
+Authentication: Password grant
+
 Header Parameters:
 
 * Accept string, value ‘application/json’
@@ -505,6 +521,8 @@ Success response:
 
 Active tokens will be set to invalid when request is successful.
 
+Authentication: Password grant
+
 Header Parameters:
 
 * Accept string, value ‘application/json’
@@ -527,6 +545,8 @@ Success response:
 ### Revoke User Token
 
 When the user logged-out of the system, call this function to invalidate all the active tokens.
+
+Authentication: Password grant
 
 Header Parameters:
 
