@@ -68,6 +68,8 @@ https://oauth.net/2/grant-types/client-credentials/
 
 #### Request access token
 
+Authentication: Client credentials grant
+
 Form Post Parameters:
 
 * grant_type string, value should be ‘client_credentials’
@@ -120,6 +122,8 @@ Standard registration URL https://www.preventionweb.net/myprofile/register
 Registration URL coming from other applications e.g. Sendain Framework Voluntary commitments https://sendaicommitments.unisdr.org. There will be additional information displayed on the page upon email approval.
 
 https://www.preventionweb.net/myprofile/register?url=https%3A%2F%2Fsendaicommitments.unisdr.org&client_id=9
+
+Authentication: Client credentials grant
 
 Header Parameters:
 
@@ -202,6 +206,8 @@ The system will revoke the token automatically.
 
 https://www.preventionweb.net/myprofile/forgotpassword
 
+Authentication: Client credentials grant
+
 Header Parameters:
 
 * Accept string, value ‘application/json’
@@ -279,6 +285,8 @@ Endpoint to call after completing the change email flow.
 
 The system will revoke the token automatically.
 
+Authentication: Client credentials grant
+
 Header Parameters:
 
 * Accept string, value ‘application/json’
@@ -345,6 +353,8 @@ Error response:
 
 Endpoint to call to check if the email address doesn't exists in our database.
 
+Authentication: Client credentials grant
+
 Header Parameters:
 
 * Accept string, value ‘application/json’
@@ -386,6 +396,8 @@ Error response:
 Drupal admin delete the account of the user from the admin interface of Drupal then sends a remote call to common login to delete the access credentials.
 
 Active tokens will be set to invalid when request is successful.
+
+Authentication: Client credentials grant
 
 Header Parameters:
 
