@@ -202,6 +202,7 @@ The resultset only includes "Disaster Risk Reduction Mandate".
 
 * Destination pages
    * Nick will develop a landing page
+* Content mapping https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=270554096
 
 
 ### Authentication:
