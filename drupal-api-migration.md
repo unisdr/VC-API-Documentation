@@ -250,10 +250,6 @@ GET /sso-unisdr/api/drupal/migration/resolutions
 
 ## Terminology content type
 
-### TODO
-* author
-* internal fields name, email
-
 ### References
 
 * Destination pages
