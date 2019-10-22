@@ -236,6 +236,7 @@ GET /sso-unisdr/api/drupal/migration/resolutions
       "field_editors_comments":null,
       "res_code":"A\/66\/PV.-",
       "res_date":"2011-02-09",
+      "type": "Report of the UN Secretary-General",
       "field_links":[
          {
             "label":"Download in English",
