@@ -198,9 +198,6 @@ GET /sso-unisdr/api/drupal/migration/organizations
 
 The resultset only includes "Disaster Risk Reduction Mandate".
 
-### TODO
-* author
-
 ### References
 
 * Destination pages
