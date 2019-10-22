@@ -83,7 +83,10 @@ GET /sso-unisdr/api/drupal/integration/preventionweb_regions
 
 Only published countries on PW are included.
 
+IMPORTANT NOTE: the approach for overview_map_url and flag_url will be revisited for the PreventionWeb migration. The images should be moved to Drupal media module.
+
 ### URL: /sso-unisdr/api/drupal/integration/regions_countries
+
 
 ```shell
 GET /sso-unisdr/api/drupal/integration/regions_countries
