@@ -97,7 +97,7 @@ GET /sso-unisdr/drupal/migration/taxonomy_languages
 ]
 ```
 
-## Large image/thumbnail image use by entry
+## Image/thumbnail used by entry
 
 ### References
 
