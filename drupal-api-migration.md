@@ -237,6 +237,8 @@ GET /sso-unisdr/api/drupal/migration/resolutions
       "res_code":"A\/66\/PV.-",
       "res_date":"2011-02-09",
       "type": "Report of the UN Secretary-General",
+      "author_name": "Leoj Ito",
+      "author_id": 143,
       "field_links":[
          {
             "label":"Download in English",
