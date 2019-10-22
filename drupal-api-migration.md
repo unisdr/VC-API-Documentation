@@ -236,7 +236,6 @@ GET /sso-unisdr/api/drupal/migration/resolutions
       "res_date":"2011-02-09",
       "type": "Report of the UN Secretary-General",
       "author_name": "Leoj Ito",
-      "author_id": 143,
       "field_links":[
          {
             "label":"Download in English",
@@ -286,7 +285,6 @@ GET /sso-unisdr/api/drupal/migration/terminology
       "field_user_comments":"",
       "field_editors_comments":"",
       "author_name": "Leoj Ito",
-      "author_id": 143,
       "field_body":"<p>A set of ordinances or regulations and associated standards intended to regulate aspects of the design, construction, materials, alteration and occupancy of structures which are necessary to ensure human safety and welfare, including resistance to collapse and damage.<\/p>\n\n<p>Annotation: Building codes can include both technical and functional standards. They should incorporate the lessons of international experience and should be tailored to national and local circumstances. A systematic regime of enforcement is a critical supporting requirement for the effective implementation of building codes.<\/p>",
       "field_hazards":[
 
