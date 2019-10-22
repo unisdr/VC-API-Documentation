@@ -200,7 +200,6 @@ The resultset only includes "Disaster Risk Reduction Mandate".
 
 ### TODO
 * author
-* internal fields name, email
 
 ### References
 
