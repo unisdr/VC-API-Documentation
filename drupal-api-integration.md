@@ -163,8 +163,8 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * undrr_region_id (optional), integer
 
 ```shell
-GET /sso-unisdr/api/integration/undrr_focalpoints
-GET /sso-unisdr/public/api/drupal/integration/undrr_focalpoints?undrr_region_id=1
+GET /sso-unisdr/api/drupal/integration/undrr_focalpoints
+GET /sso-unisdr/api/drupal/integration/undrr_focalpoints?undrr_region_id=1
 ```
 
 ### JSON Response
