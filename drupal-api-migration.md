@@ -310,10 +310,6 @@ GET /sso-unisdr/api/drupal/migration/terminology
 
 ## Vacancies (Jobs) content type
 
-### TODO
-* author
-* internal fields name, email
-
 ### References
 
 * Destination pages
@@ -353,6 +349,9 @@ GET /sso-unisdr/api/drupal/migration/vacancies
       "job_post_url":"https:\/\/jobnet.ifrc.org\/public\/hrd-cl-vac-view.asp?jobinfo_uid_c=498&vaclng=en",
       "field_city_aditional_loc":"Tarija, Bolivia (TBC)",
       "field_closing_date":"2007-09-28",
+      "author_name": "Leoj Ito",
+      "ent_contact_name": "Leoj Ito",
+      "field_email": "leoj@undrr.org",
       "field_country":[
          {
             "ctry_id":129,
