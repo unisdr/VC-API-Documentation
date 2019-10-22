@@ -237,24 +237,9 @@ GET /sso-unisdr/api/drupal/migration/resolutions
       "field_editors_comments":null,
       "res_code":"A\/66\/PV.-",
       "res_date":"2011-02-09",
-      "field_country":[
-
-      ],
-      "field_region":[
-
-      ],
-      "field_hazards":[
-
-      ],
-      "field_themes":[
-
-      ],
-      "field_related_links":[
-
-      ],
       "field_links":[
          {
-            "label":"EN",
+            "label":"Download in English",
             "url":"https:\/\/www.preventionweb.net\/files\/resolutions\/110225DRR.pdf",
             "lng_id":1
          }
