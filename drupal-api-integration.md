@@ -6,10 +6,10 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ## UNDRR Regions
 
-### URL: /sso-unisdr/api/integration/undrr_regions
+### URL: /sso-unisdr/api/drupal/integration/undrr_regions
 
 ```shell
-GET /sso-unisdr/api/integration/undrr_regions
+GET /sso-unisdr/api/drupal/integration/undrr_regions
 ```
 
 ### JSON Response
@@ -45,10 +45,10 @@ GET /sso-unisdr/api/integration/undrr_regions
 
 ## PreventionWeb Regions
 
-### URL: /sso-unisdr/api/integration/preventionweb_regions
+### URL: /sso-unisdr/api/drupal/integration/preventionweb_regions
 
 ```shell
-GET /sso-unisdr/api/integration/preventionweb_regions
+GET /sso-unisdr/api/drupal/integration/preventionweb_regions
 ```
 
 ### JSON Response
@@ -83,10 +83,10 @@ GET /sso-unisdr/api/integration/preventionweb_regions
 
 Only published countries on PW are included.
 
-### URL: /sso-unisdr/api/integration/regions_countries
+### URL: /sso-unisdr/api/drupal/integration/regions_countries
 
 ```shell
-GET /sso-unisdr/api/integration/regions_countries
+GET /sso-unisdr/api/drupal/integration/regions_countries
 ```
 
 ### JSON Response
