@@ -534,11 +534,36 @@ GET /sso-unisdr/api/drupal/migration/news
 ]
 ```
 
+## Publication type
+
+### URL: /sso-unisdr/api/drupal/migration/publication_type
+
+```shell
+GET /sso-unisdr/api/drupal/migration/publication_type
+```
+
+### JSON Response
+
+```shell
+{
+   "1":"Tool Kits",
+   "2":"Fact Sheets",
+   "3":"UNDRR Documents",
+   "4":"Reports",
+   "5":"WiA",
+   "6":"Working papers",
+   "7":"Other"
+}
+```
+
+
+## Documents and publications 
+
 ## Event 
 
 ## Training
 
-## Documents and publications 
+
 
 ## Educational material 
 
