@@ -427,6 +427,29 @@ todo
 
 
 
+## UNDRR News type (taxonomy)
+
+### URL: /sso-unisdr/api/drupal/migration/news_type
+
+```shell
+GET /sso-unisdr/api/drupal/migration/news_type
+```
+
+### JSON Response
+
+```shell
+[ 
+   { 
+      "1":"Updates",
+      "2":"Press Releases",
+      "3":"Statements and messages",
+      "4":"Features",
+      "5":"Research briefs",
+      "6":"Op Eds"
+   }
+]
+```
+
 
 ## UNDRR News and PW News
 
