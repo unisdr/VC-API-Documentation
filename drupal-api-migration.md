@@ -534,7 +534,7 @@ GET /sso-unisdr/api/drupal/migration/news
 ]
 ```
 
-## Publication type
+## Publication type (taxonomy)
 
 ### URL: /sso-unisdr/api/drupal/migration/publication_type
 
