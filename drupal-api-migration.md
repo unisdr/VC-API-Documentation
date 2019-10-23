@@ -430,6 +430,90 @@ todo
 
 ## UNDRR News and PW News
 
+### References
+
+* Destination pages
+   * https://ijjqd4.axshare.com/#g=1&p=news_list
+   * https://ijjqd4.axshare.com/#g=1&p=new_detail
+* Content type mapping https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=2983063
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/drupal/migration/news
+
+```shell
+GET /sso-unisdr/api/drupal/migration/news
+```
+
+### JSON Response
+
+```shell
+[
+   {
+      "ent_id":5526,
+      "field_title":"Bali Roadmap on Climate Change recognizes importance of disaster risk reduction",
+      "field_short_title":"",
+      "ent_dateadded":"2008-11-11 12:19:09",
+      "ent_datemodified":"2008-12-17 18:36:08",
+      "field_user_comments":"climate change",
+      "field_editors_comments":"",
+      "field_body":"<p>Disaster Risk Reduction (DRR) was included in the Bali Action Plan as a tool for climate change adaptation. The Bali Action Plan was adopted by UN member states on 15 December at the UN Framework Convention on Climate Change (UNFCCC) Conference. It called for enhanced action on adaptation, including DRR strategies to lessen the impact of disasters on developing countries; risk management and risk reduction strategies including risk transfer mechanisms such as insurance; and more international cooperation on implementation, such as through vulnerability assessments. At a side event, the Working Group on Climate Change and Disaster Risk Reduction recommended that adaptation be a pillar of any eventual climate change agreement; that DRR and climate risk management be core elements of adaptation; that mechanisms for funding adaptation and disaster risk reduction be established; and that immediate action be taken to implement risk reduction measures from 2008-2012. Participants included representatives from UNEP, UNDP, UNISDR, WHO, WMO, WB, Red Cross, Oxfam, and CARE International.<\/p>",
+      "isdr_nws_summary":"The main outcome document of the UNFCCC 13th Conference of the Parties, the Bali Action Plan, sets the path toward a new international climate change agreement. UNISDR is supporting countries in implementing the Bali Action Plan.",
+      "field_release_date":"2007-12-17",
+      "field_news_type":1,
+      "isdr_nws_photo_caption":"",
+      "isdr_nws_photo_credit_url":"",
+      "isdr_nws_photo_credit":"",
+      "field_country":[
+
+      ],
+      "field_organization":[
+         {
+            "org_id":1171
+         }
+      ],
+      "field_region":[
+
+      ],
+      "field_hazards":[
+
+      ],
+      "field_themes":[
+         {
+            "scat_id":33
+         }
+      ],
+      "field_related_links":[
+
+      ],
+      "field_links":[
+         {
+            "label":"The Bali Action Plan",
+            "url":"https:\/\/www.preventionweb.net\/files\/5526_BaliActionplan.pdf"
+         },
+         {
+            "label":"The Bali Action Plan and disaster risk reduction",
+            "url":"https:\/\/www.preventionweb.net\/files\/5526_BaliActionPlanandDRR.pdf"
+         },
+         {
+            "label":"UNISDR draft strategy to support the Bali Action Plan",
+            "url":"https:\/\/www.preventionweb.net\/files\/5526_ISDRstrategysupportBaliActionPlanprocess.pdf"
+         }
+      ],
+      ...
+   }
+]
+```
+
 ## Event 
 
 ## Training
