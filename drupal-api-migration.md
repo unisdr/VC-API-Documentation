@@ -560,6 +560,10 @@ GET /sso-unisdr/api/drupal/migration/publication_type
 
 ## Documents and publications
 
+### Important
+
+* Publication type (pub_type_id) 1,4,5,6 include to PreventionWeb domain.
+
 ### References
 
 * Destination pages
@@ -603,6 +607,9 @@ GET /sso-unisdr/api/drupal/migration/publications
       "field_number_page":"54 p.",
       "field_year_of_publication":2007,
       "pub_type_id":"5",
+      "domain":[
+         "pw"
+      ],
       "field_country":[
          {
             "ctry_id":24,
