@@ -558,14 +558,14 @@ GET /sso-unisdr/api/drupal/migration/publication_type
 ```
 
 
-## Documents and publications 
+## Documents and publications
 
 ### References
 
 * Destination pages
    * https://ijjqd4.axshare.com/#g=1&p=publication_list
    * https://ijjqd4.axshare.com/#g=1&p=publication_detail
-* Content type mapping https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=2983063
+* Content type mapping https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=270554096
 
 ### Authentication:
 
@@ -578,10 +578,10 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * Authorization string, value "Bearer [Client: ACCESS TOKEN]"
 
 
-### URL: /sso-unisdr/api/drupal/migration/news
+### URL: /sso-unisdr/api/drupal/migration/publications
 
 ```shell
-GET /sso-unisdr/api/drupal/migration/news
+GET /sso-unisdr/api/drupal/migration/publications
 ```
 
 ### JSON Response
