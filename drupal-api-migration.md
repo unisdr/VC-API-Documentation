@@ -563,8 +563,8 @@ GET /sso-unisdr/api/drupal/migration/publication_type
 ### References
 
 * Destination pages
-   * https://ijjqd4.axshare.com/#g=1&p=news_list
-   * https://ijjqd4.axshare.com/#g=1&p=new_detail
+   * https://ijjqd4.axshare.com/#g=1&p=publication_list
+   * https://ijjqd4.axshare.com/#g=1&p=publication_detail
 * Content type mapping https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=2983063
 
 ### Authentication:
