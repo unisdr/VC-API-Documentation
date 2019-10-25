@@ -13,9 +13,9 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 oAuth2 client credentials, please refer to other documentation how to get the client access token.
 
-### PARAMETERS
-* email
-* drupal_id
+### Parameters
+* email, string
+* drupal_id, integer
 
 ```shell
 POST /sso-unisdr/api/drupal/integration/add_drupal_id
