@@ -9,6 +9,8 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ### URL: /sso-unisdr/api/drupal/integration/add_drupal_id
 
+This endpoint will set the drupal_id of an account.
+
 ### Authentication:
 
 oAuth2 client credentials, please refer to other documentation how to get the client access token.
