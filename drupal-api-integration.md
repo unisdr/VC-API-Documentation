@@ -4,6 +4,23 @@ Production URL: http://program.unisdr.org/sso-unisdr/
 
 Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
+
+## Update account drupal ID
+
+### URL: /sso-unisdr/api/drupal/integration/add_drupal_id
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+### PARAMETERS
+* email
+* drupal_id
+
+```shell
+POST /sso-unisdr/api/drupal/integration/add_drupal_id
+```
+
 ## UNDRR Regions
 
 ### URL: /sso-unisdr/api/drupal/integration/undrr_regions
