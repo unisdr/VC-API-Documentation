@@ -687,10 +687,106 @@ GET /sso-unisdr/api/drupal/migration/publications
 ]
 ```
 
-## Event 
+## Event & Training
 
-## Training
+### Important
 
+* Entries tagged with campaign internal tag will be available on MCR domain.
+
+### References
+
+* Content type mapping https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=1294149393
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/drupal/migration/event_training
+
+```shell
+GET /sso-unisdr/api/drupal/migration/event_training
+```
+
+### JSON Response
+
+```shell
+[
+   {
+      "ent_id":763,
+      "field_title":"Stockholm forum for disaster reduction and recovery",
+      "ent_dateadded":"2007-10-09 18:07:44",
+      "ent_datemodified":"2007-10-09 19:33:41",
+      "field_user_comments":"",
+      "field_editors_comments":null,
+      "author_name":"Sarah Wade-Apicella",
+      "field_body":"<p>Climate Change, Disaster Risks and Poverty Reduction:<br \/>\nMoving towards a common approach to reducing vulnerability<br \/>\nA conference exploring the inter-linkages between climate change, disaster risk and poverty reduction<\/p>\n\n<p>Disasters caused by natural hazards continue to impact an ever increasing number of people throughout the world. Recent studies indicate that more than half of the world\u2019s population lives in areas with significant exposure to disasters and climate change is predicted to increase the frequency or intensity of extreme weather events. Worst affected and suffering the most from disasters are the poor, because they live in fragile areas which underscores the urgency of mainstreaming risk and vulnerability approaches into poverty reduction programs.<\/p>\n\n<p>In order to better respond to these challenges, the World Bank launched in September 2006 the Global Facility for Disaster Reduction and Recovery (GFDRR), a long term partnership designed to provide technical and financial assistance for disaster reduction and recovery. In partnership with the International Strategy for Disaster Reduction, the facility supports global and regional processes that seek to leverage country resources aimed at activities in prevention, mitigation and preparedness. Through its second line of business, the Facility provides technical assistance to low and middle income countries to strategically integrate disaster reduction and climate change adaptation measures into their development policies. Finally, the Facility through its third track supports efforts to guarantee that speedy and adequate support is available for disaster stricken countries, provided they demonstrate commitment to disaster prevention measures.<\/p>\n\n<p>The Swedish Agency for International Development Cooperation (Sida), the International Strategy for Disaster Reduction (ISDR), and the Global Facility for Disaster Reduction and Recovery (GFDRR) will be hosting a conference to explore ways to effectively respond to the challenges the inter-linkages between climate change, disaster risk and poverty reduction pose to the development planning process. The conference aims at providing a common understanding and a set of agreed practical measures in mainstreaming disaster risks and adaptation to climate change in country development strategies that GFDRR ( http:\/\/www.gfdrr.org ) is pursuing in disaster hotspot countries. Participants will include representatives from developing countries, donors, international finance institutions, international organizations, research institutions and civil society.<\/p>",
+      "ent_contact_name":"",
+      "field_email":"",
+      "trn_event_url":"http:\/\/go.worldbank.org\/KLDIO79AR0",
+      "field_start_date":"2007-10-22",
+      "field_end_date":"2007-10-25",
+      "field_online":0,
+      "field_event_country":"166",
+      "field_event_city":"Stockholm",
+      "field_venue":"",
+      "ent_lang_id":1,
+      "field_twitter_hashtag":"",
+      "trn_type_id":1,
+      "trn_type":"Event",
+      "domain":[
+         "undrr",
+         "pw"
+      ],
+      "field_country":[
+
+      ],
+      "field_organization":[
+         {
+            "org_id":125
+         },
+         {
+            "org_id":29
+         },
+         {
+            "org_id":1171
+         },
+         {
+            "org_id":29
+         }
+      ],
+      "field_region":[
+
+      ],
+      "field_hazards":[
+
+      ],
+      "field_themes":[
+         {
+            "scat_id":33
+         },
+         {
+            "scat_id":43
+         },
+         {
+            "scat_id":44
+         }
+      ],
+      "field_related_links":[
+
+      ],
+      "field_links":[
+
+      ]
+   }
+]
+```
 
 
 ## Educational material 
