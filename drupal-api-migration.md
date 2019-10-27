@@ -719,27 +719,36 @@ GET /sso-unisdr/api/drupal/migration/event_training
 ```shell
 [
    {
-      "ent_id":763,
-      "field_title":"Stockholm forum for disaster reduction and recovery",
-      "ent_dateadded":"2007-10-09 18:07:44",
-      "ent_datemodified":"2007-10-09 19:33:41",
+      "ent_id":43624,
+      "field_title":"Resilience Action Planning: Implementing the Sendai Framework at the Local Level - Online course",
+      "ent_dateadded":"2015-04-09 09:16:42",
+      "ent_datemodified":"2018-10-08 20:55:09",
       "field_user_comments":"",
-      "field_editors_comments":null,
-      "author_name":"Sarah Wade-Apicella",
-      "field_body":"<p>Climate Change, Disaster Risks and Poverty Reduction:<br \/>\nMoving towards a common approach to reducing vulnerability<br \/>\nA conference exploring the inter-linkages between climate change, disaster risk and poverty reduction<\/p>\n\n<p>Disasters caused by natural hazards continue to impact an ever increasing number of people throughout the world. Recent studies indicate that more than half of the world\u2019s population lives in areas with significant exposure to disasters and climate change is predicted to increase the frequency or intensity of extreme weather events. Worst affected and suffering the most from disasters are the poor, because they live in fragile areas which underscores the urgency of mainstreaming risk and vulnerability approaches into poverty reduction programs.<\/p>\n\n<p>In order to better respond to these challenges, the World Bank launched in September 2006 the Global Facility for Disaster Reduction and Recovery (GFDRR), a long term partnership designed to provide technical and financial assistance for disaster reduction and recovery. In partnership with the International Strategy for Disaster Reduction, the facility supports global and regional processes that seek to leverage country resources aimed at activities in prevention, mitigation and preparedness. Through its second line of business, the Facility provides technical assistance to low and middle income countries to strategically integrate disaster reduction and climate change adaptation measures into their development policies. Finally, the Facility through its third track supports efforts to guarantee that speedy and adequate support is available for disaster stricken countries, provided they demonstrate commitment to disaster prevention measures.<\/p>\n\n<p>The Swedish Agency for International Development Cooperation (Sida), the International Strategy for Disaster Reduction (ISDR), and the Global Facility for Disaster Reduction and Recovery (GFDRR) will be hosting a conference to explore ways to effectively respond to the challenges the inter-linkages between climate change, disaster risk and poverty reduction pose to the development planning process. The conference aims at providing a common understanding and a set of agreed practical measures in mainstreaming disaster risks and adaptation to climate change in country development strategies that GFDRR ( http:\/\/www.gfdrr.org ) is pursuing in disaster hotspot countries. Participants will include representatives from developing countries, donors, international finance institutions, international organizations, research institutions and civil society.<\/p>",
-      "ent_contact_name":"",
-      "field_email":"",
-      "trn_event_url":"http:\/\/go.worldbank.org\/KLDIO79AR0",
-      "field_start_date":"2007-10-22",
-      "field_end_date":"2007-10-25",
-      "field_online":0,
-      "field_event_country":"166",
-      "field_event_city":"Stockholm",
+      "field_editors_comments":"Tessa Scholma - changed the organizations,removed some tags, added contacts - 09Apr15\r\nAna-Cristina Thorlund - 2016 course  - 13Apr16\r\nAna-Cristina Thorlund - Please publish this course for 2016 with link to the Campaign website  - 13Apr16\r\nSarah Wade-Apicella - ACT revised the whole course detail to match the new and upcoming dates. Old dates were not maintained. I have also re-tagged MCR from isdr.imu.content account - but it's not on MCR website; unpublished, and republished and requested JM to rest counter for promotion.  - 14Apr16\r\nSarah Wade-Apicella - revised URL - 18Apr16\r\nSarah Wade-Apicella - Confirmed all language choices made in CMS (new metacontent only displays first one, English); changed to 'online only' location; informed JM, RMB, cc FL on issues. - 07Jun16\r\nSarah Wade-Apicella - revised next date - 31Aug16\r\nAna-Cristina Thorlund - Change contacts, title and dates of next course - 01Sep16",
+      "author_name":"Tessa Scholma",
+      "field_body":"<h3><strong>About the Course<\/strong><\/h3>\n\n<p>Over the past 20 years disasters have affected 4.4 billion people, caused USD 2 trillion of damage and killed 1.3 million people. Disasters have affected people living in developing countries and, in particular, the most vulnerable communities within these countries.<\/p>\n\n<p>Particularly in the context of increased urbanization, urban risk continues to rise. The vulnerability of cities to disasters is growing especially as poor people settle in high-risk urban areas. Unfortunately, the planning and development of cities has given little consideration to the consequences of hazards such as earthquakes, hydro-meteorological risks and others. The implication of this reality is the need for countries to focus on creating a safer world for urban dwellers and developing a series of innovative approaches to build resilience.<\/p>\n\n<p>On the basis of these needs, UNITAR, in partnership with UNISDR&rsquo;s Global Education and Training Institute (ONEA-GETI), has developed the e-learning course Urban Risk Reduction: Developing and Implementing Resilience Action Plans for Cities.<\/p>\n\n<h3><strong>Course Objectives<\/strong><\/h3>\n\n<p>This e-Learning course aims to strengthen the capacities of government officials, especially those at the local level, and disaster management professionals to design and implement plans and programmes that reduce disaster risk and enhance resilience.<\/p>\n\n<h3><strong>Content:<\/strong><\/h3>\n\n<ul class=\"bullet\">\n\n<li>Module 1: Disaster Risk Reduction Concepts and Introduction to Current Trends&nbsp;<\/li>\n\n<li>Module 2: Implementing the Sendai Framework for Disaster Risk Reduction (2015-2030)<\/li>\n\n<li>Module 3: Introduction to Making Cities Resilient Global Campaign and tools<\/li>\n\n<li>Module 4: DRR Assesment and Analysis Tools<\/li>\n\n<li>Module 5: Mainstreaming Disaster Risk Reduction into Sectoral Programmes for Socio-Economic Development<\/li>\n\n<li>Module 6: Developing, Implementing, Monitoring Resilient Action Plans,&nbsp;Safe and Resilient Action Plans<\/li>\n\n<\/ul>\n\n<h3><strong>Methodology<\/strong><\/h3>\n\n<p>This 6-module course includes interactive lessons that introduce the participant to the conceptual foundations of disaster risk reduction and urban resilience. the learning materials are presented through various media, such as text, graphs, images and video material, which contribute to better retention and enhance the learning process. Participants engage in a set of asssessment quizzes, discussion forums, and practical activities to facilitate interaction and experience sharing.<\/p>\n\n<div style=\"margin-left:0px !important;\">\n\n<div aria-labelledby=\"headingFive\" id=\"collapseFive\" role=\"tabpanel\">\n\n<div>\n\n<p>Besides the interactive lessons, participants engage in a set of practical exercises, where they can apply the knowledge gained to a real-life situation. Collaborative activities and discussion forums are other core elements of the course, organized to create collective knowledge and to facilitate interaction and experience sharing. The course also includes formative exercises as well as quizzes. A moderator guides participants through all the learning activities.&nbsp;<\/p>\n\n<h3><strong>Participant Profile<\/strong><\/h3>\n\n<\/div>\n\n<\/div>\n\n<\/div>\n\n<p>The course is open to city and local government officials, disaster management professionals, and representatives from academic and training institutions working on disaster risk reduction.<\/p>\n\n<h3><strong>Additional information<\/strong><\/h3>\n\n<p>A certificate of completion will be issued to participants who achieve a minimum total score of 70%. A certificate of participation will be issued to participants who complete all mandatory activities but achieve a final score inferior to 70%.<\/p>\n\n<p><strong>BONUS:<\/strong> Those students who perform excellent results will be rewarded by being included in the &ldquo;List of Experts&rdquo; of UNISDR. As an expert, you will have the opportunity of being consulted and invited to several workshops\/events.&nbsp;<\/p>\n\n<p><strong>Course Fee: <\/strong>100 USD (group discounts are available)<\/p>\n\n<p><strong>Contact: <\/strong>e-dcp@unitar.org<\/p>\n\n<p><strong>Please register by October 14<\/strong><\/p>",
+      "ent_contact_name":"Estrella MERLOS, Ana Cristina Thorlund",
+      "field_email":"Estrella.MERLOS@unitar.org, thorlund@un.org",
+      "trn_event_url":"https:\/\/www.unitar.org\/event\/full-catalog\/resilience-action-planning-implementing-sendai-framework-local-level-1",
+      "field_start_date":"2018-10-08",
+      "field_end_date":"2018-12-21",
+      "field_online":1,
+      "field_event_country":"",
+      "field_event_city":"",
       "field_venue":"",
       "ent_lang_id":1,
       "field_twitter_hashtag":"",
-      "trn_type_id":1,
-      "trn_type":"Event",
+      "trn_type_id":3,
+      "trn_type":"Training",
+      "translation":[
+         {
+            "entt_ent_id":43624,
+            "entt_title":"Planes de Acci\u00f3n para Resiliencia - Implementar el Marco de Sendai al Nivel Local",
+            "entt_desc":"<p>En los \u00faltimos 20 a\u00f1os, los desastres han afectado a 4.400 millones de personas, han causado da\u00f1os por valor de 2 billones de d\u00f3lares y han causado la muerte de 1,3 millones de personas. Los desastres han afectado a las personas que viven en los pa\u00edses en desarrollo y, en particular, a las comunidades m\u00e1s vulnerables de esos pa\u00edses. En particular en el contexto de la creciente urbanizaci\u00f3n, el riesgo urbano sigue aumentando. La vulnerabilidad de las ciudades a los desastres es cada vez mayor, especialmente a medida que los pobres se asientan en zonas urbanas de alto riesgo.<\/p>\r\n\r\n<p>Lamentablemente, en la planificaci\u00f3n y el desarrollo de las ciudades se ha prestado poca atenci\u00f3n a las consecuencias de peligros como los terremotos, los riesgos hidrometeorol\u00f3gicos y otros. La implicaci\u00f3n de esta realidad es la necesidad de que los pa\u00edses se centren en la creaci\u00f3n de un mundo m\u00e1s seguro para los habitantes de las ciudades y en el desarrollo de una serie de enfoques innovadores para aumentar la resiliencia.<\/p>\r\n\r\n<p>Este curso de aprendizaje electr\u00f3nico tiene por objeto fortalecer la capacidad de los funcionarios gubernamentales, especialmente los de nivel local, y de los profesionales de la gesti\u00f3n de desastres para dise\u00f1ar y aplicar planes y programas que reduzcan el riesgo de desastres. riesgo de desastres y aumentar la resiliencia.<\/p>\r\n\r\n<p><h3>Objetivos del evento<\/h3><\/p>\r\n\r\n<p>El curso de e-learning tiene por objectivo de reenforzar las capacidades de los funcionarios del gobierno, especielmente los que trabajan al nivel local, y a los profesionales de manejan los desastres para que conciban y implementen planes y programas que reducir\u00e1n el riego de desastre s y que mejorar\u00e1n la resilencia.<\/p>\r\n\r\n<p>Al final del curso, los participantes lograr\u00e1n:<\/p>\r\n\r\n<p>-Sensibilizar sobre el \"Making Cities Resilient (MRC) Campaign\";<\/p>\r\n\r\n<p>-Identificar las iniciativas y las mejores pr\u00e1cticas para integrar la reducci\u00f3n del riesgo y la adopci\u00f3n del cambio clim\u00e1tico en la planificaci\u00f3n urbana;<\/p>\r\n\r\n<p>-Evaluar la siatuaci\u00f3n de la gesti\u00f3n del riesgo en sus paises usando harramientas;<\/p>\r\n\r\n<p>-Desarrollar un plan de acci\u00f3n seguro y resiliente para sus ciudades\/paises;<\/p>\r\n\r\n<p>-Analizar el objetivo, las metas y el resultado del HFAb y del Marco de Sendai.<\/p>\r\n\r\n<p><h3>Contenido y estructura<\/h3><\/p>\r\n\r\n<p>Este curso se compone de los siguientes m\u00f3dulos:<p>\r\n\r\n<p>-M\u00f3dulo 1: Conceptos de reducci\u00f3n del riesgo de desastres e introducci\u00f3n a las tendencias actuales del riesgo urbano.<\/p>\r\n<p>-M\u00f3dulo 2: Aplicaci\u00f3n del Marco de Sendai para la Reducci\u00f3n del Riesgo de Desastres (2015-2030).<\/p>\r\n<p>-M\u00f3dulo 3: Introducci\u00f3n a las herramientas de la campa\u00f1a Making Cities Resilient (MCR).<\/p>\r\n<p>-M\u00f3dulo 4: Herramientas de evaluaci\u00f3n y an\u00e1lisis de la RRD.<\/p>\r\n<p>-M\u00f3dulo 5: Incorporaci\u00f3n de la RRD en los programas sectoriales de desarrollo socioecon\u00f3mico.<\/p>\r\n<p>-M\u00f3dulo 6: Desarrollar, implementar, monitorear y evaluar planes de acci\u00f3n seguros y resistentes.<\/p>\r\n\r\n<p><h3>Metodolog\u00eda<\/h3><\/p>\r\n\r\n<p>Este curso de 6 m\u00f3dulos incluye lecciones interactivas que introducen al participante en los fundamentos conceptuales de la reducci\u00f3n del riesgo de desastres y la resiliencia urbana.<\/p>\r\n\r\n<p>Los materiales de aprendizaje se presentan a trav\u00e9s de diversos medios, como textos, gr\u00e1ficos, im\u00e1genes y material de v\u00eddeo, que contribuyen a una mejor retenci\u00f3n y mejoran el proceso de aprendizaje. Los participantes participan en una serie de cuestionarios de evaluaci\u00f3n, foros de discusi\u00f3n, seminarios web con expertos de renombre y actividades pr\u00e1cticas para facilitar la interacci\u00f3n y el intercambio de experiencias.<\/p>\r\n\r\n<p><h3>Participantes<\/h3><\/p>\r\n\r\n<p>El curso est\u00e1 abierto a funcionarios de los gobiernos municipales y locales, profesionales de la gesti\u00f3n de desastres y representantes de instituciones acad\u00e9micas y de capacitaci\u00f3n que trabajan en la reducci\u00f3n del riesgo de desastres y el desarrollo sostenible.<\/p>\r\n\r\n<p><h3>Informaci\u00f3n adicional<\/h3><\/p>\r\n\r\n<p>Al final del curso, se entregar\u00e1 un certificado de finalizaci\u00f3n a los participantes que alcancen una puntuaci\u00f3n total m\u00ednima del 70%.<\/p>\r\n\r\n<p>BONO: los estudiantes que obtengan excelentes resultados ser\u00e1n recompensados con su inclusi\u00f3n en la \u201cLista de expertos\u201d de la UNISDR. Como experto, usted tendr\u00e1 la oportunidad de ser consultado e invitado a varios talleres\/eventos.<\/p>\r\n\r\n<p><strong>Por favor reg\u00edstrese antes del 14 de octubre<\/strong><\/p>",
+            "entt_lang_id":4,
+            "entt_dateadded":"2017-02-08 09:09:55"
+         }
+      ],
       "domain":[
          "undrr",
          "pw"
@@ -749,16 +758,10 @@ GET /sso-unisdr/api/drupal/migration/event_training
       ],
       "field_organization":[
          {
-            "org_id":125
+            "org_id":1422
          },
          {
-            "org_id":29
-         },
-         {
-            "org_id":1171
-         },
-         {
-            "org_id":29
+            "org_id":9351
          }
       ],
       "field_region":[
@@ -772,19 +775,36 @@ GET /sso-unisdr/api/drupal/migration/event_training
             "scat_id":33
          },
          {
-            "scat_id":43
+            "scat_id":34
          },
          {
             "scat_id":44
+         },
+         {
+            "scat_id":47
+         },
+         {
+            "scat_id":108
          }
       ],
       "field_related_links":[
-
+         {
+            "label":"More about the Sendai Framework",
+            "url":"https:\/\/www.preventionweb.net\/drr-framework\/sendai-framework"
+         }
       ],
       "field_links":[
-
+         {
+            "label":"Registration",
+            "url":"https:\/\/www.unitar.org\/event\/cart"
+         },
+         {
+            "label":"Inscripci\u00f3n",
+            "url":"https:\/\/www.unitar.org\/event\/cart"
+         }
       ]
-   }
+   },
+   ...
 ]
 ```
 
