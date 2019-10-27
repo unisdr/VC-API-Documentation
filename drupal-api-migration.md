@@ -695,6 +695,90 @@ GET /sso-unisdr/api/drupal/migration/publications
 
 ## Educational material 
 
+### Important
+
+* Publication type (pub_type_id) 1,4,5,6 include to PreventionWeb domain.
+
+### References
+
+* Content type mapping https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=270554096
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/drupal/migration/educational_materials
+
+```shell
+GET /sso-unisdr/api/drupal/migration/educational_materials
+```
+
+### JSON Response
+
+```shell
+[
+   {
+      "ent_id":3423,
+      "field_title":"ABC desastres",
+      "ent_dateadded":"2008-08-22 16:42:54",
+      "ent_datemodified":"2008-10-16 11:20:52",
+      "field_user_comments":"",
+      "field_editors_comments":"[MP] completed entry aligned themes 10Sept08\r\n[MCH]revised and published (16Oct08)",
+      "author_name":"Marla Petal",
+      "field_body":"<p>La idea consiste en que estudiantes (ni&ntilde;os y j&oacute;venes) y tambi&eacute;n sus docentes- encendiendo computadoras y apretando teclas- vayan apropi&aacute;ndose de saberes, aportando as&iacute; herramientas y cambios de actitudes, capaces de construir un camino diferente.<br \/><br \/>\n<br \/><br \/>\n<span class=\"style2\">En esta secci&oacute;n encontrar&aacute;s toda la informaci&oacute;n que  necesites sobre Riesgos y Desastres Naturales. Para consultar, para utilizar en  el colegio y para informarte. Sabr&aacute;s qu&eacute; hacer en una situaci&oacute;n de riesgo y c&oacute;mo  resolver problemas.<\/span><span class=\"style12\"><br \/><br \/>\n<\/span><\/p>",
+      "ent_contact_name":"",
+      "edu_audience_subgroup":"",
+      "field_authors":"",
+      "field_isbn":"",
+      "field_title_original":"",
+      "field_number_page":"",
+      "field_year_of_publication":2007,
+      "edu_language":"4",
+      "domain":[
+         "undrr",
+         "pw"
+      ],
+      "field_country":[
+
+      ],
+      "field_organization":[
+         {
+            "org_id":3
+         }
+      ],
+      "field_region":[
+         {
+            "cont_id":3
+         }
+      ],
+      "field_hazards":[
+
+      ],
+      "field_themes":[
+         {
+            "scat_id":36
+         }
+      ],
+      "field_related_links":[
+         {
+            "label":"Visit publisher for more information",
+            "url":"http:\/\/www.eird.org\/fulltext\/ABCDesastres\/index.htm"
+         }
+      ],
+      "field_links":[
+
+      ]
+   },
+   ...
+]
+```
 
 
 
