@@ -697,7 +697,7 @@ GET /sso-unisdr/api/drupal/migration/publications
 
 ### Important
 
-* Publication type (pub_type_id) 1,4,5,6 include to PreventionWeb domain.
+* Only target audiece = childen will be imported.
 
 ### References
 
