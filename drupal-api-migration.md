@@ -144,14 +144,16 @@ GET /sso-unisdr/api/drupal/migration/images
 ```shell
 [
    {
-      "ent_id":525,
-      "caption":"",
-      "url":"https:\/\/www.preventionweb.net\/files\/525_525.jpg"
+      "ent_id":26893,
+      "credit":"",
+      "caption":"Photo by wemissedthebus CC BY 2.0 2.0 http:\/\/www.flickr.com\/photos\/24936303@N08\/7026263283",
+      "url":"https:\/\/www.preventionweb.net\/files\/26893_largeImage.jpg"
    },
    {
-      "ent_id":531,
-      "caption":"Lorem ipsum dolor sit amet",
-      "url":"https:\/\/www.preventionweb.net\/files\/531_531.jpg"
+      "ent_id":26904,
+      "credit":"UNISDR Panama Office",
+      "caption":"The multistakeholder process in action in the Latin American region",
+      "url":"https:\/\/www.preventionweb.net\/files\/26904_largeImage.jpg"
    },
    ...
 ]
