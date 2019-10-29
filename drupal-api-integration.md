@@ -21,7 +21,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 ### Form Post Parameters
 * email string, value should be a valid email address
 * password string, the encrypted text must use bcrypt encryption, use the API endpoint on the general section to encrpyt the password
-* drupal_id integer, foreign key of Drupal user table (user.id), this a way for common login to associate the account information with drupal
+* drupal_id integer, primary key of Drupal user table (user.id), this a way for the common login system to associate the account information with drupal
 
 ### Error response:
 
