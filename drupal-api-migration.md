@@ -844,14 +844,14 @@ GET /sso-unisdr/api/drupal/migration/event_training
 | trn_event_url          | Event URL                               | URL                                                          |
 | field_start_date       | Event start date                        | date; yyyy-mm-dd                                             |
 | field_end_date         | Event end date                          | date; yyyy-mm-dd                                             |
-| field_online           | Is entry an online event                | int; possible values=0,1; 0=false and 1=true                 |
+| field_online           | Is entry an online event                | int; possible value= 0 or 1; 0=false and 1=true              |
 | field_event_country    | Country ID                              | int; see country integration API for country name equivalent |
 | field_event_city       |                                         | plain text                                                   |
 | field_venue            |                                         | plain text                                                   |
 | ent_lang_id            | Language ID of the entry                | int                                                          |
 | field_twitter_hashtag  |                                         | plain text                                                   |
-| trn_type_id            |                                         | int; possible values 1 or 3; 1 = Event, 3 = training         |
-| trn_type               |                                         | plain text; possible values Event or Training                |
+| trn_type_id            |                                         | int; possible value 1 or 3; 1 = Event, 3 = training          |
+| trn_type               |                                         | plain text; possible value Event or Training                 |
 | translation            | Collection                              | Array                                                        |
 | - entt_ent_id          | foreign key to entry_id                 | int                                                          |
 | - entt_title           | Translation of title (field_title)      | plain text                                                   |
