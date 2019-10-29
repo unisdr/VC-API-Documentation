@@ -406,7 +406,7 @@ Header Parameters:
 Form Post Parameters:
 
 * email string, value should be a valid email address
-* con_id integer, primary of users table in Drupal
+* drupal_id integer, primary of users table in Drupal
 
 ```shell
 POST /sso-unisdr/api/admin/delete_account
