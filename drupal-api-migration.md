@@ -829,38 +829,43 @@ GET /sso-unisdr/api/drupal/migration/event_training
 
 ### Field definition
 
-| Field                  | Description                           | Type/Value                                                   |
-|------------------------|---------------------------------------|--------------------------------------------------------------|
-| ent_id                 | Entry ID                              | int                                                          |
-| field_title            | Title of the entry                    | plain text                                                   |
-| ent_dateadded          | Date added                            | full date; yyyy-mm-dd hh:mm:ss                               |
-| ent_datemodified       | Date modified                         | full date; yyyy-mm-dd hh:mm:ss                               |
-| field_user_comments    | User comments                         | plain text; multiline                                        |
-| field_editors_comments | CMS editor comments                   | plain text; multiline                                        |
-| author_name            | Name of the person created the record | plain text                                                   |
-| field_body             | Content body                          | html                                                         |
-| ent_contact_name       |                                       | plain text                                                   |
-| field_email            |                                       | plain text                                                   |
-| trn_event_url          | Event URL                             | URL                                                          |
-| field_start_date       | Event start date                      |                                                              |
-| field_end_date         | Event end date                        |                                                              |
-| field_online           | Is entry an online event              | int; possible values=0,1; 0=false and 1=true                 |
-| field_event_country    | Country ID                            | int; see country integration API for country name equivalent |
-| field_event_city       |                                       | plain text                                                   |
-| field_venue            |                                       | plain text                                                   |
-| ent_lang_id            | Language ID of the entry              | int                                                          |
-| field_twitter_hashtag  |                                       | plain text                                                   |
-| trn_type_id            |                                       | int; possible values 1 or 3; 1 = Event, 3 = training         |
-| trn_type               |                                       | plain text; possible values Event or Training                |
-| translation            |                                       |                                                              |
-| domain                 |                                       |                                                              |
-| field_country          |                                       |                                                              |
-| field_organization     |                                       |                                                              |
-| field_region           |                                       |                                                              |
-| field_hazards          |                                       |                                                              |
-| field_themes           |                                       |                                                              |
-| field_related_links    |                                       |                                                              |
-| field_links            |                                       |                                                              |
+| Field                  | Description                             | Type/Value                                                   |
+|------------------------|-----------------------------------------|--------------------------------------------------------------|
+| ent_id                 | Entry ID                                | int                                                          |
+| field_title            | Title of the entry                      | plain text                                                   |
+| ent_dateadded          | Date added                              | full date; yyyy-mm-dd hh:mm:ss                               |
+| ent_datemodified       | Date modified                           | full date; yyyy-mm-dd hh:mm:ss                               |
+| field_user_comments    | User comments                           | plain text; multiline                                        |
+| field_editors_comments | CMS editor comments                     | plain text; multiline                                        |
+| author_name            | Name of the person created the record   | plain text                                                   |
+| field_body             | Content body                            | html                                                         |
+| ent_contact_name       |                                         | plain text                                                   |
+| field_email            |                                         | plain text                                                   |
+| trn_event_url          | Event URL                               | URL                                                          |
+| field_start_date       | Event start date                        | date; yyyy-mm-dd                                             |
+| field_end_date         | Event end date                          | date; yyyy-mm-dd                                             |
+| field_online           | Is entry an online event                | int; possible values=0,1; 0=false and 1=true                 |
+| field_event_country    | Country ID                              | int; see country integration API for country name equivalent |
+| field_event_city       |                                         | plain text                                                   |
+| field_venue            |                                         | plain text                                                   |
+| ent_lang_id            | Language ID of the entry                | int                                                          |
+| field_twitter_hashtag  |                                         | plain text                                                   |
+| trn_type_id            |                                         | int; possible values 1 or 3; 1 = Event, 3 = training         |
+| trn_type               |                                         | plain text; possible values Event or Training                |
+| translation            | Collection                              | Array                                                        |
+| - entt_ent_id          | foreign key to entry_id                 | int                                                          |
+| - entt_title           | Translation of title (field_title)      | plain text                                                   |
+| - entt_desc            | Translation of the content (field_body) | html                                                         |
+| - entt_lang_id         | Language ID of the translation          | int                                                          |
+| - entt_dateadded       |                                         | full date; yyyy-mm-dd hh:mm:ss                               |
+| domain                 |                                         | Array; possible values undrr, pw, mcr                        |
+| field_country          | Country ID                              | int                                                          |
+| field_organization     |                                         | Array                                                        |
+| field_region           |                                         | Array                                                        |
+| field_hazards          |                                         | Array                                                        |
+| field_themes           |                                         | Array                                                        |
+| field_related_links    |                                         | Array                                                        |
+| field_links            |                                         | Array                                                        |
 
 ## Educational material 
 
