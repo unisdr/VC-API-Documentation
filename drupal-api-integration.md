@@ -8,9 +8,11 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ## Registration
 
-### URL: /sso-unisdr/api/drupal/integration/add_drupal_id
+### URL: /sso-unisdr/api/drupal/integration/drupal_user_registration
 
-This endpoint will set the drupal_id of an account.
+```shell
+POST /sso-unisdr/api/drupal/integration/drupal_user_registration
+```
 
 ### Authentication:
 
@@ -20,10 +22,6 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * email string, value should be a valid email address
 * password string, the encrypted text must use bcrypt encryption, use the API endpoint on the general section to encrpyt the password
 * drupal_id integer, foreign key of Drupal user table (user.id), this a way for common login to associate the account information with drupal
-
-```shell
-POST /sso-unisdr/api/user/registration
-```
 
 ### Error response:
 
@@ -35,7 +33,7 @@ POST /sso-unisdr/api/user/registration
       "The password field is required.",
       "Password must contain at least one number and one uppercase and lowercase letter, and at least 12 characters.",
       "Do not use simple words or patterns for password.",
-      "The Contact ID is required."
+      "The drupal_id is required."
    ]
 }
 ```
