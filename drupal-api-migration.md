@@ -31,6 +31,13 @@ GET /sso-unisdr/public/api/drupal/migration/taxonomy_hazards
 ]
 ```
 
+### Field definition
+
+| Field      | Description | Type/Value |
+|------------|-------------|------------|
+| scat_id    | ID          | int        |
+| scat_title | Hazard name | plain text |
+
 
 ## Themes (taxonomy)
 
@@ -57,6 +64,9 @@ GET /sso-unisdr/public/api/drupal/migration/taxonomy_themes
    ...
 ]
 ```
+
+
+
 
 
 ## Language (taxonomy)
@@ -96,6 +106,15 @@ GET /sso-unisdr/drupal/migration/taxonomy_languages
    }
 ]
 ```
+
+### Field definition
+
+| Field     | Description | Type/Value |
+|-----------|-------------|------------|
+| lng_id    | ID          | int        |
+| lng_title | Language    | plain text |
+
+
 
 ## Image/thumbnail used by entry
 
