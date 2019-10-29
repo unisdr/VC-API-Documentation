@@ -5,6 +5,50 @@ Production URL: http://program.unisdr.org/sso-unisdr/
 Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 
+
+## Registration
+
+### URL: /sso-unisdr/api/drupal/integration/add_drupal_id
+
+This endpoint will set the drupal_id of an account.
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+### Form Post Parameters
+* email string, value should be a valid email address
+* password string, the encrypted text must use bcrypt encryption, use the API endpoint on the general section to encrpyt the password
+* drupal_id integer, foreign key of Drupal user table (user.id), this a way for common login to associate the account information with drupal
+
+```shell
+POST /sso-unisdr/api/user/registration
+```
+
+### Error response:
+
+```shell
+{
+   "status":400,
+   "error":[
+      "The email address field is required.",
+      "The password field is required.",
+      "Password must contain at least one number and one uppercase and lowercase letter, and at least 12 characters.",
+      "Do not use simple words or patterns for password.",
+      "The Contact ID is required."
+   ]
+}
+```
+
+### Success response:
+
+```shell
+{
+  "status": 200,
+  "error": []
+}
+```
+
 ## Update account drupal ID
 
 ### URL: /sso-unisdr/api/drupal/integration/add_drupal_id
