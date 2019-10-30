@@ -236,6 +236,7 @@ GET /sso-unisdr/api/drupal/integration/undrr_focalpoints?undrr_region_id=1
 ```shell
 [
    {
+      "focalpoint_id":287434,
       "ctry_id":153,
       "ctry_title":"Seychelles",
       "ctry_iso3_code":"SYC",
@@ -264,6 +265,7 @@ GET /sso-unisdr/api/drupal/integration/undrr_focalpoints?undrr_region_id=1
 
 | Field             | Description                    | Type/Value                                                       |
 |-------------------|--------------------------------|------------------------------------------------------------------|
+| focalpoint_id     | Focalpoint ID                  | int (primary key)                                                |
 | ctry_id           | Country ID                     | int                                                              |
 | ctry_title        | Country name                   | plain text                                                       |
 | ctry_iso3_code    | ISO3 code                      | plain text                                                       |
