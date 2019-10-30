@@ -8,10 +8,10 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ## Registration
 
-### URL: /sso-unisdr/api/drupal/integration/drupal_user_registration
+### URL: /sso-unisdr/api/user/drupal_user_registration
 
 ```shell
-POST /sso-unisdr/api/drupal/integration/drupal_user_registration
+POST /sso-unisdr/api/user/drupal_user_registration
 ```
 
 ### Authentication:
@@ -49,7 +49,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 
 ## Update account drupal ID
 
-### URL: /sso-unisdr/api/drupal/integration/add_drupal_id
+### URL: /sso-unisdr/api/user/add_drupal_id
 
 This endpoint will set the drupal_id of an account.
 
