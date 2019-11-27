@@ -962,12 +962,11 @@ GET /sso-unisdr/api/drupal/migration/educational_materials
 
 ### Field definition
 
-| Field                 | Description     | Type/Value                                                                                                                                                                                      |
-|-----------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ent_id                | Entry ID        | int (primary key)                                                                                                                                                                               |
-| field_title_original  | Title in original language        | plain text                                                                                                                                                                               |
-
-| edu_audience_subgroup | Target audience | plain text; possible value "Pre-school & kindergarten (<6 years), Primary school age (6-11 years), Secondary school age (12-18 years)" please note that Fanny documented the changes under "Field Summary" tab ROW 118 https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=147073088 |
+| Field                 | Description                | Type/Value                                                                                                                                                                                                                                                                                                         |
+|-----------------------|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ent_id                | Entry ID                   | int (primary key)                                                                                                                                                                                                                                                                                                  |
+| field_title_original  | Title in original language | plain text                                                                                                                                                                                                                                                                                                         |
+| edu_audience_subgroup | Target audience            | plain text; possible value "Pre-school & kindergarten (<6 years), Primary school age (6-11 years), Secondary school age (12-18 years)" please note that Fanny documented the changes under "Field Summary" tab ROW 118 https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=147073088 |
 
 
 ## Response Headers
