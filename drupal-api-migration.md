@@ -301,6 +301,7 @@ GET /sso-unisdr/api/drupal/migration/terminology
 [
    {
       "ent_id":468,
+      "current_url":["https://www.preventionweb.net/terminology/view/468"],
       "ent_dateadded":"2007-08-30 15:25:34",
       "field_title":"Building code",
       "field_user_comments":"",
@@ -361,6 +362,7 @@ GET /sso-unisdr/api/drupal/migration/vacancies
 [
    {
       "ent_id":592,
+      "current_url":["https://www.preventionweb.net/jobs/view/592", "https://www.unisdr.org/who-we-are/vacancies/592"],
       "field_title":"Disaster management delegate",
       "ent_dateadded":"2007-09-04 16:41:39",
       "ent_datemodified":"2007-09-19 12:30:56",
@@ -504,6 +506,7 @@ GET /sso-unisdr/api/drupal/migration/news
 [
    {
       "ent_id":5524,
+      "current_url":[],
       "field_title":"IPCC workshop on extreme events management accepted",
       "field_short_title":"",
       "ent_dateadded":"2008-11-11 12:09:13",
@@ -613,6 +616,7 @@ GET /sso-unisdr/api/drupal/migration/publications
 [
    {
       "ent_id":547,
+      "current_url":[],
       "field_title":"Gender perspective: working together for disaster risk reduction",
       "ent_dateadded":"2007-09-03 16:08:26",
       "ent_datemodified":"2019-10-16 14:35:49",
@@ -740,6 +744,7 @@ GET /sso-unisdr/api/drupal/migration/event_training
 [
    {
       "ent_id":43624,
+      "current_url":[],
       "field_title":"Resilience Action Planning: Implementing the Sendai Framework at the Local Level - Online course",
       "ent_dateadded":"2015-04-09 09:16:42",
       "ent_datemodified":"2018-10-08 20:55:09",
@@ -903,6 +908,7 @@ GET /sso-unisdr/api/drupal/migration/educational_materials
 [
    {
       "ent_id":3423,
+      "current_url":[],
       "field_title":"ABC desastres",
       "ent_dateadded":"2008-08-22 16:42:54",
       "ent_datemodified":"2008-10-16 11:20:52",
