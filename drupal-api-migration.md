@@ -432,7 +432,8 @@ GET /sso-unisdr/api/drupal/migration/vacancies
       "field_links":[
          {
             "label":"View application form",
-            "url":"https:\/\/www.preventionweb.net\/files\/1280_1284adpcapplicationform.doc"
+            "url":"https:\/\/www.preventionweb.net\/files\/1280_1284adpcapplicationform.doc",
+			"lng_id":1
          }
       ]
    },
@@ -518,9 +519,7 @@ GET /sso-unisdr/api/drupal/migration/news
       "isdr_nws_photo_credit":"",
       "nws_url":"",
       "nws_lang_id":1,
-      "domain":[
-         "pw"
-      ],
+      "domain":"www_undrr_org, www_preventionweb_net",
       "field_country":[
 
       ],
@@ -546,7 +545,8 @@ GET /sso-unisdr/api/drupal/migration/news
       "field_links":[
          {
             "label":"Proposal of Norway and ISDR System to IPCC",
-            "url":"https:\/\/www.preventionweb.net\/files\/5524_IPCCNorwayISDRsystemProposal.pdf"
+            "url":"https:\/\/www.preventionweb.net\/files\/5524_IPCCNorwayISDRsystemProposal.pdf",
+            "lng_id":1
          }
       ]
    },
@@ -626,9 +626,7 @@ GET /sso-unisdr/api/drupal/migration/publications
       "field_number_page":"54 p.",
       "field_year_of_publication":2007,
       "pub_type_id":"5",
-      "domain":[
-         "pw"
-      ],
+      "domain":"www_undrr_org",
       "field_country":[
          {
             "ctry_id":24,
@@ -700,7 +698,8 @@ GET /sso-unisdr/api/drupal/migration/publications
       "field_links":[
          {
             "label":"View full document",
-            "url":"https:\/\/www.preventionweb.net\/files\/547_gendergoodpractices.pdf"
+            "url":"https:\/\/www.preventionweb.net\/files\/547_gendergoodpractices.pdf",
+			"lng_id":1
          }
       ]
    },
@@ -770,10 +769,7 @@ GET /sso-unisdr/api/drupal/migration/event_training
             "entt_dateadded":"2017-02-08 09:09:55"
          }
       ],
-      "domain":[
-         "undrr",
-         "pw"
-      ],
+      "domain":"www_undrr_org",
       "field_country":[
 
       ],
@@ -817,11 +813,13 @@ GET /sso-unisdr/api/drupal/migration/event_training
       "field_links":[
          {
             "label":"Registration",
-            "url":"https:\/\/www.unitar.org\/event\/cart"
+            "url":"https:\/\/www.unitar.org\/event\/cart",
+			"lng_id":1
          },
          {
             "label":"Inscripci\u00f3n",
-            "url":"https:\/\/www.unitar.org\/event\/cart"
+            "url":"https:\/\/www.unitar.org\/event\/cart",
+			"lng_id":2
          }
       ]
    },
@@ -833,7 +831,7 @@ GET /sso-unisdr/api/drupal/migration/event_training
 
 | Field                  | Description                             | Type/Value                                                   |
 |------------------------|-----------------------------------------|--------------------------------------------------------------|
-| ent_id                 | Entry ID                                | int                                                          |
+| ent_id                 | Entry ID                                | int (primary key)                                            |
 | field_title            | Title of the entry                      | plain text                                                   |
 | ent_dateadded          | Date added                              | full date; yyyy-mm-dd hh:mm:ss                               |
 | ent_datemodified       | Date modified                           | full date; yyyy-mm-dd hh:mm:ss                               |
@@ -868,6 +866,9 @@ GET /sso-unisdr/api/drupal/migration/event_training
 | field_themes           |                                         | Array                                                        |
 | field_related_links    |                                         | Array                                                        |
 | field_links            |                                         | Array                                                        |
+| - label                | Label/text display of the link          | plain text                                                   |
+| - url                  | Target URL of the link                  | plain text                                                   |
+| - lng_id               | Language ID                             | int; see Language taxonomy for quivalent                     |
 
 ## Educational material 
 
@@ -916,11 +917,7 @@ GET /sso-unisdr/api/drupal/migration/educational_materials
       "field_title_original":"",
       "field_number_page":"",
       "field_year_of_publication":2007,
-      "edu_language":"4",
-      "domain":[
-         "undrr",
-         "pw"
-      ],
+      "domain":"www_undrr_org",
       "field_country":[
 
       ],
