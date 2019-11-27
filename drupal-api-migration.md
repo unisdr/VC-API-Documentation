@@ -958,7 +958,7 @@ GET /sso-unisdr/api/drupal/migration/educational_materials
 | Field                 | Description     | Type/Value                                                                                                                                                                                      |
 |-----------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ent_id                | Entry ID        | int (primary key)                                                                                                                                                                               |
-| edu_audience_subgroup | Target audience | plain text; please note that Fanny documented the amendment of this in the field definition ROW 118 https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=147073088 |
+| edu_audience_subgroup | Target audience | plain text; please note that Fanny documented the changes under "Field Summary" tab ROW 118 https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=147073088 |
 
 
 ## Response Headers
