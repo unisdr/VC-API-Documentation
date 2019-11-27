@@ -837,6 +837,7 @@ GET /sso-unisdr/api/drupal/migration/event_training
 | Field                  | Description                             | Type/Value                                                   |
 |------------------------|-----------------------------------------|--------------------------------------------------------------|
 | ent_id                 | Entry ID                                | int (primary key)                                            |
+| current_url            | URLs of the entry                       | Array of text                                                |
 | field_title            | Title of the entry                      | plain text                                                   |
 | ent_dateadded          | Date added                              | full date; yyyy-mm-dd hh:mm:ss                               |
 | ent_datemodified       | Date modified                           | full date; yyyy-mm-dd hh:mm:ss                               |
