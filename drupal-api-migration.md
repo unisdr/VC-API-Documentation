@@ -911,7 +911,7 @@ GET /sso-unisdr/api/drupal/migration/educational_materials
       "author_name":"Marla Petal",
       "field_body":"<p>La idea consiste en que estudiantes (ni&ntilde;os y j&oacute;venes) y tambi&eacute;n sus docentes- encendiendo computadoras y apretando teclas- vayan apropi&aacute;ndose de saberes, aportando as&iacute; herramientas y cambios de actitudes, capaces de construir un camino diferente.<br \/><br \/>\n<br \/><br \/>\n<span class=\"style2\">En esta secci&oacute;n encontrar&aacute;s toda la informaci&oacute;n que  necesites sobre Riesgos y Desastres Naturales. Para consultar, para utilizar en  el colegio y para informarte. Sabr&aacute;s qu&eacute; hacer en una situaci&oacute;n de riesgo y c&oacute;mo  resolver problemas.<\/span><span class=\"style12\"><br \/><br \/>\n<\/span><\/p>",
       "ent_contact_name":"",
-      "edu_audience_subgroup":"",
+      "edu_audience_subgroup":"Pre-school & kindergarten (<6 years)",
       "field_authors":"",
       "field_isbn":"",
       "field_title_original":"",
@@ -958,7 +958,7 @@ GET /sso-unisdr/api/drupal/migration/educational_materials
 | Field                 | Description     | Type/Value                                                                                                                                                                                      |
 |-----------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ent_id                | Entry ID        | int (primary key)                                                                                                                                                                               |
-| edu_audience_subgroup | Target audience | plain text; possible values "Pre-school & kindergarten (<6 years), Primary school age (6-11 years), Secondary school age (12-18 years)" please note that Fanny documented the changes under "Field Summary" tab ROW 118 https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=147073088 |
+| edu_audience_subgroup | Target audience | plain text; possible value "Pre-school & kindergarten (<6 years), Primary school age (6-11 years), Secondary school age (12-18 years)" please note that Fanny documented the changes under "Field Summary" tab ROW 118 https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=147073088 |
 
 
 ## Response Headers
