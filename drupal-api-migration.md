@@ -11,6 +11,15 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ## Collection - Open Tags (taxonomy)
 
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
 ### URL: /sso-unisdr/public/api/drupal/migration/open_tags
 
 ```shell
