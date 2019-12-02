@@ -298,8 +298,8 @@ GET /sso-unisdr/api/drupal/migration/resolutions
             "lng_id":1
          }
       ],
-	  "field_open_tags":[
-         
+      "field_open_tags":[
+
       ]
    },
    ...
@@ -475,8 +475,8 @@ GET /sso-unisdr/api/drupal/migration/vacancies
 			"lng_id":1
          }
       ],
-	  "field_open_tags":[
-         
+      "field_open_tags":[
+
       ]
    },
    ...
@@ -592,8 +592,8 @@ GET /sso-unisdr/api/drupal/migration/news
             "lng_id":1
          }
       ],
-	  "field_open_tags":[
-         
+      "field_open_tags":[
+
       ]
    },
    ...
@@ -749,8 +749,8 @@ GET /sso-unisdr/api/drupal/migration/publications
 			"lng_id":1
          }
       ],
-	  "field_open_tags":[
-         
+      "field_open_tags":[
+
       ]
    },
    ...
@@ -873,11 +873,11 @@ GET /sso-unisdr/api/drupal/migration/event_training
 			"lng_id":2
          }
       ],
-	  "field_open_tags":[
-		 {
+      "field_open_tags":[
+         {
 			"tag_id":1,
 			"tag_name":"campaign2010-2011"
-		 }  
+         }  
       ]
    },
    ...
@@ -1008,8 +1008,8 @@ GET /sso-unisdr/api/drupal/migration/educational_materials
       "field_links":[
 
       ],
-	  "field_open_tags":[
-         
+      "field_open_tags":[
+
       ]
    },
    ...
