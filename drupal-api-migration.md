@@ -5,68 +5,6 @@ Production URL: http://program.unisdr.org/sso-unisdr/
 Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 
-## Entries Attachments
-
-### URL: /sso-unisdr/public/api/drupal/migration/get_attachments
-
-```shell
-GET /sso-unisdr/public/api/drupal/migration/get_attachments
-```
-
-
-### JSON Response
-
-```shell
-[
-   {
-      "id":1,
-      "label":"View full document",
-      "lng_id":1,
-      "url":"https:\/\/www.preventionweb.net\/files\/554_8040.pdf"
-   },
-   ...
-]
-```
-
-### Field definition
-
-| Field      | Description   | Type/Value        |
-|------------|---------------|-------------------|
-| id         | ID            | int (primary key) |
-| label      | Label         | plain text        |
-| lng_id     | Language ID   | int               |
-| label      | URL           | plain text        |
-
-
-## Entries Related Links
-
-### URL: /sso-unisdr/public/api/drupal/migration/get_related_links
-
-```shell
-GET /sso-unisdr/public/api/drupal/migration/get_related_links
-```
-
-
-### JSON Response
-
-```shell
-[
-   {
-      "id":1,
-      "label":"View full document",
-      "url":"https:\/\/www.preventionweb.net\/"
-   },
-   ...
-]
-```
-
-### Field definition
-
-| Field      | Description   | Type/Value        |
-|------------|---------------|-------------------|
-| id         | ID            | int (primary key) |
-| label      | Label         | plain text        |
-| label      | URL           | plain text        |
 
 
 
@@ -213,6 +151,88 @@ GET /sso-unisdr/drupal/migration/taxonomy_languages
 | lng_id    | ID          | int        |
 | lng_title | Language    | plain text |
 
+
+
+## Entries Attachments
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+### URL: /sso-unisdr/public/api/drupal/migration/get_attachments
+
+```shell
+GET /sso-unisdr/public/api/drupal/migration/get_attachments
+```
+
+
+### JSON Response
+
+```shell
+[
+   {
+      "id":1,
+      "label":"View full document",
+      "lng_id":1,
+      "url":"https:\/\/www.preventionweb.net\/files\/554_8040.pdf"
+   },
+   ...
+]
+```
+
+### Field definition
+
+| Field      | Description   | Type/Value        |
+|------------|---------------|-------------------|
+| id         | ID            | int (primary key) |
+| label      | Label         | plain text        |
+| lng_id     | Language ID   | int               |
+| label      | URL           | plain text        |
+
+
+## Entries Related Links
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+### URL: /sso-unisdr/public/api/drupal/migration/get_related_links
+
+```shell
+GET /sso-unisdr/public/api/drupal/migration/get_related_links
+```
+
+
+### JSON Response
+
+```shell
+[
+   {
+      "id":1,
+      "label":"View full document",
+      "url":"https:\/\/www.preventionweb.net\/"
+   },
+   ...
+]
+```
+
+### Field definition
+
+| Field      | Description   | Type/Value        |
+|------------|---------------|-------------------|
+| id         | ID            | int (primary key) |
+| label      | Label         | plain text        |
+| label      | URL           | plain text        |
 
 
 ## Image/thumbnail used by entry
