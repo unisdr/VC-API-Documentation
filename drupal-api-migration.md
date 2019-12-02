@@ -6,6 +6,40 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 
 
+## Collection - Open Tags (taxonomy)
+
+### URL: /sso-unisdr/public/api/drupal/migration/open_tags
+
+```shell
+GET /sso-unisdr/public/api/drupal/migration/open_tags
+```
+
+
+### JSON Response
+
+```shell
+[
+   {
+      "tag_id":1,
+      "tag_name":"campaign2010-2011"
+   },
+   {
+      "tag_id":2,
+      "tag_name":"canarias2014"
+   },
+   ...
+]
+```
+
+### Field definition
+
+| Field      | Description | Type/Value |
+|------------|-------------|------------|
+| tag_id     | ID          | int        |
+| tag_name   | Tag name    | plain text |
+
+
+
 ## Hazards (taxonomy)
 
 ### URL: /sso-unisdr/public/api/drupal/migration/taxonomy_hazards
@@ -263,6 +297,9 @@ GET /sso-unisdr/api/drupal/migration/resolutions
             "url":"https:\/\/www.preventionweb.net\/files\/resolutions\/110225DRR.pdf",
             "lng_id":1
          }
+      ],
+	  "field_open_tags":[
+         
       ]
    },
    ...
@@ -437,6 +474,9 @@ GET /sso-unisdr/api/drupal/migration/vacancies
             "url":"https:\/\/www.preventionweb.net\/files\/1280_1284adpcapplicationform.doc",
 			"lng_id":1
          }
+      ],
+	  "field_open_tags":[
+         
       ]
    },
    ...
@@ -551,6 +591,9 @@ GET /sso-unisdr/api/drupal/migration/news
             "url":"https:\/\/www.preventionweb.net\/files\/5524_IPCCNorwayISDRsystemProposal.pdf",
             "lng_id":1
          }
+      ],
+	  "field_open_tags":[
+         
       ]
    },
    ...
@@ -705,6 +748,9 @@ GET /sso-unisdr/api/drupal/migration/publications
             "url":"https:\/\/www.preventionweb.net\/files\/547_gendergoodpractices.pdf",
 			"lng_id":1
          }
+      ],
+	  "field_open_tags":[
+         
       ]
    },
    ...
@@ -826,6 +872,12 @@ GET /sso-unisdr/api/drupal/migration/event_training
             "url":"https:\/\/www.unitar.org\/event\/cart",
 			"lng_id":2
          }
+      ],
+	  "field_open_tags":[
+		 {
+			"tag_id":1,
+			"tag_name":"campaign2010-2011"
+		 }  
       ]
    },
    ...
@@ -875,6 +927,7 @@ GET /sso-unisdr/api/drupal/migration/event_training
 | - label                | Label/text display of the link          | plain text                                                   |
 | - url                  | Target URL of the link                  | plain text                                                   |
 | - lng_id               | Language ID                             | int; see Language taxonomy for quivalent                     |
+| field_open_tags    	 |                                         | Array                                                        |
 
 ## Educational material 
 
@@ -954,6 +1007,9 @@ GET /sso-unisdr/api/drupal/migration/educational_materials
       ],
       "field_links":[
 
+      ],
+	  "field_open_tags":[
+         
       ]
    },
    ...
