@@ -652,6 +652,7 @@ GET /sso-unisdr/api/drupal/migration/news
       ],
       "field_links":[
          {
+	    "id":1212,
             "label":"Proposal of Norway and ISDR System to IPCC",
             "url":"https:\/\/www.preventionweb.net\/files\/5524_IPCCNorwayISDRsystemProposal.pdf",
             "lng_id":1
@@ -809,9 +810,10 @@ GET /sso-unisdr/api/drupal/migration/publications
       ],
       "field_links":[
          {
+	    "id":1212,
             "label":"View full document",
             "url":"https:\/\/www.preventionweb.net\/files\/547_gendergoodpractices.pdf",
-			"lng_id":1
+	    "lng_id":1
          }
       ],
       "field_open_tags":[
@@ -922,20 +924,23 @@ GET /sso-unisdr/api/drupal/migration/event_training
       ],
       "field_related_links":[
          {
+	    "id":1212,
             "label":"More about the Sendai Framework",
             "url":"https:\/\/www.preventionweb.net\/drr-framework\/sendai-framework"
          }
       ],
       "field_links":[
          {
+	    "id":1213,
             "label":"Registration",
             "url":"https:\/\/www.unitar.org\/event\/cart",
-			"lng_id":1
+	    "lng_id":1
          },
          {
+	    "id":1216,
             "label":"Inscripci\u00f3n",
             "url":"https:\/\/www.unitar.org\/event\/cart",
-			"lng_id":2
+	    "lng_id":2
          }
       ],
       "field_open_tags":[
@@ -988,7 +993,11 @@ GET /sso-unisdr/api/drupal/migration/event_training
 | field_hazards          |                                         | Array                                                        |
 | field_themes           |                                         | Array                                                        |
 | field_related_links    |                                         | Array                                                        |
+| - id                   | Primary key of related link             | int                                                          |
+| - label                | Label/text display of the link          | plain text                                                   |
+| - url                  | Target URL of the link                  | plain text                                                   |
 | field_links            |                                         | Array                                                        |
+| - id                   | Primary key of attachment               | int                                                          |
 | - label                | Label/text display of the link          | plain text                                                   |
 | - url                  | Target URL of the link                  | plain text                                                   |
 | - lng_id               | Language ID                             | int; see Language taxonomy for quivalent                     |
