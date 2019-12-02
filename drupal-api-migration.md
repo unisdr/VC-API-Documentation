@@ -1006,7 +1006,7 @@ GET /sso-unisdr/api/drupal/migration/event_training
 | - entt_desc            | Translation of the content (field_body) | html                                                         |
 | - entt_lang_id         | Language ID of the translation          | int                                                          |
 | - entt_dateadded       |                                         | full date; yyyy-mm-dd hh:mm:ss                               |
-| domain                 |                                         | Array; possible values undrr, pw, mcr                        |
+| domain                 |                                         | plain text, comma delimited; www_undrr_org, www_preventionweb_net, resilentcities_undrr_org |
 | field_country          | Country ID                              | int                                                          |
 | field_organization     |                                         | Array                                                        |
 | field_region           |                                         | Array                                                        |
