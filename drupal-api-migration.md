@@ -875,8 +875,8 @@ GET /sso-unisdr/api/drupal/migration/event_training
       ],
       "field_open_tags":[
          {
-			"tag_id":1,
-			"tag_name":"campaign2010-2011"
+            "tag_id":1,
+            "tag_name":"campaign2010-2011"
          }  
       ]
    },
