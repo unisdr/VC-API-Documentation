@@ -188,6 +188,8 @@ GET /sso-unisdr/api/drupal/integration/regions_countries
 
 | Field            | Description                    | Type/Value      |
 |------------------|--------------------------------|-----------------|
+| focalpoint_id    | Focalpoint ID                  | int (primary key) |
+| domain           | Domain                         | plain text      |
 | ctry_id          | Country ID                     | int             |
 | ctry_title       | Country name                   | plain text      |
 | ctry_iso3_code   | ISO3 code                      | plain text      |
