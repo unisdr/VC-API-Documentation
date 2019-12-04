@@ -188,19 +188,19 @@ GET /sso-unisdr/api/drupal/integration/regions_countries
 
 | Field            | Description                    | Type/Value      |
 |------------------|--------------------------------|-----------------|
-| focalpoint_id    | Focalpoint ID                  | int (primary key) |
+| focalpoint_id    | Focalpoint ID                  | int (pk)        |
 | domain           | Domain                         | plain text      |
-| ctry_id          | Country ID                     | int             |
+| ctry_id          | Country ID                     | int (fk)        |
 | ctry_title       | Country name                   | plain text      |
 | ctry_iso3_code   | ISO3 code                      | plain text      |
 | ctry_un_code     | UN Country ID                  | plain text      |
-| cont_id          | PreventionWeb region ID        | int             |
+| cont_id          | PreventionWeb region ID        | int (fk)        |
 | cont_title       | PreventionWeb region name      | plain text      |
 | overview_map_url | Overview Map URL               | plain text; URL |
 | flag_url         | Flag URL                       | plain text; URL |
 | pw_country_url   | PreventionWeb country page URL | plain text; URL |
 | undrr_region     | Collection                     | Array           |
-| - isdr_reg_id    | UNDRR region ID                | int             |
+| - isdr_reg_id    | UNDRR region ID                | int (fk)        |
 | - isdr_reg_title | UNDRR region name              | plain text      |
 
 
@@ -268,11 +268,11 @@ GET /sso-unisdr/api/drupal/integration/undrr_focalpoints?undrr_region_id=1
 | Field             | Description                    | Type/Value                                                       |
 |-------------------|--------------------------------|------------------------------------------------------------------|
 | focalpoint_id     | Focalpoint ID                  | int (primary key)                                                |
-| ctry_id           | Country ID                     | int                                                              |
+| ctry_id           | Country ID                     | int  (fk)                                                        |
 | ctry_title        | Country name                   | plain text                                                       |
 | ctry_iso3_code    | ISO3 code                      | plain text                                                       |
 | fp_type           | Focal point type               | plain text; possible values: Sendai FW (official), NP (official) |
-| org_id            | Organization ID                | int                                                              |
+| org_id            | Organization ID                | int  (fk)                                                        |
 | org_title_long    | Organization name              | plain text                                                       |
 | org_title_acronym | Organization acronym           | plain text                                                       |
 | org_url           | Organization website URL       | plain text                                                       |
@@ -280,7 +280,7 @@ GET /sso-unisdr/api/drupal/integration/undrr_focalpoints?undrr_region_id=1
 | flag_url          | Flag URL                       | plain text; URL                                                  |
 | pw_country_url    | PreventionWeb country page URL | plain text                                                       |
 | undrr_region      | Collection                     | Array                                                            |
-| - isdr_reg_id     | UNDRR region ID                | int                                                              |
+| - isdr_reg_id     | UNDRR region ID                | int  (fk)                                                        |
 | - isdr_reg_title  | UNDRR region name              | plain text                                                       |
 
 
