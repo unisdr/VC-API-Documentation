@@ -432,7 +432,18 @@ GET /sso-unisdr/api/drupal/migration/terminology
 [
    {
       "ent_id":468,
-      "current_url":["https://www.preventionweb.net/terminology/view/468"],
+      "current_url": [
+         {
+            "id": "99053481",
+            "ent_id": 468,
+            "url": "https:\/\/www.unisdr.org\/archive\/5348"
+         },
+	 {
+            "id": "99053482",
+            "ent_id": 468,
+            "url": "https:\/\/www.unisdr.org\/archive\/5348"
+         }
+      ],
       "ent_dateadded":"2007-08-30 15:25:34",
       "field_title":"Building code",
       "field_user_comments":"",
@@ -886,7 +897,18 @@ GET /sso-unisdr/api/drupal/migration/event_training
 [
    {
       "ent_id":43624,
-      "current_url":[],
+      "current_url": [
+         {
+            "id": "99053481",
+            "ent_id": 43624,
+            "url": "https:\/\/www.unisdr.org\/archive\/5348"
+         },
+	 {
+            "id": "99053482",
+            "ent_id": 43624,
+            "url": "https:\/\/www.unisdr.org\/archive\/5348"
+         }
+      ],
       "field_title":"Resilience Action Planning: Implementing the Sendai Framework at the Local Level - Online course",
       "ent_dateadded":"2015-04-09 09:16:42",
       "ent_datemodified":"2018-10-08 20:55:09",
@@ -988,7 +1010,10 @@ GET /sso-unisdr/api/drupal/migration/event_training
 | Field                  | Description                             | Type/Value                                                   |
 |------------------------|-----------------------------------------|--------------------------------------------------------------|
 | ent_id                 | Entry ID                                | int (primary key)                                            |
-| current_url            | URLs of the entry                       | Array of text                                                |
+| current_url            | URLs of the entry                       | Array                                                        |
+| - id                   | Unique ID                               | int                                                          |
+| - ent_id               | Foreign key to entry_id                 | int (fk)                                                     |
+| - url                  | URL                                     | plain text                                                   |
 | field_title            | Title of the entry                      | plain text                                                   |
 | ent_dateadded          | Date added                              | full date; yyyy-mm-dd hh:mm:ss                               |
 | ent_datemodified       | Date modified                           | full date; yyyy-mm-dd hh:mm:ss                               |
