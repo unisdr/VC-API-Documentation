@@ -1030,18 +1030,18 @@ GET /sso-unisdr/api/drupal/migration/event_training
 | field_event_country    | Country ID                              | int; see country integration API for country name equivalent |
 | field_event_city       |                                         | plain text                                                   |
 | field_venue            |                                         | plain text                                                   |
-| ent_lang_id            | Language ID of the entry                | int                                                          |
+| ent_lang_id            | Language ID of the entry                | int (fk)                                                     |
 | field_twitter_hashtag  |                                         | plain text                                                   |
 | trn_type_id            |                                         | int; possible value 1 or 3; 1 = Event, 3 = training          |
 | trn_type               |                                         | plain text; possible value Event or Training                 |
 | translation            | Collection                              | Array                                                        |
-| - entt_ent_id          | foreign key to entry_id                 | int                                                          |
+| - entt_ent_id          | foreign key to entry_id                 | int (fk)                                                     |
 | - entt_title           | Translation of title (field_title)      | plain text                                                   |
 | - entt_desc            | Translation of the content (field_body) | html                                                         |
-| - entt_lang_id         | Language ID of the translation          | int                                                          |
+| - entt_lang_id         | Language ID of the translation          | int (fk)                                                     |
 | - entt_dateadded       |                                         | full date; yyyy-mm-dd hh:mm:ss                               |
 | domain                 |                                         | plain text, comma delimited; www_undrr_org, www_preventionweb_net, resilentcities_undrr_org |
-| field_country          | Country ID                              | int                                                          |
+| field_country          | Country ID                              | int (fk)                                                     |
 | field_organization     |                                         | Array                                                        |
 | field_region           |                                         | Array                                                        |
 | field_hazards          |                                         | Array                                                        |
@@ -1054,7 +1054,7 @@ GET /sso-unisdr/api/drupal/migration/event_training
 | - id                   | Primary key of attachment               | int                                                          |
 | - label                | Label/text display of the link          | plain text                                                   |
 | - url                  | Target URL of the link                  | plain text                                                   |
-| - lng_id               | Language ID                             | int; see Language taxonomy for quivalent                     |
+| - lng_id               | Language ID (fk)                        | int; see Language taxonomy for quivalent (fk)        |
 | field_open_tags    	 |                                         | Array                                                        |
 
 ## Educational material 
