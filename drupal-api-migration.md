@@ -1153,6 +1153,60 @@ GET /sso-unisdr/api/drupal/migration/educational_materials
 | edu_audience_subgroup | Target audience            | plain text; possible value "Pre-school & kindergarten (<6 years), Primary school age (6-11 years), Secondary school age (12-18 years)" please note that Fanny documented the changes under "Field Summary" tab ROW 118 https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=147073088 |
 
 
+
+
+## Redirect 
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/drupal/migration/redirect
+
+```shell
+GET /sso-unisdr/api/drupal/migration/redirect
+```
+
+### JSON Response
+
+```shell
+[
+  {
+    "ent_id": 34133,
+    "ent_sec_id": 1,
+    "migration_origin": "vacancies",
+    "id": "1341332",
+    "url": "https:\/\/www.unisdr.org\/who-we-are\/vacancies\/34133"
+  },
+  {
+    "ent_id": 34146,
+    "ent_sec_id": 1,
+    "migration_origin": "vacancies",
+    "id": "1341461",
+    "url": "https:\/\/www.preventionweb.net\/jobs\/view\/34146"
+  },
+   ...
+]
+```
+
+### Field definition
+
+| Field                 | Description                | Type/Value              |
+|-----------------------|----------------------------|-------------------------|
+| ent_id                | Entry ID                   | int (primary key)       |
+| id                    | Primary key                | int (fk)                |
+
+
+
+
+
 ## Response Headers
 
 * X-Total-Records integer
