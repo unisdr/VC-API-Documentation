@@ -1200,9 +1200,9 @@ GET /sso-unisdr/api/drupal/migration/redirect
 
 | Field                 | Description                | Type/Value              |
 |-----------------------|----------------------------|-------------------------|
-| ent_id                | Entry ID                   | int (primary key)       |
-| id                    | Primary key                | int (fk)                |
-
+| id                    | Primary key                | int (primary key)       |
+| ent_id                | Entry ID                   | int (fk)                |
+| url                   | Current URL of entry       | plain text              |
 
 
 
