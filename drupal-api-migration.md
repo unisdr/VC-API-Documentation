@@ -590,7 +590,7 @@ GET /sso-unisdr/api/drupal/migration/vacancies
 
 ### Field definition
 
-todo
+See events endpoint for details.
 
 
 
@@ -651,6 +651,7 @@ GET /sso-unisdr/api/drupal/migration/news
 [
    {
       "ent_id":5524,
+      "field_image_id": "5524",
       "current_url":[],
       "field_title":"IPCC workshop on extreme events management accepted",
       "field_short_title":"",
@@ -705,6 +706,15 @@ GET /sso-unisdr/api/drupal/migration/news
    ...
 ]
 ```
+
+### Field definition
+
+| Field                  | Description                             | Type/Value                                                   |
+|------------------------|-----------------------------------------|--------------------------------------------------------------|
+| field_image_id         | Image ID                                | int (fk), linked to images endpoint                          |
+| field_news_type        | News type ID                            | int (fk), linked to news type endpoint                       |
+
+
 
 ## Publication type (taxonomy)
 
@@ -765,6 +775,7 @@ GET /sso-unisdr/api/drupal/migration/publications
 [
    {
       "ent_id":547,
+      "field_image_id": "547",
       "current_url":[],
       "field_title":"Gender perspective: working together for disaster risk reduction",
       "ent_dateadded":"2007-09-03 16:08:26",
@@ -863,6 +874,15 @@ GET /sso-unisdr/api/drupal/migration/publications
    ...
 ]
 ```
+
+### Field definition
+
+| Field                  | Description                             | Type/Value                                                   |
+|------------------------|-----------------------------------------|--------------------------------------------------------------|
+| field_image_id         | Image ID                                | int (fk), linked to images endpoint                          |
+| pub_type_id            | Publication type ID                     | int (fk), linked to publication type endpoint                |
+
+
 
 ## Event & Training
 
@@ -1090,6 +1110,7 @@ GET /sso-unisdr/api/drupal/migration/educational_materials
 [
    {
       "ent_id":3423,
+      "field_image_id": "3423",
       "current_url":[],
       "field_title":"ABC desastres",
       "ent_dateadded":"2008-08-22 16:42:54",
