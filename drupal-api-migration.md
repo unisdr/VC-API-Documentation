@@ -504,7 +504,7 @@ GET /sso-unisdr/api/drupal/migration/vacancies
 [
    {
       "ent_id":592,
-      "current_url":["https://www.preventionweb.net/jobs/view/592", "https://www.unisdr.org/who-we-are/vacancies/592"],
+      "current_url":[],
       "field_title":"Disaster management delegate",
       "ent_dateadded":"2007-09-04 16:41:39",
       "ent_datemodified":"2007-09-19 12:30:56",
