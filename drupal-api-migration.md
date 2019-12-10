@@ -1178,6 +1178,8 @@ GET /sso-unisdr/api/drupal/migration/educational_materials
 
 ## Redirect 
 
+Contains all the current URLs of entries in the corporate website.
+
 ### Authentication:
 
 oAuth2 client credentials, please refer to other documentation how to get the client access token.
@@ -1222,6 +1224,7 @@ GET /sso-unisdr/api/drupal/migration/redirect
 | Field                 | Description                | Type/Value              |
 |-----------------------|----------------------------|-------------------------|
 | id                    | Primary key                | int (primary key)       |
+| ent_sec_id            | Section ID (internal use)  | int (fk)                |
 | ent_id                | Entry ID                   | int (fk)                |
 | url                   | Current URL of entry       | plain text              |
 
