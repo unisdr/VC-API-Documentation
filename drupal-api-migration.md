@@ -387,7 +387,8 @@ GET /sso-unisdr/api/drupal/migration/resolutions
       "author_name": "Leoj Ito",
       "field_links":[
          {
-            "label":"Download in English",
+            "id":12345,
+	    "label":"Download in English",
             "url":"https:\/\/www.preventionweb.net\/files\/resolutions\/110225DRR.pdf",
             "lng_id":1
          }
@@ -575,7 +576,8 @@ GET /sso-unisdr/api/drupal/migration/vacancies
       ],
       "field_links":[
          {
-            "label":"View application form",
+            "id":12345,
+	    "label":"View application form",
             "url":"https:\/\/www.preventionweb.net\/files\/1280_1284adpcapplicationform.doc",
 			"lng_id":1
          }
