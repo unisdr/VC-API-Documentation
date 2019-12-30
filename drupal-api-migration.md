@@ -20,10 +20,10 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * Accept string, value "application/json"
 * Authorization string, value "Bearer [Client: ACCESS TOKEN]"
 
-### URL: /sso-unisdr/public/api/drupal/migration/open_tags
+### URL: /sso-unisdr/api/drupal/migration/open_tags
 
 ```shell
-GET /sso-unisdr/public/api/drupal/migration/open_tags
+GET /sso-unisdr/api/drupal/migration/open_tags
 ```
 
 
@@ -54,10 +54,10 @@ GET /sso-unisdr/public/api/drupal/migration/open_tags
 
 ## Hazards (taxonomy)
 
-### URL: /sso-unisdr/public/api/drupal/migration/taxonomy_hazards
+### URL: /sso-unisdr/api/drupal/migration/taxonomy_hazards
 
 ```shell
-GET /sso-unisdr/public/api/drupal/migration/taxonomy_hazards
+GET /sso-unisdr/api/drupal/migration/taxonomy_hazards
 ```
 
 
@@ -88,10 +88,10 @@ GET /sso-unisdr/public/api/drupal/migration/taxonomy_hazards
 ## Themes (taxonomy)
 
 
-### URL: /sso-unisdr/public/api/drupal/migration/taxonomy_themes
+### URL: /sso-unisdr/api/drupal/migration/taxonomy_themes
 
 ```shell
-GET /sso-unisdr/public/api/drupal/migration/taxonomy_themes
+GET /sso-unisdr/api/drupal/migration/taxonomy_themes
 ```
 
 
@@ -173,10 +173,10 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * Accept string, value "application/json"
 * Authorization string, value "Bearer [Client: ACCESS TOKEN]"
 
-### URL: /sso-unisdr/public/api/drupal/migration/get_attachments
+### URL: /sso-unisdr/api/drupal/migration/get_attachments
 
 ```shell
-GET /sso-unisdr/public/api/drupal/migration/get_attachments
+GET /sso-unisdr/api/drupal/migration/get_attachments
 ```
 
 
@@ -215,10 +215,10 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * Accept string, value "application/json"
 * Authorization string, value "Bearer [Client: ACCESS TOKEN]"
 
-### URL: /sso-unisdr/public/api/drupal/migration/get_related_links
+### URL: /sso-unisdr/api/drupal/migration/get_related_links
 
 ```shell
-GET /sso-unisdr/public/api/drupal/migration/get_related_links
+GET /sso-unisdr/api/drupal/migration/get_related_links
 ```
 
 
