@@ -160,6 +160,7 @@ GET /sso-unisdr/api/drupal/integration/regions_countries
    {
       "ctry_id":60,
       "ctry_title":"Fiji",
+      "ctry_title_sp":"Fiji",
       "ctry_iso3_code":"FJI",
       "ctry_un_code":"242",
       "cont_id":5,
@@ -192,6 +193,7 @@ GET /sso-unisdr/api/drupal/integration/regions_countries
 | domain           | Domain                         | plain text      |
 | ctry_id          | Country ID                     | int (fk)        |
 | ctry_title       | Country name                   | plain text      |
+| ctry_title_sp    | Country name in Spanish        | plain text      |
 | ctry_iso3_code   | ISO3 code                      | plain text      |
 | ctry_un_code     | UN Country ID                  | plain text      |
 | cont_id          | PreventionWeb region ID        | int (fk)        |
