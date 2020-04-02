@@ -638,3 +638,49 @@ Query String Parameter:
 ```shell
 GET /sso-unisdr/logout?redirect_uri=https%3A%2F%2Fvc-dev.eac-bkk.org%2Fauth%2Flogout
 ```
+
+
+## Password Validation 
+
+Checks the password if it is valid based on the dictionaries and REGEX
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/drupal/migration/check_password
+
+```shell
+GET /sso-unisdr/api/drupal/migration/check_password
+```
+
+### JSON Response
+
+```shell
+[
+  {
+    "status": 200,
+    "success": true,
+    "password_encrypted": "$2y$10$v2kyiP3yIPIUz56GJkV4pedGi8X5lqpAJR6YlICSxTAHRe3QzOKPy",
+    "error": ["The password must contain at least one number, one uppercase and lowercase letter, and at least 12 characters."]
+  }
+]
+```
+
+### Field definition
+
+| Field                 | Description                | Type/Value              |
+|-----------------------|----------------------------|-------------------------|
+| status                | Status code of request     | int 				       |
+| success            	| True if valid else false   | bool (true|false)       |
+| password_encrypted    | The encrypted password     | plain text              |
+| error    				| Error message     		 | plain text              |
+
+
