@@ -216,16 +216,15 @@ GET /sso-unisdr/api/drupal/migration/taxonomy_hazards
 
 
 
+
+
+
 # Content Type
 
 CONDITION: Pre-filtered by content publication date >= 2020 and theme = private sector
 
 
 ## Documents and publications
-
-### Important
-
-* Publication type (pub_type_id) 1,4,5,6 include to PreventionWeb domain.
 
 ### References
 
