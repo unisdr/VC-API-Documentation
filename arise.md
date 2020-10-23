@@ -178,3 +178,37 @@ GET /sso-unisdr/drupal/migration/taxonomy_languages
 | lng_id    | ID          | int        |
 | lng_title | Language    | plain text |
 
+
+
+## Hazards (taxonomy)
+
+### URL: /sso-unisdr/api/drupal/migration/taxonomy_hazards
+
+```shell
+GET /sso-unisdr/api/drupal/migration/taxonomy_hazards
+```
+
+
+### JSON Response
+
+```shell
+[
+   {
+      "scat_id":67,
+      "scat_title":"Avalanche"
+   },
+   {
+      "scat_id":56,
+      "scat_title":"Cold Wave"
+   },
+   ...
+]
+```
+
+### Field definition
+
+| Field      | Description | Type/Value |
+|------------|-------------|------------|
+| scat_id    | ID          | int        |
+| scat_title | Hazard name | plain text |
+
