@@ -100,3 +100,81 @@ GET /sso-unisdr/api/drupal/integration/regions_countries
 | undrr_region     | Collection                     | Array           |
 | - isdr_reg_id    | UNDRR region ID                | int (fk)        |
 | - isdr_reg_title | UNDRR region name              | plain text      |
+
+
+
+## Themes (taxonomy)
+
+
+### URL: /sso-unisdr/api/drupal/migration/taxonomy_themes
+
+```shell
+GET /sso-unisdr/api/drupal/migration/taxonomy_themes
+```
+
+
+### JSON Response
+
+```shell
+[
+   {
+      "scat_id":41,
+      "scat_title":"Advocacy & Media"
+   },
+   {
+      "scat_id":31,
+      "scat_title":"Capacity Development"
+   },
+   ...
+]
+```
+
+
+
+
+
+## Language (taxonomy)
+
+### URL: /sso-unisdr/drupal/migration/taxonomy_languages
+
+```shell
+GET /sso-unisdr/drupal/migration/taxonomy_languages
+```
+### JSON Response
+
+```shell
+[
+   {
+      "lng_id":6,
+      "lng_title":"Arabic"
+   },
+   {
+      "lng_id":5,
+      "lng_title":"Chinese"
+   },
+   {
+      "lng_id":1,
+      "lng_title":"English"
+   },
+   {
+      "lng_id":2,
+      "lng_title":"French"
+   },
+   {
+      "lng_id":8,
+      "lng_title":"Russian"
+   },
+   {
+      "lng_id":4,
+      "lng_title":"Spanish"
+   }
+]
+```
+
+### Field definition
+
+| Field     | Description | Type/Value |
+|-----------|-------------|------------|
+| lng_id    | ID          | int        |
+| lng_title | Language    | plain text |
+
