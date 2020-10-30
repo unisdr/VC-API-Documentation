@@ -405,7 +405,7 @@ GET /sso-unisdr/api/arise/integration/news
 
 
 
-## News
+## Events (Meeting and Conferences AND Training)
 
 ### Authentication:
 
@@ -418,10 +418,10 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * Authorization string, value "Bearer [Client: ACCESS TOKEN]"
 
 
-### URL: /sso-unisdr/api/arise/integration/news
+### URL: /sso-unisdr/api/arise/integration/event_training
 
 ```shell
-GET /sso-unisdr/api/arise/integration/news
+GET /sso-unisdr/api/arise/integration/event_training
 ```
 
 ### JSON Response
