@@ -1,4 +1,4 @@
-OpenAPI version 3 documentation is work in progress.
+OpenAPI version 3 documentation is work in progress https://github.com/unisdr/VC-API-Documentation/blob/master/arise.json.
 
 # Taxonomy
 
