@@ -315,4 +315,91 @@ GET /sso-unisdr/api/arise/integration/publications
 | Field                  | Description                             | Type/Value                                                   |
 |------------------------|-----------------------------------------|--------------------------------------------------------------|
 | field_image_id         | Image ID                                | int (fk), linked to images endpoint                          |
-| pub_type_id            | Publication type ID                     | int (fk), linked to publication type endpoint                |
+
+
+
+## News
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/arise/integration/news
+
+```shell
+GET /sso-unisdr/api/arise/integration/news
+```
+
+### JSON Response
+
+```shell
+[
+ {
+    "ent_id": 43133,
+    "ent_sec_id": 2,
+    "field_title": "As ministerial forum opens at Sendai Conference, focus turns to reconstruction after disasters, increased international cooperation in post-2015 framework",
+    "field_short_title": "",
+    "ent_dateadded": "2015-03-15 12:09:50",
+    "ent_datemodified": "2015-03-16 08:11:11",
+    "field_body_trimmed": "In speaking of both cooperation and building back better, participants stressed the need for a forward-looking perspective to build now the kind of resiliency that would be needed in the future, particularly given the knowledge of the increased severity of certain crises due to climate change and other ...",
+    "field_release_date": "2015-03-15",
+    "ent_lang_id": 1,
+    "current_url": [
+      {
+        "id": "2431331",
+        "ent_id": 43133,
+        "url": "https:\/\/www.preventionweb.net\/news\/view\/43133"
+      }
+    ],
+    "field_country": [
+      {
+        "ctry_id": 87,
+        "ctry_iso3_code": "JPN"
+      }
+    ],
+    "field_organization": [
+      {
+        "org_id": 6289,
+        "org_title_long": "United Nations Department of Public Information",
+        "org_title_acronym": "UN-DPI"
+      }
+    ],
+    "field_region": [
+      {
+        "cont_id": 4
+      }
+    ],
+    "field_hazards": [
+      {
+        "scat_id": 143
+      }
+    ],
+    "field_themes": [
+      {
+        "scat_id": 42
+      },
+      {
+        "scat_id": 104
+      },
+      {
+        "scat_id": 106
+      },
+      {
+        "scat_id": 108
+      },
+      {
+        "scat_id": 653
+      }
+    ]
+  },
+   ...
+]
+```
+
