@@ -527,7 +527,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 
 ### Query string parameter:
 
-* ids string, value [123 OR 123,456] field_image_id of the content
+* ids string, value [123 OR 123,456] field_image_id of the content (optional)
 
 ### URL: /sso-unisdr/api/arise/integration/images
 
