@@ -310,12 +310,6 @@ GET /sso-unisdr/api/arise/integration/publications
 ]
 ```
 
-### Field definition
-
-| Field                  | Description                             | Type/Value                                                   |
-|------------------------|-----------------------------------------|--------------------------------------------------------------|
-| field_image_id         | Image ID                                | int (fk), linked to images endpoint                          |
-
 
 
 ## News
@@ -345,7 +339,6 @@ GET /sso-unisdr/api/arise/integration/news
     "ent_id": 43133,
     "ent_sec_id": 2,
     "field_title": "As ministerial forum opens at Sendai Conference, focus turns to reconstruction after disasters, increased international cooperation in post-2015 framework",
-    "field_short_title": "",
     "ent_dateadded": "2015-03-15 12:09:50",
     "ent_datemodified": "2015-03-16 08:11:11",
     "field_body_trimmed": "In speaking of both cooperation and building back better, participants stressed the need for a forward-looking perspective to build now the kind of resiliency that would be needed in the future, particularly given the knowledge of the increased severity of certain crises due to climate change and other ...",
@@ -403,3 +396,8 @@ GET /sso-unisdr/api/arise/integration/news
 ]
 ```
 
+### Field definition
+
+| Field                  | Description                             | Type/Value                                                   |
+|------------------------|-----------------------------------------|--------------------------------------------------------------|
+| field_release_date     | News release date                       | date (yyyy-mm-dd)                                            |
