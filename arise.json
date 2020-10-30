@@ -1,0 +1,438 @@
+{
+  "openapi": "3.0.0",
+  "servers": [
+    {
+      "url": "https://program.unisdr.org/sso-unisdr-development/",
+      "description": "Development API server"
+      
+    },
+    {
+      "url": "https://program.unisdr.org/sso-unisdr/",
+      "description": "Production API server"
+    }
+  ],
+  "info": {
+    "title": "PreventionWeb API - ARISE Project",
+    "contact": {
+        "name": "UNDRR Technical Team",
+        "email": "margate@un.org"
+    },
+    "version": "0.2",
+  },
+   "tags": [
+    {
+      "name": "taxonomy",
+      "description": "Taxonomy public API endpoints"
+    },
+    {
+      "name": "authentication",
+      "description": "oAuth2 client credentials authentication"
+    },
+    {
+      "name": "content type",
+      "description": "Content type API endpoints"
+    }
+  ],
+  "paths": {
+    "/api/drupal/integration/preventionweb_regions": {
+      "get": {
+        "tags": [
+          "taxonomy"
+        ],
+        "summary": "Get PW geo regions",
+        "description": "This API retrieves the PreventionWeb geographical region in JSON format.",
+        "operationId": "/api/drupal/integration/preventionweb_regions",
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "restult": {
+                    "value": "[\n  {\n    \"cont_id\": 1,\n    \"cont_title\": \"Africa\"\n  },\n  {\n    \"cont_id\": 2,\n    \"cont_title\": \"Americas\"\n  },\n  {\n    \"cont_id\": 4,\n    \"cont_title\": \"Asia\"\n  },\n  {\n    \"cont_id\": 3,\n    \"cont_title\": \"Europe\"\n  },\n  {\n    \"cont_id\": 5,\n    \"cont_title\": \"Oceania\"\n  }\n]"
+                  }
+                }
+              }
+            }
+          },
+        }
+      }
+    },
+    "/api/drupal/integration/regions_countries": {
+          "get": {
+              "tags": [
+                "taxonomy"
+              ],
+              "summary": "Get PW published countries",
+              "description": "This API retrieves the PreventionWeb countries in JSON format.",
+              "operationId": "/api/drupal/integration/regions_countries",
+              "responses": {
+                  "200": {
+                    "description": "200 response",
+                    "content": {
+                      "application/json": {
+                        "examples": {
+                          "restult": {
+                            "value": "[\n   {\n      \"ctry_id\":60,\n      \"ctry_title\":\"Fiji\",\n      \"ctry_title_sp\":\"Fiji\",\n      \"ctry_iso3_code\":\"FJI\",\n      \"ctry_un_code\":\"242\",\n      \"cont_id\":5,\n      \"cont_title\":\"Oceania\",\n      \"overview_map_url\":\"https:\/\/www.preventionweb.net\/english\/images\/countries\/maps\/fji.gif\",\n      \"flag_url\":\"https:\/\/www.preventionweb.net\/assets\/shared\/images\/flags\/fji.jpg\",\n      \"pw_country_url\":\"https:\/\/www.preventionweb.net\/english\/countries\/oceania\/fji\",\n      \"undrr_region\":[\n         [\n            {\n               \"isdr_reg_id\":3,\n               \"isdr_reg_title\":\"Asia and Pacific\"\n            },\n            {\n               \"isdr_reg_id\":24,\n               \"isdr_reg_title\":\"Suva\"\n            }\n         ]\n      ]\n   },\n   ...\n]"
+                          }
+                        }
+                      }
+                    }
+                },
+              }
+          }
+    },
+    "/api/drupal/migration/taxonomy_themes": {
+          "get": {
+              "tags": [
+                "taxonomy"
+              ],
+              "summary": "Get PW themes",
+              "description": "This API retrieves the PreventionWeb themes in JSON format.",
+              "operationId": "/api/drupal/integration/taxonomy_themes",
+              "responses": {
+                  "200": {
+                    "description": "200 response",
+                },
+              }
+          }
+    },
+    "/api/drupal/migration/taxonomy_hazards": {
+          "get": {
+              "tags": [
+                "taxonomy"
+              ],
+              "summary": "Get PW hazards",
+              "description": "This API retrieves the PreventionWeb hazards in JSON format.",
+              "operationId": "/api/drupal/integration/taxonomy_hazards",
+              "responses": {
+                  "200": {
+                    "description": "200 response",
+                },
+              }
+          }
+    },
+    "/api/drupal/migration/taxonomy_languages": {
+          "get": {
+              "tags": [
+                "taxonomy"
+              ],
+              "summary": "Get PW languages",
+              "description": "This API retrieves the PreventionWeb supported meta data languages in JSON format.",
+              "operationId": "/api/drupal/integration/taxonomy_languages",
+              "responses": {
+                  "200": {
+                    "description": "200 response",
+                },
+              }
+          }
+    },
+    "/oauth/token": {
+        "post": {
+              "tags": [
+                "authentication"
+              ],
+              "summary": "Request client credential access token",
+              "description": "This API grant client credential access token to interact with private endpoints.",
+              "operationId": "/oauth/token",
+              "responses": {
+                  "200": {
+                    "description": "200 response",
+                },
+              },
+              "requestBody": {
+                "content": {
+                  "application/x-www-form-urlencoded": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "grant_type": {
+                          "description": "Type of oAuth2 grant",
+                          "type": "string",
+                          "default": "client_credentials"
+                        },
+                        "client_id": {
+                          "description": "Client ID provided by UNDRR.",
+                          "type": "string",
+                          "default": 14834828485284
+                        },
+                        "client_secret": {
+                          "description": "Client secret provided by UNDRR.",
+                          "type": "string",
+                          "default": "eyrytomvsdmopvopm3po5345fsdkfv435345odfgmsoisdfng"
+                        },
+                        "scope": {
+                          "description": "Resournces the client application wants to access to server.",
+                          "type": "string",
+                          "default": "*"
+                        }
+                      },
+                      "required": [
+                        "grant_type", "client_id", "client_secret"
+                      ]
+                    }
+                  }
+                }
+              }
+          }    
+    },
+    "/api/arise/integration/publications": {
+          "get": {
+              "tags": [
+                "content type"
+              ],
+              "summary": "Get PW docs & pubs",
+              "description": "This API retrieves the PreventionWeb documents and publications entries tagged with private sector theme, published from year 2020 in JSON format.",
+              "operationId": "/arise/integration/publications",
+              "parameters": [
+                  {
+                    "name": "Authorization",
+                    "in": "header",
+                    "description": "Use the token received from the authentication call.",
+                    "required": true,
+                    "example": "Bearer eyJ0eXAiOiJKV1QiLCJhbGci...",
+                    "schema": {
+                      "type": "string"
+                    }
+                  },
+                  {
+                    "name": "Accept",
+                    "in": "header",
+                    "description": "Use the token received from the authentication call.",
+                    "required": true,
+                    "example": "application/json",
+                    "schema": {
+                      "type": "string"
+                    }
+                  },
+              ],
+              "responses": {
+                  "200": {
+                    "description": "200 response",
+                },
+              }
+          }
+    },
+    "/api/arise/integration/news": {
+          "get": {
+              "tags": [
+                "content type"
+              ],
+              "summary": "Get PW news",
+              "description": "This API retrieves the PreventionWeb news entries tagged with private sector theme, published from year 2020 in JSON format.",
+              "operationId": "/arise/integration/news",
+              "parameters": [
+                  {
+                    "name": "Authorization",
+                    "in": "header",
+                    "description": "Use the token received from the authentication call.",
+                    "required": true,
+                    "example": "Bearer eyJ0eXAiOiJKV1QiLCJhbGci...",
+                    "schema": {
+                      "type": "string"
+                    }
+                  },
+                  {
+                    "name": "Accept",
+                    "in": "header",
+                    "description": "Use the token received from the authentication call.",
+                    "required": true,
+                    "example": "application/json",
+                    "schema": {
+                      "type": "string"
+                    }
+                  },
+              ],
+              "responses": {
+                  "200": {
+                    "description": "200 response",
+                },
+              }
+          }
+    },
+    "/api/arise/integration/event_training": {
+          "get": {
+              "tags": [
+                "content type"
+              ],
+              "summary": "Get PW events",
+              "description": "This API retrieves the PreventionWeb meetings and conferences AND training entries tagged with private sector theme, published from year 2020 in JSON format.",
+              "operationId": "/arise/integration/event_training",
+              "parameters": [
+                  {
+                    "name": "Authorization",
+                    "in": "header",
+                    "description": "Use the token received from the authentication call.",
+                    "required": true,
+                    "example": "Bearer eyJ0eXAiOiJKV1QiLCJhbGci...",
+                    "schema": {
+                      "type": "string"
+                    }
+                  },
+                  {
+                    "name": "Accept",
+                    "in": "header",
+                    "description": "Use the token received from the authentication call.",
+                    "required": true,
+                    "example": "application/json",
+                    "schema": {
+                      "type": "string"
+                    }
+                  },
+              ],
+              "responses": {
+                  "200": {
+                    "description": "200 response",
+                },
+              }
+          }
+    },
+    "/api/arise/integration/images": {
+          "get": {
+              "tags": [
+                "content type"
+              ],
+              "summary": "Get PW images",
+              "description": "This API retrieves the PreventionWeb images assets for entries tagged with private sector theme, published from year 2020 in JSON format.",
+              "operationId": "/arise/integration/images",
+              "parameters": [
+                  {
+                    "name": "Authorization",
+                    "in": "header",
+                    "description": "Use the token received from the authentication call.",
+                    "required": true,
+                    "example": "Bearer eyJ0eXAiOiJKV1QiLCJhbGci...",
+                    "schema": {
+                      "type": "string"
+                    }
+                  },
+                  {
+                    "name": "Accept",
+                    "in": "header",
+                    "description": "Use the token received from the authentication call.",
+                    "required": true,
+                    "example": "application/json",
+                    "schema": {
+                      "type": "string"
+                    }
+                  },
+                  {
+                    "name": "ids",
+                    "in": "path",
+                    "description": "Image IDs to retrieve the images.",
+                    "required": false,
+                    "example": "1234 or 1234,5678",
+                    "schema": {
+                      "type": "string"
+                    }
+                  },
+              ],
+              "responses": {
+                  "200": {
+                    "description": "200 response",
+                },
+              }
+          }
+    },
+    "end": {
+    
+    },
+  },
+  "components": {
+    "schemas": {
+      "publication content type": {
+        "type": "object",
+        "properties": {
+            "ent_id": {
+                "type": "integer"
+            },
+            "field_image_id": {
+                "type": "integer"
+            },
+            "field_title": {
+                "type": "string"
+            },
+            "ent_dateadded": {
+                "type": "date"
+            },
+            "ent_datemodified": {
+                "type": "date"
+            },
+            "field_body_trimmed": {
+                "type": "string",
+                "description": "Text version of the content body trimmed to 300 characters."
+            },
+            "field_authors": {
+                "type": "string",
+            },
+            "field_year_of_publication": {
+                "type": "integer"
+            },
+            "current_url": {
+                "type": "object",
+                "properties": {
+                     "id": {
+                        "type": "integer"
+                     },
+                     "ent_id": {
+                        "type": "integer"
+                     },
+                     "url": {
+                        "type": "string"
+                     },
+                }
+            },
+            "field_organization": {
+                "type": "object",
+                "properties": {
+                     "org_id": {
+                        "type": "integer"
+                     },
+                     "org_title_long": {
+                        "type": "string"
+                     },
+                     "org_title_acronym": {
+                        "type": "string"
+                     },
+                }
+            },
+            "field_themes": {
+                "type": "object",
+                "properties": {
+                     "scat_id": {
+                        "type": "integer"
+                     },
+                }
+            },
+            "field_hazards": {
+                "type": "object",
+                "properties": {
+                     "scat_id": {
+                        "type": "integer"
+                     },
+                }
+            },
+            "field_country": {
+                "type": "object",
+                "properties": {
+                     "ctry_id": {
+                        "type": "integer"
+                     },
+                     "ctry_iso3_code": {
+                        "type": "string"
+                     },
+                }
+            },
+            "field_region": {
+                "type": "object",
+                "properties": {
+                     "cont_id": {
+                        "type": "integer"
+                     },
+                }
+            },
+        },
+      }
+    }
+  }
+}
