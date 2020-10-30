@@ -278,8 +278,16 @@ GET /sso-unisdr/api/arise/integration/publications
         "org_title_acronym": "Left Right"
       }
     ],
-    "field_region": [],
-    "field_hazards": [],
+    "field_region": [
+      {
+        "cont_id": 4
+      }
+    ],
+    "field_hazards": [
+      {
+        "scat_id": 143
+      }
+    ],
     "field_themes": [
       {
         "scat_id": 42
