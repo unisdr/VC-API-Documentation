@@ -1,3 +1,5 @@
+OpenAPI version 3 documentation is work in progress.
+
 # Taxonomy
 
 ## PreventionWeb Regions
@@ -507,3 +509,52 @@ GET /sso-unisdr/api/arise/integration/event_training
 | trn_type_id            | Event type ID                           | integer; 1 = Event (Meeting & conferences), 3 = Training     |
 
 
+
+
+
+
+## Events (Meeting and Conferences AND Training)
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+### Query string parameter:
+
+* ids string, value [123 OR 123,456] field_image_id of the content
+
+### URL: /sso-unisdr/api/arise/integration/images
+
+```shell
+GET /sso-unisdr/api/arise/integration/images
+GET /sso-unisdr/api/arise/integration/images?ids=123
+GET /sso-unisdr/api/arise/integration/images?ids=123,456
+```
+
+### JSON Response
+
+```shell
+[
+  "0": {
+    "field_image_id": 62970,
+    "ent_id": 62970,
+    "credit": "",
+    "caption": "",
+    "url": "https:\/\/www.preventionweb.net\/files\/62970_largeImage.jpg"
+  },
+  "1": {
+    "field_image_id": 63004,
+    "ent_id": 63004,
+    "credit": "",
+    "caption": "",
+    "url": "https:\/\/www.preventionweb.net\/files\/63004_largeImage.jpg"
+  },
+   ...
+]
+```
