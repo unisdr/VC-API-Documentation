@@ -401,3 +401,109 @@ GET /sso-unisdr/api/arise/integration/news
 | Field                  | Description                             | Type/Value                                                   |
 |------------------------|-----------------------------------------|--------------------------------------------------------------|
 | field_release_date     | News release date                       | date (yyyy-mm-dd)                                            |
+
+
+
+
+## News
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/arise/integration/news
+
+```shell
+GET /sso-unisdr/api/arise/integration/news
+```
+
+### JSON Response
+
+```shell
+[
+  {
+    "ent_id": 41789,
+    "ent_sec_id": 5,
+    "field_title": "Disaster Risk management Public Seminar Series No.5 :The role of the private sector in building resilience to disasters",
+    "ent_dateadded": "2015-01-08 11:20:41",
+    "ent_datemodified": "2015-01-08 16:44:34",
+    "ent_datepublished": "2015-01-08 16:44:34",
+    "field_body_trimmed": "In many years, Japan and the World Bank have been working together to support Disaster Risk Management (DRM) efforts by disaster-prone developing countries. In April 2013, the Government of Japan announced Japan-World Bank Program for Mainstreaming DRM in Developing Countries. Subsequently, World Bank ...",
+    "field_start_date": "2015-01-13",
+    "field_end_date": "2015-01-13",
+    "ent_lang_id": 1,
+    "trn_type_id": 1,
+    "trn_type": "Event",
+    "current_url": [
+      {
+        "id": "5417891",
+        "ent_id": 41789,
+        "url": "https:\/\/www.preventionweb.net\/events\/view\/41789"
+      }
+    ],
+    "field_country": [
+      {
+        "ctry_id": 87,
+        "ctry_iso3_code": "JPN"
+      }
+    ],
+    "field_organization": [
+      {
+        "org_id": 125,
+        "org_title_long": "World Bank, the",
+        "org_title_acronym": "WB"
+      },
+      {
+        "org_id": 16644,
+        "org_title_long": "Japan Bosai Platform",
+        "org_title_acronym": ""
+      }
+    ],
+    "field_region": [
+      {
+        "cont_id": 4
+      }
+    ],
+    "field_hazards": [
+      {
+        "scat_id": 143
+      }
+    ],
+    "field_themes": [
+      {
+        "scat_id": 42
+      },
+      {
+        "scat_id": 104
+      },
+      {
+        "scat_id": 106
+      },
+      {
+        "scat_id": 108
+      },
+      {
+        "scat_id": 653
+      }
+    ]
+  },
+   ...
+]
+```
+
+### Field definition
+
+| Field                  | Description                             | Type/Value                                                   |
+|------------------------|-----------------------------------------|--------------------------------------------------------------|
+| field_start_date       | Start date of the event                 | date (yyyy-mm-dd)                                            |
+| field_end_date         | Start date of the event                 | date (yyyy-mm-dd)                                            |
+| trn_type_id            | Event type ID                           | integer; 1 = Event (Meeting & conferences), 3 = Training     |
+
+
