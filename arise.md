@@ -513,7 +513,7 @@ GET /sso-unisdr/api/arise/integration/event_training
 
 
 
-## Events (Meeting and Conferences AND Training)
+## Image Resources
 
 ### Authentication:
 
