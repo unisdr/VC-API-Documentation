@@ -1,5 +1,5 @@
 
-# UNISDR Common Login Documentation
+# UNDRR Common Login Documentation
 
 Part of the documentation are specific to Voluntary Commitments project.
 
