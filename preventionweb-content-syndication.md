@@ -11,6 +11,8 @@
 
 ## [Themes (taxonomy)](https://github.com/unisdr/VC-API-Documentation/blob/master/arise.md#themes-taxonomy)
 
+## [Publication type (taxonomy)](https://github.com/unisdr/VC-API-Documentation/blob/master/drupal-api-migration.md#publication-type-taxonomy)
+
 
 # Content Type
 
