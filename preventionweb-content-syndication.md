@@ -164,7 +164,7 @@ GET /sso-unisdr/api/preventionweb/content-syndication/publications?modified_sinc
   "last_page": 59,
   "last_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications?page=59",
   "next_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications?page=3",
-  "path": "http:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content\/publications",
+  "path": "http:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications",
   "per_page": 200,
   "prev_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications?page=1",
   "to": 400,
@@ -175,6 +175,22 @@ GET /sso-unisdr/api/preventionweb/content-syndication/publications?modified_sinc
 ```
 
 ## News
+
+### [Authentication:](#authentication)
+
+### [Header Parameters:](#header-parameters)
+
+### [Query string parameters:](#query-string-parameters)
+
+### URL: /sso-unisdr/api/preventionweb/content-syndication/news
+
+```shell
+GET /sso-unisdr/api/preventionweb/content-syndication/news
+GET /sso-unisdr/api/preventionweb/content-syndication/news?page=3
+GET /sso-unisdr/api/preventionweb/content-syndication/news?per_page=300
+GET /sso-unisdr/api/preventionweb/content-syndication/news?q=climate
+GET /sso-unisdr/api/preventionweb/content-syndication/news?modified_since=2021-01-10
+```
 
 
 ### JSON Response
@@ -255,14 +271,14 @@ GET /sso-unisdr/api/preventionweb/content-syndication/publications?modified_sinc
       ]
     }, ...
   ],
-  "first_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications?page=1",
+  "first_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/news?page=1",
   "from": 201,
   "last_page": 59,
-  "last_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications?page=59",
-  "next_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications?page=3",
-  "path": "http:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content\/publications",
+  "last_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/news?page=59",
+  "next_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/news?page=3",
+  "path": "http:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/news",
   "per_page": 200,
-  "prev_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications?page=1",
+  "prev_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/news?page=1",
   "to": 400,
   "total": 11769,
   "status": 200,
