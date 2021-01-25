@@ -26,11 +26,23 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * Accept string, value "application/json"
 * Authorization string, value "Bearer [Client: ACCESS TOKEN]"
 
+### Query string parameters:
+
+| Name           	| Description                    	| Type/Value                 	| Default 	|
+|----------------	|--------------------------------	|----------------------------	|---------	|
+| page           	| current page                   	| int                        	| 1       	|
+| per_page       	| number of records per page     	| int, max value allowed 400 	| 200     	|
+| modified_since 	| filter result by last modified 	| date, yyyy-mm-dd           	|         	|
+| q              	| filter result by entry title   	| string                     	|         	|
 
 ### URL: /sso-unisdr/api/preventionweb/content-syndication/publications
 
 ```shell
 GET /sso-unisdr/api/preventionweb/content-syndication/publications
+GET /sso-unisdr/api/preventionweb/content-syndication/publications?page=3
+GET /sso-unisdr/api/preventionweb/content-syndication/publications?per_page=300
+GET /sso-unisdr/api/preventionweb/content-syndication/publications?q=climate
+GET /sso-unisdr/api/preventionweb/content-syndication/publications?modified_since=2021-01-10
 ```
 
 ### JSON Response
