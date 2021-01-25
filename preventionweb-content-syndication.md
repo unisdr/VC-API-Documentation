@@ -200,7 +200,11 @@ GET /sso-unisdr/api/preventionweb/content-syndication/publications?modified_sinc
           "org_title_acronym": "NOLA.com"
         }
       ],
-      "field_region": [],
+      "field_region": [
+        {
+          "cont_id": 1
+        }
+      ],
       "field_hazards": [
         {
           "scat_id": 58
@@ -220,9 +224,36 @@ GET /sso-unisdr/api/preventionweb/content-syndication/publications?modified_sinc
           "scat_id": 44
         }
       ],
-      "field_related_links": [],
-      "field_links": []
+      "field_related_links": [
+       {
+          "id": 70336,
+          "label": "Risk perception and knowledge in fire risk reduction in a Dong minority rural village in China: A health-EDRM education intervention study",
+          "url": "https:\/\/www.preventionweb.net\/go\/61499"
+        }
+      ],
+      "field_links": [
+        {
+          "id": 92933,
+          "label": "View document",
+          "lng_id": 1,
+          "url": "https:\/\/www.preventionweb.net\/files\/66548_f421finaldavidrushfireriskreduction.pdf"
+        }
+      ]
     }, ...
+  ],
+  "first_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications?page=1",
+  "from": 201,
+  "last_page": 59,
+  "last_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications?page=59",
+  "next_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications?page=3",
+  "path": "http:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content\/publications",
+  "per_page": 200,
+  "prev_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications?page=1",
+  "to": 400,
+  "total": 11769,
+  "status": 200,
+  "success": 1
+}
 ```
 
 
