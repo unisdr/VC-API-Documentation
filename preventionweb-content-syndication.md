@@ -184,7 +184,7 @@ GET /sso-unisdr/api/preventionweb/content-syndication/publications?modified_sinc
         {
           "id": "2673641",
           "ent_id": 67364,
-          "url": "https:\/\/www.preventionweb.net\/news\/view\/67364"
+          "url": "https:\/\/www.preventionweb.net\/publications\/view\/67364"
         }
       ],
       "field_country": [
