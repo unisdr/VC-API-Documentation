@@ -67,7 +67,7 @@ GET /sso-unisdr/api/preventionweb/content-syndication/publications?modified_sinc
         {
           "id": "8665481",
           "ent_id": 66548,
-          "url": "https:\/\/www.preventionweb.net\/news\/view\/66548"
+          "url": "https:\/\/www.preventionweb.net\/preventionwebs\/view\/66548"
         }
       ],
       "field_country": [
@@ -158,6 +158,20 @@ GET /sso-unisdr/api/preventionweb/content-syndication/publications?modified_sinc
         }
       ]
     }, ...
+  ],
+  "first_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications?page=1",
+  "from": 201,
+  "last_page": 59,
+  "last_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications?page=59",
+  "next_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications?page=3",
+  "path": "http:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content\/publications",
+  "per_page": 200,
+  "prev_page_url": "https:\/\/[DOMAIN/PATH]\/api\/preventionweb\/content-syndication\/publications?page=1",
+  "to": 400,
+  "total": 11769,
+  "status": 200,
+  "success": 1
+}
 ```
 
 ## News
