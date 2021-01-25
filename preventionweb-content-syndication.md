@@ -291,4 +291,4 @@ GET /sso-unisdr/api/preventionweb/content-syndication/news?modified_since=2021-0
 ```
 
 
-# Authentication
+# [Authentication](https://github.com/unisdr/VC-API-Documentation#step-1-request-access-token)
