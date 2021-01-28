@@ -305,6 +305,12 @@ GET /sso-unisdr/api/preventionweb/content-syndication/news?modified_since=2021-0
 GET /sso-unisdr/api/preventionweb/content-syndication/collections/cop23
 ```
 
+### Current page in PreventionWeb
+
+https://www.preventionweb.net/collections/cop23
+
+
+
 ### JSON Response
 
 ```shell
