@@ -290,6 +290,27 @@ GET /sso-unisdr/api/preventionweb/content-syndication/news?modified_since=2021-0
 }
 ```
 
+# Content Promotion
+
+## Collection
+
+### [Authentication:](#authentication)
+
+### [Header Parameters:](#header-parameters)
+
+### [Query string parameters:](#query-string-parameters)
+
+### URL: /sso-unisdr/api/preventionweb/content-syndication/collections/{COLLECTION URL NAME}
+```shell
+GET /sso-unisdr/api/preventionweb/content-syndication/collections/cop23
+```
+
+### JSON Response
+
+```shell
+```
+
+
 
 # [Authentication](https://github.com/unisdr/VC-API-Documentation#step-1-request-access-token)
 
