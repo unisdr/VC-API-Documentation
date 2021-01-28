@@ -298,8 +298,6 @@ GET /sso-unisdr/api/preventionweb/content-syndication/news?modified_since=2021-0
 
 ### [Header Parameters:](#header-parameters)
 
-### [Query string parameters:](#query-string-parameters)
-
 ### URL: /sso-unisdr/api/preventionweb/content-syndication/collections/{COLLECTION URL NAME}
 ```shell
 GET /sso-unisdr/api/preventionweb/content-syndication/collections/cop23
