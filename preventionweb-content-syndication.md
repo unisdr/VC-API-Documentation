@@ -308,6 +308,38 @@ GET /sso-unisdr/api/preventionweb/content-syndication/collections/cop23
 ### JSON Response
 
 ```shell
+{
+  "total": 23,
+  "status": 200,
+  "data": [
+    {
+      "title": "Disaster risk in focus at COP23",
+      "link": "http:\/\/www.preventionweb.net\/collections\/cop23",
+      "author": "UNDRR Editors",
+      "date_updated": "19 Oct 2018",
+      "description": "The need to address climate risks and vulnerability has featured prominently in discussions at COP 23.",
+      "collections": [
+        {
+          "title": "Fiji: Climate resilience",
+          "link": "https:\/\/www.preventionweb.net\/go\/55935",
+          "content_type": "News",
+          "date": "2017-11-15",
+          "organizations": "Fiji Times",
+          "description": "The Pacific Islands Development Forum has joined a long-term flagship program of the Global Island Partnership — the Island Resilience Challenge. Solutions to improve hurricane preparedness need to be integrated into community planning before the cycle of climate-induced disasters becomes an existential threat.",
+          "thumbnail": ""
+        },
+        {
+          "title": "Tuvalu pushes for climate displacement laws at UN",
+          "link": "https:\/\/www.preventionweb.net\/go\/55901",
+          "content_type": "News",
+          "date": "2017-11-14",
+          "organizations": "Radio New Zealand International",
+          "description": "During COP23, the Permanent Mission of Tuvalu proposed a resolution to create a legal framework for people displaced by climate change. The conference has seen evidence on how sea level rise and exacerbating storm activity are making people more vulnerable to displacement. A legal framework would make way for enhanced disaster risk reduction.",
+          "thumbnail": ""
+        }, ...
+    }
+  ]
+}
 ```
 
 
