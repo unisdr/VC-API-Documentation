@@ -288,6 +288,120 @@ GET /sso-unisdr/api/drupal/integration/undrr_focalpoints?undrr_region_id=1
 
 
 
+## Sendai Voluntary Commitments - Organization Commitments
+
+This endpoint will retrieve the organizations Sendai Voluntary Commitments. Resultset is cached for 60 minutes.
+
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/integration/sfvc/organization_commitments?partnersOrganizationNames=[ORG_NAME]
+
+#### Querystring Parameter
+
+* partnersOrganizationNames (required), string (case sensitive)
+
+```shell
+GET /sso-unisdr/api/drupal/integration/undrr_focalpoints?partnersOrganizationNames=United+Nations+Office+for+Disaster+Risk+Reduction
+```
+
+### JSON Response
+
+```shell
+{
+  "data": [
+    {
+      "commitmentVersionId": 445,
+      "commitmentVersion": "2.0",
+      "commitmentIdentifier": "20190307_007",
+      "commitmentPublicationStatus": [
+        "ACTIVE"
+      ],
+      "commitmentPublicationStatusValues": [
+        "ACTIVE"
+      ],
+      "status": "PUBLISHED",
+      "statusIsFinal": true,
+      "title": "Promoting the Making Cities Resilient and Sustainable Campaign in Asia Pacific ",
+      "organisation": "United Cities and Local Governments Asia-Pacific",
+      "partners": [
+        "United Cities and Local Governments",
+        "United Nations Office for Disaster Risk Reduction"
+      ],
+      "implementers": [
+        "United Cities and Local Governments Asia-Pacific"
+      ],
+      "partnerOrgs": [
+        {
+          "organizationRole": "PARTNER",
+          "organizationReferenceKey": "3346",
+          "organizationName": "United Cities and Local Governments",
+          "organizationAddress": "Carrer Avinyó, 15, Barcelona, Spain",
+          "organizationCategory": "NETWORKS_AND_OTHER",
+          "organizationWebsite": "http:\/\/www.uclg.org\/",
+          "organizationCountryCca3": "ESP"
+        },
+        {
+          "organizationRole": "PARTNER",
+          "organizationReferenceKey": "1171",
+          "organizationName": "United Nations Office for Disaster Risk Reduction",
+          "organizationAddress": "9-11 rue de Varembé, Geneva, Switzerland",
+          "organizationCategory": "UN_AND_IO",
+          "organizationWebsite": "https:\/\/www.undrr.org\/",
+          "organizationCountryCca3": "CHE"
+        }
+      ],
+      "implementerOrgs": [
+        {
+          "organizationRole": "IMPLEMENTER",
+          "organizationReferenceKey": "8672",
+          "organizationName": "United Cities and Local Governments Asia-Pacific",
+          "organizationAddress": "Mitra Praja Building 2nd Floor, Jl. Sunter Permai Raya No. 1, Jakarta, Indonesia",
+          "organizationCategory": "NETWORKS_AND_OTHER",
+          "organizationWebsite": "http:\/\/www.uclg-aspac.org\/",
+          "organizationCountryCca3": "IDN"
+        }
+      ],
+      "scopes": [
+        "Regional - Asia, Oceania"
+      ],
+      "countries": [],
+      "alpha3CountryCodes": [],
+      "shortDescription": "The programme contributes to the increase in the number of Local Governments (LGs) that sign the Making Cities Resilient (MCR) Campaign. It fosters the implementation of the Sendai Framework for Disaster Risk Reduction at the local level and supports city DRR action plans to meet Target E.",
+      "lastUpdated": "2021-02-02",
+      "illustratingPhoto": {
+        "fileName": "Hal 16-17.jpg",
+        "fileReference": "ddfdeea2-7c53-46f6-b63c-14409df39dff",
+        "mimeType": "image\/jpeg",
+        "sizeInBytes": 94069,
+        "imageURL": "https:\/\/sendaicommitments.undrr.org\/api\/public\/file-storage\/ddfdeea2-7c53-46f6-b63c-14409df39dff\/show"
+      },
+      "latestPublishedVersion": true,
+      "url": "https:\/\/sendaicommitments.undrr.org\/commitments\/20190307_007"
+    },
+	...
+  ],
+  "total": 4,
+  "status": 200,
+  "url_view_all_map": "https:\/\/sendaicommitments.undrr.org\/commitments?partnersOrganizationNames=United+Nations+Office+for+Disaster+Risk+Reduction",
+  "url_view_all_list": "https:\/\/sendaicommitments.undrr.org\/commitments?partnersOrganizationNames=United+Nations+Office+for+Disaster+Risk+Reduction&viewType=MAP"
+}
+```
+
+### Field definition
+
+| Field             | Description                    | Type/Value                                                       |
+|-------------------|--------------------------------|------------------------------------------------------------------|
+
 
 
 
