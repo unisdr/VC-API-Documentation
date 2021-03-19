@@ -311,7 +311,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * partnersOrganizationNames (required), string (case sensitive)
 
 ```shell
-GET /sso-unisdr/api/drupal/integration/undrr_focalpoints?partnersOrganizationNames=United+Nations+Office+for+Disaster+Risk+Reduction
+GET /sso-unisdr/api/integration/sfvc/organization_commitments?partnersOrganizationNames=United+Nations+Office+for+Disaster+Risk+Reduction
 ```
 
 ### JSON Response
