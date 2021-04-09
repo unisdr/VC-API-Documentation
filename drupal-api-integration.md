@@ -399,8 +399,30 @@ GET /sso-unisdr/api/integration/sfvc/organization_commitments?partnersOrganizati
 
 ### Field definition
 
-| Field             | Description                    | Type/Value                                                       |
-|-------------------|--------------------------------|------------------------------------------------------------------|
+| Field                             | Type/Value                                                               | Description                       |
+|-----------------------------------|--------------------------------------------------------------------------|-----------------------------------|
+| commitmentVersionId               |                                                                          |                                   |
+| commitmentVersionId               | integer                                                                  |                                   |
+| commitmentVersion                 | string                                                                   |                                   |
+| commitmentIdentifier              | string                                                                   |                                   |
+| commitmentPublicationStatus       | CommitmentPublicationStatus[]                                            |                                   |
+| commitmentPublicationStatusValues | CommitmentPublicationStatus[]                                            |                                   |
+| status                            | CommitmentStatusType(this will always be PUBLISHED in public search)     |                                   |
+| statusISFinal                     | boolean(this will always be true in public search)                       |                                   |
+| title                             | string                                                                   |                                   |
+| organisation                      | string(concatenation of implementers names with as a delimiter)          |                                   |
+| partners                          | string[](array with partner names)                                       |                                   |
+| implementers                      | string[](array with implementers names)                                  |                                   |
+| partnerOrgs                       | Organization[]                                                           |                                   |
+| implementerOrgs                   | Organization[]                                                           |                                   |
+| scopes                            | string[] (scopes in human readable format)                               |                                   |
+| countries                         | string[] (countries in human readable format)                            |                                   |
+| alpha3CountryCodes                | string[](CCA3 where this is applied. Can be empty in global commitments) |                                   |
+| shortDescription                  | string                                                                   |                                   |
+| lastUpdated                       | date(last time the public information was updated)                       |                                   |
+| illustratingPhoto.imageURL        | string                                                                   | URL of image                      |
+| latestPublishedVersion            | boolean                                                                  |                                   |
+| url                               | string                                                                   | URL of the commitments page in VC |
 
 
 
