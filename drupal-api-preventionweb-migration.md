@@ -4,6 +4,10 @@ Production URL: http://program.unisdr.org/sso-unisdr/
 
 Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
+## Generic querystring parameters
+
+* page		integer, default 1
+* per_page 	integer, default 200, max value allowed 1000, number of items per page
 
 ## Vacancies (Jobs) content type
 
