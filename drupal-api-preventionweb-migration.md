@@ -7,13 +7,6 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 ## Vacancies (Jobs) content type
 
-### References
-
-* Destination pages
-   * https://ijjqd4.axshare.com/#g=1&p=vacancy_detail
-   * Nick is checking the list page
-* Content type mapping https://docs.google.com/spreadsheets/d/1kYxhne-dvREr5XWQS75APAFeQhnpW2bK/edit#gid=1765529697
-
 ### Authentication:
 
 oAuth2 client credentials, please refer to other documentation how to get the client access token.
@@ -25,10 +18,10 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * Authorization string, value "Bearer [Client: ACCESS TOKEN]"
 
 
-### URL: /sso-unisdr/api/drupal/migration/vacancies
+### URL: /sso-unisdr/api/preventionweb/migration/vacancies
 
 ```shell
-GET /sso-unisdr/api/drupal/migration/vacancies
+GET /sso-unisdr/api/preventionweb/migration/vacancies
 ```
 
 ### JSON Response
