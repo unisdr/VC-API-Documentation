@@ -65,6 +65,8 @@ GET /sso-unisdr/api/preventionweb/migration/users
         "Publications, policies and plans - Weekly"
       ]
     },
+    ...
+]
 ```
 
 ## National Platform
