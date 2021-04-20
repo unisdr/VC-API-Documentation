@@ -16,6 +16,11 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
 * All published national platform on PW 
 
+### Resources:
+
+* Current URL: https://www.preventionweb.net/english/hyogo/national/list/
+* 
+
 ### Authentication:
 
 oAuth2 client credentials, please refer to other documentation how to get the client access token.
