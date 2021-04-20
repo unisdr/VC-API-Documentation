@@ -9,6 +9,95 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 * page		integer, default 1
 * per_page 	integer, default 200, max value allowed 1000, number of items per page
 
+## Resources: Academic Programs
+
+### Business Rules:
+
+* All published academic programmes but some fields are aggregated to body field https://unitednations.sharepoint.com/:x:/r/sites/UNDRRDrupalPlatform/_layouts/15/Doc.aspx?sourcedoc=%7B7E9BDB40-DCFF-4B69-B8D0-90D50A69976E%7D&file=migration%20rules.xlsx&action=default&mobileredirect=true
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/preventionweb/migration/acad_programs
+
+```shell
+GET /sso-unisdr/api/preventionweb/migration/acad_programs
+```
+
+### JSON Response
+
+```shell
+[
+    {
+      "ent_id": 749,
+      "ent_sec_id": 13,
+      "ent_dateadded": "2007-10-04 09:52:26",
+      "ent_datemodified": "2007-10-17 17:40:47",
+      "ent_datepublished": "0000-00-00 00:00:00",
+      "field_user_comments": "",
+      "field_editors_comments": null,
+      "author_name": "Leoj ETAG",
+      "field_title": "Disaster Management and Sustainable Development",
+      "field_resource_type": "Academic programme",
+      "acad_type_id": 1,
+      "field_academic_programme_type": "University programme",
+      "acad_level_id": 2,
+      "field_academic_programme_level": "Masters",
+      "field_academic_programme_duration": "Up to 1 year.",
+      "field_website_url": "http:\/\/northumbria.ac.uk\/?view=CourseDetail&code=DTFDMS6",
+      "acad_freq_id": 1,
+      "field_body": "<h2>Location<\/h2><p>Newcastle<\/p><h2>Degree<\/h2><p>MSc<\/p><h2>Description<\/h2><p>The program aims to introduce the students with issues of personal security and security planning and development issues. To enhance the learning experience students are provided with a field-based experience on matters such as microbiological water testing and remediation of earthquake-damaged structures. The program focuses on emergency planning procedures and of the role of the key agencies which work together in the event of national or international disasters such as floods, earthquakes, terrorist attacks and major accidents.<\/p><h2>Themes<\/h2><p>Disaster management, Sustainable development, Emergency management, Disaster risk reduction, Climate change risk.<\/p><h2>Target audience<\/h2><p>The program attract both aspiring Managers in the field of Disaster and professionals having good experience of working on emergency, disaster and risk reduction issues & who want to enhance hone enhance their knowledge level or hone their skills.<\/p><h2>Admission requirement<\/h2><p>A second class honours degree in an appropriate subject (i.e. geography, environmental management\/studies, economics, and sociology) or appropriate professional experience and\/or qualifications.<\/p><h2>Frequency<\/h2><p>Annual<\/p><h2>Language<\/h2><p>English<\/p><h2>Application procedure<\/h2><p>Students can apply online or call the help desk +44 191 227 4453 to obtain application form or to know more about the course.<\/p><h2>Tuition and cost<\/h2><p>3070.00 £ per year for home students. For further details please see <a href=\"http:\/\/northumbria.ac.uk\/brochure\/studfees\/?view=Standard\">programme brochure<\/a>.<\/p><h2>Deadline<\/h2><p>Please see university homepage.<\/p><h2>Contact<\/h2><p>School of Applied Sciences, Northumbria University<br \/>\nEllison Building, Newcastle City Campus<br \/>\nTel: (0191) 227 4453<br \/>\nFax: (0191) 227 4561<br \/>\nE-mail: et.admissions@northumbria.ac.uk<\/p>",
+      "field_country": [
+        {
+          "ctry_id": 183,
+          "ctry_iso3_code": "GBR"
+        }
+      ],
+      "field_organization": [
+        {
+          "org_id": 1411,
+          "org_title_long": "Disaster and Development Network",
+          "org_title_acronym": "DDN"
+        }
+      ],
+      "field_region": [
+        {
+          "cont_id": 3
+        }
+      ],
+      "field_hazards": [],
+      "field_themes": [
+        {
+          "scat_id": 33
+        },
+        {
+          "scat_id": 36
+        }
+      ],
+      "field_related_links": [],
+      "field_links": [],
+      "domain": "www_preventionweb_net",
+      "current_url": [
+        {
+          "id": "13007491",
+          "ent_id": 749,
+          "url": "https:\/\/www.preventionweb.net\/academic\/view\/749"
+        }
+      ]
+    },
+    ...
+]
+```
+
+
 ## Vacancies (Jobs) content type
 
 
