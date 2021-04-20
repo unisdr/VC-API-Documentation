@@ -9,6 +9,99 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 * page		integer, default 1
 * per_page 	integer, default 200, max value allowed 1000, number of items per page
 
+
+## Publications: Policy and Plans migration from PW Policy and Plans
+
+### Business Rules:
+
+* All published PW Policy and Plans marked for migration https://unitednations.sharepoint.com/:x:/r/sites/UNDRRDrupalPlatform/_layouts/15/Doc.aspx?sourcedoc=%7B7E9BDB40-DCFF-4B69-B8D0-90D50A69976E%7D&file=migration%20rules.xlsx&action=default&mobileredirect=true (Policies and plans TAB)
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/preventionweb/migration/policy_plans
+
+```shell
+GET /sso-unisdr/api/preventionweb/migration/policy_plans
+```
+
+### JSON Response
+
+```shell
+[
+    {
+      "ent_id": 7351,
+      "ent_sec_id": 9,
+      "ent_dateadded": "2008-11-19 13:31:29",
+      "ent_datemodified": "2008-11-19 19:16:22",
+      "ent_datepublished": "2008-11-19 16:12:08",
+      "pol_type": 1,
+      "pol_subtype": 2,
+      "field_user_comments": "",
+      "field_editors_comments": "",
+      "author_name": "LeoJ ETAG",
+      "field_title": "Disaster risk reduction national coordinating mechanisms in Jordan (2008)",
+      "field_body": "<p>This presentation was given at the Workshop on National Platforms at the International Disaster and Risk Conference (IDRC) in Davos, Switzerland, in August of 2008.  This NP presentation includes information regarding: Context of Disaster Risk Reduction (DRR) in Jordan, Legal Framework for DRR and DRR National Plan, DRR in Sectoral Policies, National Preventive Disaster Risk Reduction Mechanisms, National Crisis Management  Mechanisms, Institutional Actors and Stakeholders, Institutional DRR Actors and Stakeholders, DRR Institutional Relation to Climate Change, Regional Coordination of DRR and South-South Collaboration, and more.<\/p>",
+      "field_year_of_publication": 2008,
+      "field_authors": "",
+      "field_policy_type": "National policy and plans",
+      "field_country": [
+        {
+          "ctry_id": 88,
+          "ctry_iso3_code": "JOR"
+        }
+      ],
+      "field_organization": [
+        {
+          "org_id": 3487,
+          "org_title_long": "Jordan - government",
+          "org_title_acronym": ""
+        }
+      ],
+      "field_region": [
+        {
+          "cont_id": 4
+        }
+      ],
+      "field_hazards": [],
+      "field_themes": [
+        {
+          "scat_id": 104
+        }
+      ],
+      "field_related_links": [],
+      "field_links": [
+        {
+          "id": 6226,
+          "label": "View full presentation",
+          "lng_id": 1,
+          "url": "https:\/\/www.preventionweb.net\/files\/7351_JordanNPPresentation.ppt"
+        }
+      ],
+      "domain": "www_preventionweb_net",
+      "current_url": [
+        {
+          "id": "9073511",
+          "ent_id": 7351,
+          "url": "https:\/\/www.preventionweb.net\/english\/professional\/policies\/v.php?id=7351"
+        }
+      ]
+    },
+    ...
+]
+```
+
+
+
+
 ## Resources: Academic Programs
 
 ### Business Rules:
