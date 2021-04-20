@@ -10,6 +10,59 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 * per_page 	integer, default 200, max value allowed 1000, number of items per page
 
 
+## National Platform
+
+### Business Rules:
+
+* All published national platform on PW 
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+### URL: /sso-unisdr/api/preventionweb/migration/national_platform
+
+```shell
+GET /sso-unisdr/api/preventionweb/migration/national_platform
+```
+
+### JSON Response
+
+```shell
+[
+    {
+      "np_id": 75,
+      "field_title": "Armenia National Platform",
+      "field_country": {
+        "ctry_id": 8,
+        "ctry_iso3_code": "ARM"
+      },
+      "field_region": {
+        "cont_id": 3
+      },
+      "field_organization": {
+        "org_id": 25249,
+        "org_title_long": "Ministry of Emergency Situations of the Republic of Armenia",
+        "org_title_acronym": ""
+      },
+      "domain": "www_preventionweb_net",
+      "field_body": "<p><strong>History<\/strong><\/p>\r\n\r\n<p>As a result of joint efforts by the Ministry of Emergency Situations of Armenia, UN agencies (UNDRR, UNDP) and other DRR interested partners, the Government of Armenia adopted in December 2010 a decision on the formation of &quot;ARNAP&quot; (DRR National Platform) Foundation. Being a non-governmental organization, the Platform provides opportunities for state, non-governmental, private and international institutions to participate in decision-making and consultation processes. At the same time, it provides opportunities for organizing and controlling day-to-day operational activities, implementing long-term projects; it also provides necessary flexibility to respond to new challenges.<\/p>\r\n\r\n<p><strong>Structure<\/strong><\/p>\r\n\r\n<p>The main players of the National Platform are governmental authorities of Armenia, Ministry of Emergency Situations, and international and donor organizations working in the field of DRR, UN, Armenian Red Cross society, Save the Children, OxYGen Foundation, Caritas Armenia, World Vision Armenia as well as scientific institutions, civil societies and experts.<\/p><p>Establishment and development of innovative community-based youth resource centres<\/p>\r\n\r\n<p style=\"margin-left:35.7pt;\">&nbsp;<\/p>",
+      "current_url": [
+        {
+          "id": "1818000081",
+          "url": "https:\/\/www.preventionweb.net\/english\/hyogo\/national\/list\/v.php?id=8"
+        }
+      ],
+      "field_website_url": ""
+]
+```
+
+
 ## Publications: Policy and Plans migration from PW Policy and Plans
 
 ### Business Rules:
@@ -106,7 +159,7 @@ GET /sso-unisdr/api/preventionweb/migration/policy_plans
 
 ### Business Rules:
 
-* All published academic programmes but some fields are aggregated to body field https://unitednations.sharepoint.com/:x:/r/sites/UNDRRDrupalPlatform/_layouts/15/Doc.aspx?sourcedoc=%7B7E9BDB40-DCFF-4B69-B8D0-90D50A69976E%7D&file=migration%20rules.xlsx&action=default&mobileredirect=true
+* All published academic programmes but some fields are aggregated to body field https://unitednations.sharepoint.com/:x:/r/sites/UNDRRDrupalPlatform/_layouts/15/Doc.aspx?sourcedoc=%7B7E9BDB40-DCFF-4B69-B8D0-90D50A69976E%7D&file=migration%20rules.xlsx&action=default&mobileredirect=true (Academic Programme TAB)
 
 ### Authentication:
 
