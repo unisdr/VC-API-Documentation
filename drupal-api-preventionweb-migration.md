@@ -10,6 +10,63 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 * per_page 	integer, default 200, max value allowed 1000, number of items per page
 
 
+## Users and subscriptions migration
+
+### Todos:
+
+* Email cleanup on-going using online tool (Olivier)
+* Expose RSS endpoint for mailchimp integration (Chris)
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+### URL: /sso-unisdr/api/preventionweb/migration/users
+
+```shell
+GET /sso-unisdr/api/preventionweb/migration/users
+```
+
+### JSON Response
+
+```shell
+[
+    {
+      "con_id": 36317,
+      "con_fname": "David",
+      "con_lname": "Watson",
+      "con_dateadded": "2010-11-24 23:27:09",
+      "con_datemodified": "2010-11-24 23:27:09",
+      "con_email": "david.watson@incom.com.au",
+      "con_org": "Incom Risk Management",
+      "con_position": null,
+      "srv_opt": "",
+      "subscription": []
+    },
+    {
+      "con_id": 36408,
+      "con_fname": "Cees",
+      "con_lname": "Van Westen",
+      "con_dateadded": "2009-10-07 09:49:45",
+      "con_datemodified": "2009-10-07 09:58:23",
+      "con_email": "westen@itc.nl",
+      "con_org": "ITC",
+      "con_position": "Associate Professor",
+      "srv_opt": "2,8,5*1,5*3,10,13",
+      "subscription": [
+        "Children resources - Monthly",
+        "Community - Weekly",
+        "News and blogs - Weekly",
+        "Publications, policies and plans - Weekly"
+      ]
+    },
+```
+
 ## National Platform
 
 ### Business Rules:
