@@ -612,34 +612,6 @@ GET /sso-unisdr/api/preventionweb/migration/images
 See: https://github.com/unisdr/VC-API-Documentation/blob/master/drupal-api-migration.md#json-response-6
 
 
-## Event & Training
-
-All PW published entries except with source UNDRR. Resultset is cached for 3 minutes. 
-
-### Authentication:
-
-oAuth2 client credentials, please refer to other documentation how to get the client access token.
-
-
-### Header Parameters:
-
-* Accept string, value "application/json"
-* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
-
-
-### URL: /sso-unisdr/api/preventionweb/migration/event_training
-
-```shell
-GET /sso-unisdr/api/preventionweb/migration/event_training
-```
-
-### JSON Response
-
-See: https://github.com/unisdr/VC-API-Documentation/blob/master/drupal-api-migration.md#json-response-15
-
-
-
-
 
 
 ## Event & Training
@@ -666,6 +638,11 @@ GET /sso-unisdr/api/preventionweb/migration/event_training
 ### JSON Response
 
 See: https://github.com/unisdr/VC-API-Documentation/blob/master/drupal-api-migration.md#json-response-15
+
+
+
+
+
 
 
 ## Publications: Documents and publications
