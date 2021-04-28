@@ -38,18 +38,6 @@ GET /sso-unisdr/api/preventionweb/migration/users
 ```shell
 [
     {
-      "con_id": 36317,
-      "con_fname": "Leoj",
-      "con_lname": "ETAG",
-      "con_dateadded": "2010-11-24 23:27:09",
-      "con_datemodified": "2010-11-24 23:27:09",
-      "con_email": "email@microsoft.com",
-      "con_org": "Microsoft Management Inc.",
-      "con_position": null,
-      "srv_opt": "",
-      "subscription": []
-    },
-    {
       "con_id": 36408,
       "con_fname": "Leo",
       "con_lname": "Gipo",
@@ -58,7 +46,16 @@ GET /sso-unisdr/api/preventionweb/migration/users
       "con_email": "email@marga.tech",
       "con_org": "ITC",
       "con_position": "Gamer",
+      "field_first_name": "Leo",
+      "field_last_name": "Gipo",
+      "field_organization": "ITC",
+      "field_position": "Gamer",
+      "field_salutation": null,
+      "field_telephone": "+0",
+      "field_other_phone": "+0",
+      "field_fax": null,
       "srv_opt": "2,8,5*1,5*3,10,13",
+      "field_domain_access": "www_preventionweb_net",
       "subscription": [
         "Children resources - Monthly",
         "Community - Weekly",
