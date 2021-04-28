@@ -4,6 +4,7 @@ Production URL: http://program.unisdr.org/sso-unisdr/
 
 Staging URL: https://program.unisdr.org/sso-unisdr-development/
 
+
 ## Generic querystring parameters
 
 * page		integer, default 1
@@ -490,5 +491,93 @@ GET /sso-unisdr/api/preventionweb/migration/organizations
       ]
    },
    ...
+]
+```
+
+
+
+
+## Blogs
+
+All published blogs. Resultset is cached for 3 minutes.
+
+### Resources:
+
+* Content mapping: https://docs.google.com/spreadsheets/d/1cLJAFyYSs8LZUrDKtRgGOLombwA4wKBB8tfSWPvI2Tc/edit#gid=561059434
+
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/preventionweb/migration/blogs
+
+```shell
+GET /sso-unisdr/api/preventionweb/migration/blogs
+```
+
+### JSON Response
+
+```shell
+[
+    {
+      "ent_id": 44959,
+      "ent_sec_id": 589,
+      "ent_dateadded": "0000-00-00 00:00:00",
+      "ent_datemodified": "2017-05-03 17:49:08",
+      "ent_datepublished": "2015-06-25 00:00:00",
+      "field_user_comments": "",
+      "field_editors_comments": "",
+      "author_name": "",
+      "ent_contact_name": "",
+      "field_email": "",
+      "field_title": "How can the world better prepare for natural disasters?",
+      "field_body": "<p>It is no longer business as usual. From major global businesses to SMEs to small local producers, economic losses from disasters are a growing threat to business continuity and sustainability. The news last week that the share price of a small Irish insurance company dropped 12% on the Dublin Stock Exchange did not grab any major headlines. However, the fact that its financial losses for 2014 were triggered in part by record claims for winter storm damage is an indication of how businesses across the world are feeling the impact of disaster risk, amplified by climate change.<\/p>\r\n\r\n<p>The accumulation of such small announcements is just as significant as a major disaster event like the floods in northern Thailand in 2011 that did serious damage to the car industry as global supply chains, dependent on manufacturing plants located on flood plains, were severely disrupted. GDP in Thailand fell by 9% in the last three months of 2011 compared with the same quarter in 2010. GDP also fell in Japan in 2011 after the Great East Japan Earthquake and Tsunami, which generated direct losses of over $200 billion.<\/p>\r\n\r\n<p><em>Margareta Wahlström was the UN Special Representative of the Secretary-General for Disaster Risk Reduction from 2008 until 2016. She has extensive experience in both disaster relief operations and disaster risk management, with the United Nations system and the International Federation of Red Cross and Red Crescent Societies. Her broad experience spans conflict and non-conflict emergencies, and addressing long-term issues of sustainable development. She was also the head of UNISDR, the United Nations Office for Disaster Risk Reduction, the focal point in the United Nations system for the coordination of disaster risk reduction.<\/em><\/p>",
+      "field_publication_date": "2015-06-25 00:00:00",
+      "field_blog_type": "Blog",
+      "field_image_id": "",
+      "domain": "www_preventionweb_net",
+      "field_authors": "Margareta Wahlström, Deputy Emergency Relief Coordinator, Swedish Red Cross",
+      "field_country": [],
+      "field_organization": [],
+      "field_region": [],
+      "field_hazards": [],
+      "field_themes": [
+        {
+          "scat_id": 42
+        },
+        {
+          "scat_id": 653
+        }
+      ],
+      "field_related_links": [
+        {
+          "id": 27000,
+          "label": "‘Sustainability Starts in Sendai,’ Secretary-General Says of Japan Summit on Disaster Risk Reduction, at Launch of Assessment Report",
+          "url": "http:\/\/www.un.org\/press\/en\/2015\/sgsm16563.doc.htm"
+        },
+        {
+          "id": 27001,
+          "label": "The R!SE Initiative",
+          "url": "http:\/\/www.pwc.com\/gx\/en\/governance-risk-compliance-consulting-services\/resilience\/publications\/rise.jhtml"
+        }
+      ],
+      "field_links": [],
+      "current_url": [
+        {
+          "id": "589449591",
+          "ent_id": 44959,
+          "url": "https:\/\/www.preventionweb.net\/experts\/oped\/view\/44959"
+        }
+      ]
+    },
+    ...
 ]
 ```
