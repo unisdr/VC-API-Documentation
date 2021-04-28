@@ -583,3 +583,30 @@ GET /sso-unisdr/api/preventionweb/migration/blogs
     ...
 ]
 ```
+
+
+## Images
+
+All primary image (thubnail or large) used by PW published entries except with source UNDRR. Resultset is cached for 3 minutes. No pagination set cause had to do post processing clearning each row.
+
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+### URL: /sso-unisdr/api/preventionweb/migration/images
+
+```shell
+GET /sso-unisdr/api/preventionweb/migration/images
+```
+
+### JSON Response
+
+See: https://github.com/unisdr/VC-API-Documentation/blob/master/drupal-api-migration.md#json-response-6
