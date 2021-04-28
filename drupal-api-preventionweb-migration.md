@@ -18,6 +18,11 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 * Email cleanup on-going using online tool (Olivier)
 * Expose RSS endpoint for mailchimp integration (Chris)
 
+
+### Resources:
+
+* Content mapping: https://docs.google.com/spreadsheets/d/1cLJAFyYSs8LZUrDKtRgGOLombwA4wKBB8tfSWPvI2Tc/edit#gid=397479902
+
 ### Authentication:
 
 oAuth2 client credentials, please refer to other documentation how to get the client access token.
@@ -76,7 +81,7 @@ GET /sso-unisdr/api/preventionweb/migration/users
 ### Resources:
 
 * Current URL: https://www.preventionweb.net/english/hyogo/national/list/
-* 
+
 
 ### Authentication:
 
