@@ -689,7 +689,7 @@ Migration source were from excel file.
 * Disasters (URL: /sso-unisdr/api/preventionweb/migration/tags_migration_disasters)
 * Words into Action (URL: /sso-unisdr/api/preventionweb/migration/tags_migration_words_into_action)
 * Community Collection (URL: /sso-unisdr/api/preventionweb/migration/tags_migration_community_collections)
-* Syndication (URL: /sso-unisdr/api/preventionweb/migration/tags_migration_syndication_taxonomy)
+* Syndication (URL: /sso-unisdr/api/preventionweb/migration/tags_migration_syndication_taxonomy), dependent to Jira ticket https://umane.everis.com/jiraito/browse/WEBSITEMIG-1154
 
 ```shell
 GET /sso-unisdr/api/preventionweb/migration/tags_migration_resource_guides
