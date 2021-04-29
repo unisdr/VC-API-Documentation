@@ -635,10 +635,9 @@ See: https://github.com/unisdr/VC-API-Documentation/blob/master/drupal-api-migra
 
 ## News
 
+All PW published news including tagged "pw:mizutorioped". Resultset is cached for 3 minutes.
+
 ### Migration from PW News
-
-
-### Migration from different content sources
 
 * News (URL: /sso-unisdr/api/preventionweb/migration/news)
 
