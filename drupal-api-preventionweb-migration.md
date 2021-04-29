@@ -654,10 +654,18 @@ See: https://github.com/unisdr/VC-API-Documentation/blob/master/drupal-api-migra
 All PW published entries except with source UNDRR mapped to information type "Documents and publications". Resultset is cached for 3 minutes.
 
 
-### URL: /sso-unisdr/api/preventionweb/migration/publications
+### Migration from different content sources
+
+* Documents and publications (URL: /sso-unisdr/api/preventionweb/migration/publications)
+* Policy and plans (URL: /sso-unisdr/api/preventionweb/migration/publications_policy_import)
+* Educational materials (URL: /sso-unisdr/api/preventionweb/migration/publications_edumat_import)
+* Maps (URL: /sso-unisdr/api/preventionweb/migration/publications_maps_import)
 
 ```shell
 GET /sso-unisdr/api/preventionweb/migration/publications
+GET /sso-unisdr/api/preventionweb/migration/publications_policy_import
+GET /sso-unisdr/api/preventionweb/migration/publications_edumat_import
+GET /sso-unisdr/api/preventionweb/migration/publications_maps_import
 ```
 
 ### JSON Response
