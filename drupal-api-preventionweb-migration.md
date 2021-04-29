@@ -723,7 +723,16 @@ GET /sso-unisdr/api/preventionweb/migration/tags_migration_syndication_taxonomy
           "url": "https:\/\/www.preventionweb.net\/collections\/asiapacific-profiles"
         }
       ],
-      "field_related_entries": []
+      "field_related_entries": [
+        "36379",
+        "48991",
+        "58098",
+        "59753",
+        "61585",
+        "62176",
+        "64116",
+        "66304"
+      ]
     },
     ...
 ]
