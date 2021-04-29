@@ -673,26 +673,13 @@ Migration source were from excel file.
 
 * Content mapping: https://docs.google.com/spreadsheets/d/1cLJAFyYSs8LZUrDKtRgGOLombwA4wKBB8tfSWPvI2Tc/edit#gid=0
 
-### Migration for Resource Guides
+### Migration to specific collection type
 
-URL: /sso-unisdr/api/preventionweb/migration/tags_migration_resource_guides
-
-### Migration for Disasters
-
-URL: /sso-unisdr/api/preventionweb/migration/tags_migration_disasters
-
-### Migration for Words into Action
-
-URL: /sso-unisdr/api/preventionweb/migration/tags_migration_words_into_action
-
-### Migration for Community Collection
-
-URL: /sso-unisdr/api/preventionweb/migration/tags_migration_community_collections
-
-### Migration for Syndication
-
-URL: /sso-unisdr/api/preventionweb/migration/tags_migration_syndication_taxonomy
-
+* Resource Guides (URL: /sso-unisdr/api/preventionweb/migration/tags_migration_resource_guides)
+* Disasters (URL: /sso-unisdr/api/preventionweb/migration/tags_migration_disasters)
+* Words into Action (URL: /sso-unisdr/api/preventionweb/migration/tags_migration_words_into_action)
+* Community Collection (URL: /sso-unisdr/api/preventionweb/migration/tags_migration_community_collections)
+* Syndication (URL: /sso-unisdr/api/preventionweb/migration/tags_migration_syndication_taxonomy)
 
 ```shell
 GET /sso-unisdr/api/preventionweb/migration/tags_migration_resource_guides
