@@ -734,3 +734,46 @@ GET /sso-unisdr/api/preventionweb/migration/tags_migration_syndication_taxonomy
     ...
 ]
 ```
+
+## Resources: Ond Demand Training
+
+Migration source from excel file.
+
+```shell
+GET /sso-unisdr/api/preventionweb/migration/resources_ondemandtraining
+```
+
+### JSON Response
+
+```shell
+[
+    {
+      "field_title": "Earthquake Seismology",
+      "field_programme_url": "https:\/\/www.edx.org\/course\/earthquake-seismology-2",
+      "organization": "Federica",
+      "field_body": "<p>The course introduces the basic<br \/>\ntheories and experimental work focused on earthquake generation and seismic<br \/>\nwave propagation. It centers on methods and technologies used to image the<br \/>\nearthquake as well as real-time simulations and mapping.<\/p>",
+      "field_academic_programme_duratio": "12 weeks",
+      "tags": "GIS & Mapping; Science and Technology; Earthquake",
+      "org_ids": "1442",
+      "language": "English",
+      "field_theme": [
+        {
+          "scat_id": 105
+        },
+        {
+          "scat_id": 761
+        },
+        {
+          "scat_id": 60
+        }
+      ],
+      "field_organization": [
+        {
+          "org_id": "1442"
+        }
+      ]
+    },
+    ...
+]
+```
+
