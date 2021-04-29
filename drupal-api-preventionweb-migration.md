@@ -11,6 +11,22 @@ Staging URL: https://program.unisdr.org/sso-unisdr-development/
 * per_page 	integer, default 200, max value allowed 1000, number of items per page
 
 
+## Generic authentication and header
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+
+
+
+
 ## Users and subscriptions migration
 
 ### Todos:
@@ -507,18 +523,6 @@ All published blogs. Resultset is cached for 3 minutes.
 
 * Content mapping: https://docs.google.com/spreadsheets/d/1cLJAFyYSs8LZUrDKtRgGOLombwA4wKBB8tfSWPvI2Tc/edit#gid=561059434
 
-
-### Authentication:
-
-oAuth2 client credentials, please refer to other documentation how to get the client access token.
-
-
-### Header Parameters:
-
-* Accept string, value "application/json"
-* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
-
-
 ### URL: /sso-unisdr/api/preventionweb/migration/blogs
 
 ```shell
@@ -649,16 +653,6 @@ See: https://github.com/unisdr/VC-API-Documentation/blob/master/drupal-api-migra
 
 All PW published entries except with source UNDRR mapped to information type "Documents and publications". Resultset is cached for 3 minutes.
 
-### Authentication:
-
-oAuth2 client credentials, please refer to other documentation how to get the client access token.
-
-
-### Header Parameters:
-
-* Accept string, value "application/json"
-* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
-
 
 ### URL: /sso-unisdr/api/preventionweb/migration/publications
 
@@ -669,3 +663,68 @@ GET /sso-unisdr/api/preventionweb/migration/publications
 ### JSON Response
 
 See: https://github.com/unisdr/VC-API-Documentation/blob/master/drupal-api-migration.md#json-response-15
+
+
+## Collections
+
+Migration source were from excel file.
+
+### Resources:
+
+* Content mapping: https://docs.google.com/spreadsheets/d/1cLJAFyYSs8LZUrDKtRgGOLombwA4wKBB8tfSWPvI2Tc/edit#gid=0
+
+### Migration for Resource Guides
+
+URL: /sso-unisdr/api/preventionweb/migration/tags_migration_resource_guides
+
+### Migration for Disasters
+
+URL: /sso-unisdr/api/preventionweb/migration/tags_migration_disasters
+
+### Migration for Words into Action
+
+URL: /sso-unisdr/api/preventionweb/migration/tags_migration_words_into_action
+
+### Migration for Community Collection
+
+URL: /sso-unisdr/api/preventionweb/migration/tags_migration_community_collections
+
+### Migration for Syndication
+
+URL: /sso-unisdr/api/preventionweb/migration/tags_migration_syndication_taxonomy
+
+
+```shell
+GET /sso-unisdr/api/preventionweb/migration/tags_migration_resource_guides
+GET /sso-unisdr/api/preventionweb/migration/tags_migration_disasters
+GET /sso-unisdr/api/preventionweb/migration/tags_migration_words_into_action
+GET /sso-unisdr/api/preventionweb/migration/tags_migration_community_collections
+GET /sso-unisdr/api/preventionweb/migration/tags_migration_syndication_taxonomy
+```
+
+
+### JSON Response
+
+```shell
+[
+   {
+      "id": "8f7282ca47ec176ac78f28329ad2ac76",
+      "field_domain_access": "www_preventionweb_net",
+      "field_collection_type": "Resource guides",
+      "keep": "Yes",
+      "field_title": "Asia-Pacific DRR Country Status Reports ",
+      "open_tags": "pw:asiapacificreport",
+      "field_type": "Topic guide",
+      "field_body": "<p>The Disaster Risk Reduction Country Status Reports provide a snapshot of DRR progress and the   status of the implementation of the Sendai Framework for Disaster Risk   Reduction at the national level.<\/p>",
+      "field_image": "https:\/\/www.undrr.org\/image\/asia-pacific-drr-country-status-reports",
+      "current_url": [
+        {
+          "id": "19191000011",
+          "url": "https:\/\/www.preventionweb.net\/collections\/asiapacific-profiles"
+        }
+      ],
+      "field_related_entries": []
+    },
+    ...
+]
+```
