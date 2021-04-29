@@ -735,7 +735,7 @@ GET /sso-unisdr/api/preventionweb/migration/tags_migration_syndication_taxonomy
 ]
 ```
 
-## Resources: Ond Demand Training
+## Resources: On Demand Training
 
 Migration source from excel file.
 
