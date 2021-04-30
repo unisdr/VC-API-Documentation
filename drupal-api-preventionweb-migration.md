@@ -689,16 +689,13 @@ Migration source were from excel file.
 * Disasters (URL: /sso-unisdr/api/preventionweb/migration/tags_migration_disasters)
 * Words into Action (URL: /sso-unisdr/api/preventionweb/migration/tags_migration_words_into_action)
 * Community Collection (URL: /sso-unisdr/api/preventionweb/migration/tags_migration_community_collections)
-* Syndication (URL: /sso-unisdr/api/preventionweb/migration/tags_migration_syndication_taxonomy), dependent to Jira ticket https://umane.everis.com/jiraito/browse/WEBSITEMIG-1154
 
 ```shell
 GET /sso-unisdr/api/preventionweb/migration/tags_migration_resource_guides
 GET /sso-unisdr/api/preventionweb/migration/tags_migration_disasters
 GET /sso-unisdr/api/preventionweb/migration/tags_migration_words_into_action
 GET /sso-unisdr/api/preventionweb/migration/tags_migration_community_collections
-GET /sso-unisdr/api/preventionweb/migration/tags_migration_syndication_taxonomy
 ```
-
 
 ### JSON Response
 
@@ -734,6 +731,15 @@ GET /sso-unisdr/api/preventionweb/migration/tags_migration_syndication_taxonomy
     ...
 ]
 ```
+
+## Syndication taxonomy: Country profile migration
+
+The entries in field_related_entries must be assigned with "Syndication taxonomy: Country profile migration". This migration must be executed after completing the content migration. Dependent to Jira ticket https://umane.everis.com/jiraito/browse/WEBSITEMIG-1154, for the creation of new taxonomy in Drupal.
+
+```shell
+GET /sso-unisdr/api/preventionweb/migration/tags_migration_syndication_taxonomy
+```
+
 
 ## Resources: On Demand Training
 
@@ -777,3 +783,27 @@ GET /sso-unisdr/api/preventionweb/migration/resources_ondemandtraining
 ]
 ```
 
+
+## Integration: Retrieve VC organitions with commitments
+
+This will retrieve all the organizations that is linked to a voluntary commitment.
+
+```shell
+GET /sso-unisdr/api/integration/sfvc/get_organizations
+```
+
+### JSON Response
+
+```shell
+[
+    {
+      "id": "17161",
+      "name": "Nigerian Women Agro Allied Farmers Association"
+    },
+    {
+      "id": "10180",
+      "name": "Agency for Humanitarian and Development Assistance for Afghanistan"
+    },
+    ...
+]
+```
