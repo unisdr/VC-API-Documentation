@@ -684,12 +684,26 @@ GET /sso-unisdr/api/preventionweb/migration/tags_migration_community_collections
 
 ## Syndication taxonomy: Country profile migration
 
-The entries in field_related_entries must be assigned with "Syndication taxonomy: Country profile migration". This migration must be executed after completing the content migration. Dependent to Jira ticket https://umane.everis.com/jiraito/browse/WEBSITEMIG-1154, for the creation of new taxonomy in Drupal.
+The entries in field_related_entries must be assigned with "Syndication taxonomy: Country profile". This migration must be executed after completing the content migration. Dependent to Jira ticket https://umane.everis.com/jiraito/browse/WEBSITEMIG-1154, for the creation of new taxonomy in Drupal.
 
 ```shell
 GET /sso-unisdr/api/preventionweb/migration/tags_migration_syndication_taxonomy
 ```
 
+### JSON Response
+
+```shell
+[
+    {
+      "field_collection_type": "Syndication",
+      "open_tags": "pw:countryprofile",
+      "comment": "add to Syndication taxonomy \"Country profile\"",
+      "field_related_entries": [
+        "10552",
+        "11145"
+    }
+]
+```
 
 ## Resources: On Demand Training
 
