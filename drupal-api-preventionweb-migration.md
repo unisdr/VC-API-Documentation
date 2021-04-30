@@ -144,16 +144,6 @@ GET /sso-unisdr/api/preventionweb/migration/national_platform
 
 * All published PW Policy and Plans marked for migration https://unitednations.sharepoint.com/:x:/r/sites/UNDRRDrupalPlatform/_layouts/15/Doc.aspx?sourcedoc=%7B7E9BDB40-DCFF-4B69-B8D0-90D50A69976E%7D&file=migration%20rules.xlsx&action=default&mobileredirect=true (Policies and plans TAB)
 
-### Authentication:
-
-oAuth2 client credentials, please refer to other documentation how to get the client access token.
-
-
-### Header Parameters:
-
-* Accept string, value "application/json"
-* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
-
 
 ### URL: /sso-unisdr/api/preventionweb/migration/policy_plans
 
