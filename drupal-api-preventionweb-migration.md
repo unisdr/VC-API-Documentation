@@ -39,14 +39,6 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 
 * Content mapping: https://docs.google.com/spreadsheets/d/1cLJAFyYSs8LZUrDKtRgGOLombwA4wKBB8tfSWPvI2Tc/edit#gid=397479902
 
-### Authentication:
-
-oAuth2 client credentials, please refer to other documentation how to get the client access token.
-
-### Header Parameters:
-
-* Accept string, value "application/json"
-* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
 
 ### URL: /sso-unisdr/api/preventionweb/migration/users
 
@@ -335,17 +327,6 @@ GET /sso-unisdr/api/preventionweb/migration/acad_programs
 * All published vacancies except source UNDRR
 
 
-### Authentication:
-
-oAuth2 client credentials, please refer to other documentation how to get the client access token.
-
-
-### Header Parameters:
-
-* Accept string, value "application/json"
-* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
-
-
 ### URL: /sso-unisdr/api/preventionweb/migration/vacancies
 
 ```shell
@@ -461,17 +442,6 @@ All published organizations. Resultset is cached for 3 minutes.
 ### Business Rules:
 
 * All published organizations.
-
-
-### Authentication:
-
-oAuth2 client credentials, please refer to other documentation how to get the client access token.
-
-
-### Header Parameters:
-
-* Accept string, value "application/json"
-* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
 
 
 ### URL: /sso-unisdr/api/preventionweb/migration/organizations
@@ -610,16 +580,6 @@ See: https://github.com/unisdr/VC-API-Documentation/blob/master/drupal-api-migra
 ## Event & Training
 
 All PW published entries except with source UNDRR. Resultset is cached for 3 minutes. 
-
-### Authentication:
-
-oAuth2 client credentials, please refer to other documentation how to get the client access token.
-
-
-### Header Parameters:
-
-* Accept string, value "application/json"
-* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
 
 
 ### URL: /sso-unisdr/api/preventionweb/migration/event_training
