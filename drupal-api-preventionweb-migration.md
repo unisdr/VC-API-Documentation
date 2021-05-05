@@ -747,6 +747,43 @@ GET /sso-unisdr/api/preventionweb/migration/resources_ondemandtraining
 ]
 ```
 
+## Entries Attachments
+
+All attachments related to PW migration, including already migrated records during the base platform phase. (sec ids: 1, 2, 5, 8, 9, 10, 13, 83, 589)
+ 
+* Academic Programmes
+* Documents & Publications
+* DRR Voices Blog
+* Educational materials
+* Events Calendar (training and non-training)
+* Jobs
+* Maps
+* News
+* Policy, Plans & Statements
+
+
+```shell
+GET /sso-unisdr/api/drupal/migration/get_attachments
+```
+
+### JSON Response
+
+See: https://github.com/unisdr/VC-API-Documentation/blob/master/drupal-api-migration.md#json-response-4
+
+
+## Entries Related Links
+
+All related links related to PW content migration, including already migrated records during the base platform phase. See content types included above.
+
+```shell
+GET /sso-unisdr/api/drupal/migration/get_related_links
+```
+
+### JSON Response
+
+See: https://github.com/unisdr/VC-API-Documentation/blob/master/drupal-api-migration.md#json-response-5
+
+
 
 ## Integration: Retrieve VC organitions with commitments
 
