@@ -749,7 +749,7 @@ GET /sso-unisdr/api/preventionweb/migration/resources_ondemandtraining
 
 ## Entries Attachments
 
-All attachments related to PW migration, including already migrated records during the base platform phase. (sec ids: 1, 2, 5, 8, 9, 10, 13, 83, 589)
+All attachments related to PW migration, including already migrated records during the base platform phase. (sec ids: 1, 2, 5, 8, 9, 10, 13, 83, 589). As agreed with Everis, same endpoint as base platform migration.
  
 * Academic Programmes
 * Documents & Publications
@@ -773,7 +773,7 @@ See: https://github.com/unisdr/VC-API-Documentation/blob/master/drupal-api-migra
 
 ## Entries Related Links
 
-All related links related to PW content migration, including already migrated records during the base platform phase. See content types included above.
+All related links related to PW content migration, including already migrated records during the base platform phase. As agreed with Everis, same endpoint as base platform migration. See content types included above.
 
 ```shell
 GET /sso-unisdr/api/drupal/migration/get_related_links
