@@ -813,6 +813,7 @@ GET /sso-unisdr/api/integration/sfvc/get_organizations
 
 ## Publications: Educational materials
 
+Migrate the content to Publications content type and document publications information type.
 
 ### URL: /sso-unisdr/api/preventionweb/migration/educational_materials
 
