@@ -723,16 +723,21 @@ GET /sso-unisdr/api/preventionweb/migration/resources_ondemandtraining
       "organization": "Federica",
       "field_body": "<p>The course introduces the basic<br \/>\ntheories and experimental work focused on earthquake generation and seismic<br \/>\nwave propagation. It centers on methods and technologies used to image the<br \/>\nearthquake as well as real-time simulations and mapping.<\/p>",
       "field_academic_programme_duratio": "12 weeks",
-      "tags": "GIS & Mapping; Science and Technology; Earthquake",
+      "tags_theme": "GIS & Mapping; Science and Technology",
+      "tags_hazard": "Earthquake",
       "org_ids": "1442",
       "language": "English",
+      "tags_theme": "GIS & Mapping; Science and Technology",
+      "tags_hazard": "Earthquake",
       "field_theme": [
         {
           "scat_id": 105
         },
         {
           "scat_id": 761
-        },
+        }
+      ],
+      "field_hazard": [
         {
           "scat_id": 60
         }
