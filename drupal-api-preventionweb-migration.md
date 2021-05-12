@@ -808,3 +808,88 @@ GET /sso-unisdr/api/integration/sfvc/get_organizations
     ...
 ]
 ```
+
+
+
+## Publications: Educational materials
+
+
+### URL: /sso-unisdr/api/preventionweb/migration/educational_materials
+
+```shell
+GET /sso-unisdr/api/preventionweb/migration/educational_materials
+```
+
+### JSON Response
+
+```shell
+[
+    {
+      "ent_status": 3,
+      "ent_id": 3418,
+      "ent_sec_id": 10,
+      "field_title": "El popocatepetl",
+      "ent_dateadded": "2008-08-22 17:04:14",
+      "ent_datemodified": "2008-12-17 11:29:33",
+      "ent_datepublished": "2008-12-17 11:29:33",
+      "field_user_comments": "",
+      "field_editors_comments": "[MP] added org 10Sept08\r\n[MCH]revised the link and published (17Dec08)",
+      "field_body": "",
+      "author_name": "Jane Doe",
+      "ent_contact_name": "",
+      "field_email": "",
+      "field_target_audience": "",
+      "field_authors": "",
+      "field_isbn": "",
+      "field_title_original": "",
+      "field_number_page": "",
+      "field_year_of_publication": 2008,
+      "edu_language": "4",
+      "edu_audience_group_id": 2,
+      "edu_audience_subgroup_id": 0,
+      "field_image_id": "",
+      "domain": "www_preventionweb_net",
+      "field_country": [
+        {
+          "ctry_id": 112,
+          "ctry_iso3_code": "MEX"
+        }
+      ],
+      "field_organization": [
+        {
+          "org_id": 3915,
+          "org_title_long": "Kokone",
+          "org_title_acronym": ""
+        }
+      ],
+      "field_region": [
+        {
+          "cont_id": 2
+        }
+      ],
+      "field_hazards": [
+        {
+          "scat_id": 72
+        }
+      ],
+      "field_themes": [
+        {
+          "scat_id": 34
+        },
+        {
+          "scat_id": 37
+        }
+      ],
+      "field_related_links": [],
+      "field_links": [],
+      "current_url": [
+        {
+          "id": "10034181",
+          "ent_id": 3418,
+          "url": "https:\/\/www.preventionweb.net\/educational\/view\/3418"
+        }
+      ]
+    },
+    ...
+]
+```
