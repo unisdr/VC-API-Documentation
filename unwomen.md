@@ -1,5 +1,28 @@
 # Taxonomy
 
+## PreventionWeb Countries and Regions
+
+### URL: /sso-unisdr/api/integration/taxonomy/country_region
+
+### JSON Response
+```shell
+[
+  {
+    "uuid": "a19ec975-0a4c-4cad-add6-2e7951678eaf",
+    "tid": 69,
+    "name": "Africa",
+    "parent_target_id": 0
+  },
+  {
+    "uuid": "93a2aea0-9ebc-4b60-852f-aa317dc524eb",
+    "tid": 76,
+    "name": "Algeria",
+    "parent_target_id": 69
+  },
+  ...
+]
+```
+
 ## PreventionWeb Countries
 
 ### URL: /sso-unisdr/api/integration/taxonomy/country
@@ -26,6 +49,7 @@
     "parent_target_id": 72
   },
   ...
+]
 ```
 
 ## PreventionWeb Regions
