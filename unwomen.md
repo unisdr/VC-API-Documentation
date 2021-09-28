@@ -17,12 +17,44 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * items_per_page integer (optional), items per page, allowed value [5, 10, 50] (10 is the default value)
 * page integer (optional), page number (0 is the default value)
 
-### URL: /sso-unisdr/api/integration/pw/images
+### URL: /sso-unisdr/api/integration/pw/images?ids=xxx
 
 * /sso-unisdr/api/integration/pw/images?ids=72681,72558
 * /sso-unisdr/api/integration/pw/images?page=1&ids=72681
 * /sso-unisdr/api/integration/pw/images?page=1&items_per_page=5&ids=72681,72558
 
+### JSON Response
+
+```shell
+{
+  "results": [
+    {
+      "field_image_id": "73824",
+      "nid": "66789",
+      "credit": "",
+      "caption": "",
+      "url": "http:\/\/www.preventionweb.net\/media\/73824\/download",
+      "url_portait": "http:\/\/www.preventionweb.net\/sites\/default\/files\/styles\/por\/public\/2021-09\/WorldRiskReport%202021.png?h=d230a86e&amp;itok=cRlBDIaw"
+    },
+    {
+      "field_image_id": "73822",
+      "nid": "66783",
+      "credit": "",
+      "caption": "",
+      "url": "http:\/\/www.preventionweb.net\/media\/73822\/download",
+      "url_portait": "http:\/\/www.preventionweb.net\/sites\/default\/files\/styles\/por\/public\/2021-09\/Disaster%20risk%20reduction%20through%20digital%20transformation%20in%20the%20western%20hemisphere.png?h=d230a86e&amp;itok=8MNa8P5f"
+    },
+    ...
+  ],
+  "pager": {
+    "count": 3,
+    "pages": 0,
+    "items_per_page": "10",
+    "current_page": 0,
+    "next_page": 0
+  }
+}
+```
 
 ## Collection
 
