@@ -21,6 +21,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 ### URL: /sso-unisdr/api/integration/pw/collections/unwomen/{collection_node_id}
 
 * /sso-unisdr/api/integration/pw/collections/unwomen/65663
+* /sso-unisdr/api/integration/pw/collections/unwomen/65663?page=2
 * /sso-unisdr/api/integration/pw/collections/unwomen/65663?type=news
 * /sso-unisdr/api/integration/pw/collections/unwomen/65663?type=publication
 * /sso-unisdr/api/integration/pw/collections/unwomen/65663?type=blog
