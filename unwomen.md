@@ -1,3 +1,73 @@
+# Content Type
+
+CONDITION: Pre-filtered by content publication date >= 2020 and theme = private sector
+
+
+## Documents and publications
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+### URL: /sso-unisdr/api/integration/pw/collections/unwomen/{collection_node_id}
+
+### JSON Response
+
+```shell
+[
+{
+  "current_page": 1,
+  "data": [
+    {
+      "nid": 16349,
+      "type": "news",
+      "title": "The case for equity to reduce disaster risk: An analysis of Bolivia",
+      "langcode": "en",
+      "changed": 1631269371,
+      "created": 1625564667,
+      "published_at": 1625571999,
+      "array_organization_id": [
+        "363"
+      ],
+      "array_organization_name": [
+        "World Bank, the"
+      ],
+      "array_themes": [
+        "317",
+        "322",
+        "327"
+      ],
+      "array_hazards": [],
+      "array_countries_regions": [
+        "98"
+      ],
+      "url": "https:\/\/www.preventionweb.net\/news\/case-equity-reduce-disaster-risk-analysis-bolivia",
+      "image_id": 72216,
+      "body_trimmed": "Bolivia is one of the poorest nations in Latin America. However, it has at least $14 billion per year in potential if it achieves gender equality, urban-rural parity."
+    },
+    ...
+  ],
+  "first_page_url": "\/sso-unisdr\/api\/integration\/pw\/collections\/unwomen\/65663?page=1",
+  "from": 1,
+  "last_page": 5,
+  "last_page_url": "\/sso-unisdr\/api\/integration\/pw\/collections\/unwomen\/65663?page=5",
+  "next_page_url": "\/sso-unisdr\/api\/integration\/pw\/collections\/unwomen\/65663?page=2",
+  "path": "\/sso-unisdr\/api\/integration\/pw\/collections\/unwomen\/65663",
+  "per_page": "100",
+  "prev_page_url": null,
+  "to": 100,
+  "total": 464,
+  "status": 200,
+  "success": 1
+}
+```
+
+
 # Taxonomy
 
 ## PreventionWeb Countries and Regions
@@ -124,3 +194,6 @@
   ...
 ]
 ```
+
+
+
