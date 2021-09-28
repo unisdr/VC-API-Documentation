@@ -1,9 +1,6 @@
 # Content Type
 
-CONDITION: Pre-filtered by content publication date >= 2020 and theme = private sector
-
-
-## Documents and publications
+## Collection
 
 ### Authentication:
 
