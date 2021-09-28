@@ -48,7 +48,55 @@
     "name": "Americas",
     "cont_id": 2
   },
+  ...
+]
+```
 
+
+## PreventionWeb Themes
+
+### URL: /sso-unisdr/api/integration/taxonomy/theme
+
+### JSON Response
+
+```shell
+[
+  {
+    "uuid": "23289da9-3674-4aa4-b17b-0d162c52931c",
+    "tid": 307,
+    "scat_id": 41,
+    "name": "Advocacy & Media"
+  },
+  {
+    "uuid": "c4cd9635-ab1f-46e4-99f8-15c3f8ce26dd",
+    "tid": 308,
+    "scat_id": 31,
+    "name": "Capacity Development"
+  },
+  ...
+]
+```
+
+## PreventionWeb Hazards
+
+### URL: /sso-unisdr/api/integration/taxonomy/hazard
+
+### JSON Response
+
+```shell
+[
+  {
+    "uuid": "14dbbe26-ab0f-4fab-bd05-dfcbcced0a7b",
+    "tid": 341,
+    "scat_id": 67,
+    "name": "Avalanche"
+  },
+  {
+    "uuid": "9512e517-01d7-49da-b408-e29199a96eac",
+    "tid": 342,
+    "scat_id": 56,
+    "name": "Cold Wave"
+  },
   ...
 ]
 ```
