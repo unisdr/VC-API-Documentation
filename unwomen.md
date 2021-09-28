@@ -1,4 +1,28 @@
-# Content Type
+# Content Type / Content / Rosources
+
+## Images
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+### Query String Parameter:
+
+* ids string (required), image_id comma separated e.g. ?ids=72681,72558
+* items_per_page integer (optional), items per page, allowed value [5, 10, 50] (10 is the default value)
+* page integer (optional), page number (0 is the default value)
+
+### URL: /sso-unisdr/api/integration/pw/images
+
+* /sso-unisdr/api/integration/pw/images?ids=72681,72558
+* /sso-unisdr/api/integration/pw/images?page=1&ids=72681
+* /sso-unisdr/api/integration/pw/images?page=1&items_per_page=5&ids=72681,72558
+
 
 ## Collection
 
@@ -18,13 +42,13 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * type string (optional), allowed value [news, publication, blog]
 
 
-### URL: /sso-unisdr/api/integration/pw/collections/unwomen/{collection_node_id}
+### URL: /sso-unisdr/api/integration/pw/collection/unwomen/{collection_node_id}
 
-* /sso-unisdr/api/integration/pw/collections/unwomen/65663
-* /sso-unisdr/api/integration/pw/collections/unwomen/65663?page=2
-* /sso-unisdr/api/integration/pw/collections/unwomen/65663?type=news
-* /sso-unisdr/api/integration/pw/collections/unwomen/65663?type=publication
-* /sso-unisdr/api/integration/pw/collections/unwomen/65663?type=blog
+* /sso-unisdr/api/integration/pw/collection/unwomen/65663
+* /sso-unisdr/api/integration/pw/collection/unwomen/65663?page=2
+* /sso-unisdr/api/integration/pw/collection/unwomen/65663?type=news
+* /sso-unisdr/api/integration/pw/collection/unwomen/65663?type=publication
+* /sso-unisdr/api/integration/pw/collection/unwomen/65663?type=blog
 
 
 ### JSON Response
