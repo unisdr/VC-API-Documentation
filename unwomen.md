@@ -11,7 +11,20 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * Accept string, value "application/json"
 * Authorization string, value "Bearer [Client: ACCESS TOKEN]"
 
+### Query String Parameter:
+
+* page integer (optional), page number
+* per_page integer (optional), number of records per page (200 is the default and maximum value)
+* type string (optional), allowed value [news, publication, blog]
+
+
 ### URL: /sso-unisdr/api/integration/pw/collections/unwomen/{collection_node_id}
+
+* /sso-unisdr/api/integration/pw/collections/unwomen/65663
+* /sso-unisdr/api/integration/pw/collections/unwomen/65663?type=news
+* /sso-unisdr/api/integration/pw/collections/unwomen/65663?type=publication
+* /sso-unisdr/api/integration/pw/collections/unwomen/65663?type=blog
+
 
 ### JSON Response
 
