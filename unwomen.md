@@ -16,7 +16,6 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 ### JSON Response
 
 ```shell
-[
 {
   "current_page": 1,
   "data": [
