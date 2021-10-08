@@ -1,4 +1,4 @@
-# Content Type / Content / Rosources
+The API exposes the registration / participants information from the excel file from Indico.
 
 ## All registraton
 
