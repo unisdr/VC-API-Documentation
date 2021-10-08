@@ -13,6 +13,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 
 ### URL: /sso-unisdr/indico/event/registration/all/{code}
 
+* {code} integer, this is the event ID in Indico
 * /sso-unisdr/indico/event/registration/all/1000230
 
 ### JSON Response
@@ -138,6 +139,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 
 ### URL: /sso-unisdr/indico/event/registration/approved/{code}
 
+* {code} integer, this is the event ID in Indico
 * /sso-unisdr/indico/event/registration/approved/1000230
 
 ### JSON Response
@@ -200,6 +202,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 
 ### URL: /sso-unisdr/api/integration/indico/event/registration/upload-report/{code}
 
+* {code} integer, this is the event ID in Indico
 * /sso-unisdr/api/integration/indico/event/registration/upload-report/1000230
 
 ### JSON Response
