@@ -130,7 +130,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 
 ## Participants
 
-This endpoint shows all the approved registrations. But since the Excel file is not headers are not standard, manual intervention per event is needed to expose the appropriate fields per event. The example below is based from RF Americas registration.
+This endpoint shows all the approved registrations. But since the Excel report column headers are not standard, manual intervention per event is needed to expose the appropriate fields. The example below is based on RP America Indico registration.
 
 ### Authentication:
 
