@@ -84,13 +84,156 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 
 ## Publications
 
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+### Query String Parameter:
+
+* page integer (optional), page number
+* per_page integer (optional), number of records per page (200 is the default and maximum value)
+
 ### URL: /sso-unisdr/api/integration/arise/v2/publications
 
+### JSON Response
+
+```shell
+{
+  "current_page": 1,
+  "data": [
+    {
+      "nid": 67032,
+      "type": "publication",
+      "title": "Adapting urban transport to climate change",
+      "langcode": "en",
+      "changed": 1633684066,
+      "created": 1633614338,
+      "published_at": 1633684066,
+      "array_organization_id": [
+        "67036",
+        "67034"
+      ],
+      "array_organization_name": [
+        "Sustainable Urban Transport Project",
+        "Transforming Urban Mobility Initiative"
+      ],
+      "array_themes": [
+        "313",
+        "331",
+        "339"
+      ],
+      "array_hazards": [
+        "343",
+        "347",
+        "348"
+      ],
+      "array_countries_regions": [],
+      "url": "https:\/\/www.preventionweb.net\/publication\/adapting-urban-transport-climate-change",
+      "image_id": 74081,
+      "field_title_original": null,
+      "field_publication_type": "Documents and publications",
+      "field_year_of_publication": 2021,
+      "ent_id": null,
+      "body_trimmed": "This module explores the impact wreaked by extreme weather events on cities and their transport networks and means by which resilience can be built up against the increasing frequency and intensity of these events. ",
+      "array_authors": [
+        "Doogie Black",
+        "Nick Pyatt"
+      ]
+    },
+    ...
+  ],
+  "first_page_url": "https:\/\/program.unisdr.org\/sso-unisdr-development\/api\/integration\/arise\/v2\/news?page=1",
+  "from": 1,
+  "last_page": 1,
+  "last_page_url": "https:\/\/program.unisdr.org\/sso-unisdr-development\/api\/integration\/arise\/v2\/news?page=1",
+  "next_page_url": null,
+  "path": "https:\/\/program.unisdr.org\/sso-unisdr-development\/api\/integration\/arise\/v2\/news",
+  "per_page": 200,
+  "prev_page_url": null,
+  "to": 113,
+  "total": 113,
+  "status": 200,
+  "success": 1
+}
+```
 
 
 ## Events (Meeting and Conferences AND Training)
 
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+### Query String Parameter:
+
+* page integer (optional), page number
+* per_page integer (optional), number of records per page (200 is the default and maximum value)
+
 ### URL: /sso-unisdr/api/integration/arise/v2/event_training
+
+### JSON Response
+
+```shell
+{
+  "current_page": 1,
+  "data": [
+    {
+      "nid": 66954,
+      "type": "event",
+      "title": "UP ISSI E-HANDA Webinar: Helping MSMEs Build Forward Better",
+      "langcode": "en",
+      "changed": 1633447157,
+      "created": 1633446584,
+      "published_at": 1633446961,
+      "array_organization_id": [
+        "15805"
+      ],
+      "array_organization_name": [
+        "UP Institute for Small-Scale Industries"
+      ],
+      "array_themes": [
+        "331",
+        "332"
+      ],
+      "array_hazards": [],
+      "array_countries_regions": [],
+      "url": "https:\/\/www.preventionweb.net\/event\/issi-e-handa-webinar-helping-msmes-build-forward-better-0",
+      "image_id": 73984,
+      "field_start_date": "2021-10-13",
+      "field_end_date": "2021-10-13",
+      "field_event_type_id": 783,
+      "field_event_type": "Meetings and conferences",
+      "ent_id": null,
+      "body_trimmed": "In line with the observance of the International Day for Disaster Risk Reduction, the University of the Philippines Institute for Small-Scale Industries (UP ISSI) is holding the “E-HANDA Webinar: Helping MSMEs Build Forward Better” on October 13, 2021"
+    },
+    ...
+  ],
+  "first_page_url": "https:\/\/program.unisdr.org\/sso-unisdr-development\/api\/integration\/arise\/v2\/news?page=1",
+  "from": 1,
+  "last_page": 1,
+  "last_page_url": "https:\/\/program.unisdr.org\/sso-unisdr-development\/api\/integration\/arise\/v2\/news?page=1",
+  "next_page_url": null,
+  "path": "https:\/\/program.unisdr.org\/sso-unisdr-development\/api\/integration\/arise\/v2\/news",
+  "per_page": 200,
+  "prev_page_url": null,
+  "to": 113,
+  "total": 113,
+  "status": 200,
+  "success": 1
+}
+```
+
+
 
 
 
