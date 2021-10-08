@@ -2,6 +2,21 @@
 
 ## Images
 
+See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/unwomen.md#images
+
+## News
+
+### URL: /sso-unisdr/api/integration/arise/v2/news
+
+## Publications
+
+### URL: /sso-unisdr/api/integration/arise/v2/publications
+
+## Events (Meeting and Conferences AND Training)
+
+### URL: /sso-unisdr/api/integration/arise/v2/event_training
+
+
 
 # Taxonomy
 
