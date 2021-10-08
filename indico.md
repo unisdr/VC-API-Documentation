@@ -229,6 +229,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 POST http://[SERVER]/sso-unisdr/api/integration/indico/event/registration/upload-report/1000230 HTTP/1.1
 Accept: application/json
 Content-Type: multipart/form-data; boundary=---011000010111000001101001
+Authorization: Bearer [CLIENT TOKEN]
 Host: localhost
 Content-Length: 242
 
@@ -245,6 +246,7 @@ Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 HttpResponse<String> response = Unirest.post("http://[SERVER]/sso-unisdr/api/integration/indico/event/registration/upload-report/1000230")
   .header("Accept", "application/json")
   .header("Content-Type", "multipart/form-data; boundary=---011000010111000001101001")
+  .header("Authorization", "Bearer [CLIENT TOKEN]")
   .body("-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"file\"; filename=\"RegistrantsList_export_1000230.xlsx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n\r\n\r\n-----011000010111000001101001--\r\n")
   .asString();
 ```
@@ -265,6 +267,7 @@ curl_setopt_array($curl, [
   CURLOPT_POSTFIELDS => "-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"file\"; filename=\"RegistrantsList_export_1000230.xlsx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n\r\n\r\n-----011000010111000001101001--\r\n",
   CURLOPT_HTTPHEADER => [
     "Accept: application/json",
+    "Authorization: Bearer [CLIENT TOKEN]",
     "Content-Type: multipart/form-data; boundary=---011000010111000001101001"
   ],
 ]);
