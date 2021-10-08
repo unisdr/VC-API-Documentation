@@ -1,4 +1,4 @@
-The API exposes the registration / participants information from the excel file from Indico.
+The API exposes the registration / participants information from the excel exported file report from the Indico system.
 
 ## All registraton
 
