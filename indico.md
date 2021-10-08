@@ -2,6 +2,8 @@ The API exposes the registration / participants information from the excel file 
 
 ## All registraton
 
+This endpoint will retrieve all the raw registration information from Indico in JSON format. The data are read from the uploaded registration excel report from Indico.
+
 ### Authentication:
 
 oAuth2 client credentials, please refer to other documentation how to get the client access token.
