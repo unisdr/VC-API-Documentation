@@ -13,10 +13,10 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * Accept string, value "application/json"
 * Authorization string, value "Bearer [Client: ACCESS TOKEN]"
 
-### URL: /sso-unisdr/indico/event/registration/all/{code}
+### URL: /sso-unisdr/api/integration/indico/event/registration/all/{code}
 
 * {code} integer, this is the event ID in Indico
-* /sso-unisdr/indico/event/registration/all/1000230
+* /sso-unisdr/api/integration/indico/event/registration/all/1000230
 
 ### JSON Response
 
@@ -141,10 +141,10 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * Accept string, value "application/json"
 * Authorization string, value "Bearer [Client: ACCESS TOKEN]"
 
-### URL: /sso-unisdr/indico/event/registration/approved/{code}
+### URL: /sso-unisdr/api/integration/indico/virtualplatform/registration/approved-participants/{code}
 
 * {code} integer, this is the event ID in Indico
-* /sso-unisdr/indico/event/registration/approved/1000230
+* /sso-unisdr/api/integration/indico/virtualplatform/registration/approved-participants/1000230
 
 ### JSON Response
 
