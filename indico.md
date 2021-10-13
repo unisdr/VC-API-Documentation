@@ -21,7 +21,7 @@ Response Body
 
 ```shell
 [ACCESS TOKEN]
-
+```
 
 
 ## All registraton
