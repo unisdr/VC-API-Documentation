@@ -1,5 +1,29 @@
 The API exposes the registration / participants information from the excel exported file report from the Indico system.
 
+## Authentication
+
+### Client Credentials Flow OAuth2 API
+
+#### Request access token
+
+Form Post Parameters:
+
+* grant_type string, value should be ‘client_credentials’
+* client_id  integer,  client ID given by UNISDR
+* client_secret  string, secret provided by UNISDR
+* scope string (optional), value should be ‘*’ or null 
+
+```shell
+POST /sso-unisdr/oauth/token
+```
+
+Response Body
+
+```shell
+[ACCESS TOKEN]
+
+
+
 ## All registraton
 
 This endpoint will retrieve all the raw registration information from Indico in JSON format. The data are read from the uploaded registration excel report from Indico.
