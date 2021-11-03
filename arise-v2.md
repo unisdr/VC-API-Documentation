@@ -391,6 +391,17 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
     ],
     "ctry_id": 2
   },
+  {
+    "uuid": "6bd89ac8-81e9-4ddb-b0b0-68098af2ea59",
+    "country": "Niue",
+    "iso_code3": "NIU",
+    "un_code": "570",
+    "array_undrr_region_id": [
+      "68",
+      "66"
+    ],
+    "ctry_id": 194
+  },
   ...
 ]
 ```
