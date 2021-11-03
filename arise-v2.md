@@ -364,3 +364,74 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 ]
 ```
 
+## UNDRR Countries
+
+### URL: /sso-unisdr/api/integration/taxonomy/undrr_country
+
+### JSON Response
+```shell
+[
+  {
+    "uuid": "fce824db-999d-43a8-814d-179ad6e49269",
+    "country": "Afghanistan",
+    "iso_code3": "AFG",
+    "un_code": "004",
+    "array_undrr_region_id": [
+      "66"
+    ],
+    "ctry_id": 1
+  },
+  {
+    "uuid": "a1f2f07c-1c04-42be-a9c6-295ccbb1a7bf",
+    "country": "Albania",
+    "iso_code3": "ALB",
+    "un_code": "008",
+    "array_undrr_region_id": [
+      "67"
+    ],
+    "ctry_id": 2
+  },
+  ...
+]
+```
+
+## UNDRR Regions
+
+### URL: /sso-unisdr/api/integration/taxonomy/undrr_region
+
+### JSON Response
+
+```shell
+[
+  {
+    "uuid": "323f4b97-8c24-4037-9555-f8609adcef9f",
+    "tid": 63,
+    "name": "Africa"
+  },
+  {
+    "uuid": "9ef45c73-f014-4798-a513-5ce1518d8d8c",
+    "tid": 64,
+    "name": "Americas"
+  },
+  {
+    "uuid": "319257a7-b8dd-455c-9110-27c531c42856",
+    "tid": 65,
+    "name": "Arab States"
+  },
+  {
+    "uuid": "6f0bda11-9842-4c14-b9af-e9740e5baef5",
+    "tid": 66,
+    "name": "Asia and Pacific"
+  },
+  {
+    "uuid": "bb36dc0f-abd7-4042-b4eb-45efeef4c309",
+    "tid": 67,
+    "name": "Europe"
+  },
+  {
+    "uuid": "7b4254af-6e2d-4dfa-aaf5-742c099f3cd2",
+    "tid": 68,
+    "name": "Suva"
+  }
+]
+```
