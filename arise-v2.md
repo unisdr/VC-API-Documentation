@@ -241,6 +241,8 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 
 ## PreventionWeb Countries and Regions
 
+This endpoint lists all countries and regions. Record with parent_target_id = 0 while parent_target_id != 0 are countries. 
+
 ### URL: /sso-unisdr/api/integration/taxonomy/country_region
 
 ### JSON Response
@@ -293,6 +295,8 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 
 ## PreventionWeb Regions
 
+The field cont_id was retained to retain reference to legacy data. New record created in the new system will not have cont_id.
+
 ### URL: /sso-unisdr/api/integration/taxonomy/region
 
 ### JSON Response
@@ -318,6 +322,8 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 
 ## PreventionWeb Themes
 
+The field scat_id was retained to retain reference to legacy data. New record created in the new system will not have scat_id.
+
 ### URL: /sso-unisdr/api/integration/taxonomy/theme
 
 ### JSON Response
@@ -341,6 +347,8 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 ```
 
 ## PreventionWeb Hazards
+
+The field scat_id was retained to retain reference to legacy data. New record created in the new system will not have scat_id. 
 
 ### URL: /sso-unisdr/api/integration/taxonomy/hazard
 
