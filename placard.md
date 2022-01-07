@@ -73,14 +73,14 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 			"ent_id": 79277,
 			"body_trimmed": "This report presents a synthesis of published and ongoing research by REACH which explores the relationship between water security, climate and climate adaptation decisions, drawing on findings from REACH research conducted in Sub-Saharan Africa and South Asia.&nbsp;Globally, water institutions are working ..."
 		},
-    ...
-  ],
-	"first_page_url": "http:\/\/SERVER\/api\/integration\/pw\/publications-europe?page=1",
+    		...
+	],
+	"first_page_url": "http:\/\/localhost:8000\/api\/integration\/pw\/publications-europe?page=1",
 	"from": 1,
 	"last_page": 13,
-	"last_page_url": "http:\/\/SERVER\/api\/integration\/pw\/publications-europe?page=13",
-	"next_page_url": "http:\/\/SERVER\/api\/integration\/pw\/publications-europe?page=2",
-	"path": "http:\/\/SERVER\/api\/integration\/pw\/publications-europe",
+	"last_page_url": "http:\/\/localhost:8000\/api\/integration\/pw\/publications-europe?page=13",
+	"next_page_url": "http:\/\/localhost:8000\/api\/integration\/pw\/publications-europe?page=2",
+	"path": "http:\/\/localhost:8000\/api\/integration\/pw\/publications-europe",
 	"per_page": 200,
 	"prev_page_url": null,
 	"to": 200,
