@@ -7,6 +7,8 @@ See documentation for more details https://github.com/unisdr/VC-API-Documentatio
 
 ## Publications
 
+This method will retrieve all documents and publications records tagged Europe region or country under Europe.
+
 ### Authentication:
 
 oAuth2 client credentials, please refer to other documentation how to get the client access token.
