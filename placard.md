@@ -95,33 +95,33 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 
 ## PreventionWeb Countries and Regions
 
-### See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/arise-v2.md#preventionweb-countries-and-regions
+See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/arise-v2.md#preventionweb-countries-and-regions
 
 
 
 ## PreventionWeb Countries
 
-### See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/arise-v2.md#preventionweb-countries
+See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/arise-v2.md#preventionweb-countries
 
 
 
 
 ## PreventionWeb Regions
 
-### See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/arise-v2.md#url-sso-unisdrapiintegrationtaxonomyregion
+See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/arise-v2.md#url-sso-unisdrapiintegrationtaxonomyregion
 
 
 
 ## PreventionWeb Themes
 
-### See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/arise-v2.md#preventionweb-themes
+See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/arise-v2.md#preventionweb-themes
 
 
 ## PreventionWeb Hazards
 
-### See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/arise-v2.md#preventionweb-hazards
+See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/arise-v2.md#preventionweb-hazards
 
 
 ## UNDRR Countries
 
-### See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/arise-v2.md#undrr-countries
+See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/arise-v2.md#undrr-countries
