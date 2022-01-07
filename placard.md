@@ -11,7 +11,7 @@ This method will retrieve all documents and publications records tagged Europe r
 
 ### Authentication:
 
-oAuth2 client credentials, please refer to other documentation how to get the client access token.
+oAuth2 client credentials, please refer to other documentation how to get the client access token https://github.com/unisdr/VC-API-Documentation/blob/master/indico.md#authentication.
 
 ### Header Parameters:
 
