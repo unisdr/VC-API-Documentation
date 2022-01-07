@@ -121,7 +121,3 @@ See documentation for more details https://github.com/unisdr/VC-API-Documentatio
 
 See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/arise-v2.md#preventionweb-hazards
 
-
-## UNDRR Countries
-
-See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/arise-v2.md#undrr-countries
