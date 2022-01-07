@@ -90,24 +90,16 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 }
 ```
 
-| Field           	| Description                	| Type/Value       	|
-|-----------------	|----------------------------	|------------------	|
-| nid             	| ID                         	| int, primary key 	|
-| title           	| Title of the publication   	| text             	|
-| langcode        	| 2 characters language code 	|                  	|
-| changed         	| Unix timestamp             	| int              	|
-| created         	| Unix timestamp             	|                  	|
-| published_at    	| Unix timestamp             	|                  	|
-| image_id        	|                            	| int              	|
-| ent_id          	|                            	| int              	|
-| address_street  	|                            	|                  	|
-| address_town    	|                            	|                  	|
-| address_zip_cde 	|                            	|                  	|
-| country_id      	|                            	| int              	|
-| country_iso3    	|                            	|                  	|
-| country_un_code 	|                            	|                  	|
-| country_title   	|                            	|                  	|
-| checksum        	|                            	|                  	|
+| Field        	| Description                                                                      	| Type/Value       	|
+|--------------	|----------------------------------------------------------------------------------	|------------------	|
+| nid          	| ID, primary key                                                                     	| int           	|
+| title        	| Title of the publication                                                         	| text             	|
+| langcode     	| 2 characters language code                                                       	|                  	|
+| changed      	| Unix timestamp                                                                   	| int              	|
+| created      	| Unix timestamp                                                                   	|                  	|
+| published_at 	| Unix timestamp                                                                   	|                  	|
+| image_id     	| Reference to image source http://www.preventionweb.net/media/[image_id]/download 	| int              	|
+| ent_id       	| Reference to legacy old ID                                                       	| int              	|
 
 # Taxonomy
 
