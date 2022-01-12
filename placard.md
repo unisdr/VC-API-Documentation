@@ -1,10 +1,5 @@
 # Content Type / Content / Rosources
 
-## Images
-
-See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/unwomen.md#images
-
-
 ## Publications
 
 This method will retrieve all documents and publications records tagged Europe region or country under Europe.
