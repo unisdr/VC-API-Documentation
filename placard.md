@@ -1,5 +1,11 @@
 # Content Type / Content / Rosources
 
+## API Base URL
+
+https://program.unisdr.org/sso-unisdr
+
+
+
 ## Publications
 
 This method will retrieve all documents and publications records tagged Europe region or country under Europe.
