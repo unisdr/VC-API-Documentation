@@ -78,7 +78,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 					"langcode": "en",
 					"target": "link",
 					"url": "https:\/\/www.mite.gov.it\/sites\/default\/files\/archivio\/allegati\/clima\/documento_SNAC.pdf",
-					"file": []
+					"array_file": []
 				},
 				{
 					"name": "National Policy on Disaster Management 2009 India",
