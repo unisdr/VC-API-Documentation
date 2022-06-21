@@ -11,9 +11,9 @@ https://program.unisdr.org/sso-unisdr
 
 
 
-## Policy Plans and 
+## Policies and Plans
 
-This method will retrieve all documents and publications records tagged Europe region or country under Europe.
+This method will retrieve all policies and plans documents exposing all meta data.
 
 ### Authentication:
 
@@ -85,7 +85,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 					"langcode": "en",
 					"target": "file",
 					"url": "https:\/\/www.preventionweb.net\/sites\/default\/files\/2022-01\/National Policy on Disaster Management 2009 India.pdf",
-					"file": {
+					"array_file": {
 						"filemime": "application\/pdf",
 						"filesize": 1448747,
 						"created": 1642666425,
@@ -94,7 +94,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 				}
 			]
 		},
-    ...
+	...
 	],
 	"first_page_url": "http:\/\/[SERVER]\/api\/integration\/pw\/publications-europe?page=1",
 	"from": 1,
