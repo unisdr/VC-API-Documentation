@@ -129,7 +129,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 | - langcode                  	|                                                                                  	|             	|
 | - target                    	| Identifier if the attachment is a file or link.                                  	|             	|
 | - url                       	|                                                                                  	|             	|
-| - file[]                    	| Empty array if the target is not equal to file                                   	| array       	|
+| - array_file[]               	| Empty array if the target is not equal to file                                   	| array       	|
 | ** filemime                 	| Mime type of the file e.g. application/pdf                                       	| text        	|
 | ** filesize                 	|                                                                                  	| int         	|
 | ** created                  	| Unix timestamp                                                                   	| int         	|
