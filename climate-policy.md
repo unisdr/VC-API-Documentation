@@ -1,9 +1,5 @@
 # Content Type / Content / Rosources
 
-## TODO
-
-* Related link
-* Endpoint for policy type
 
 ## API Base URL
 
@@ -92,6 +88,19 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 						"changed": 1642666433
 					}
 				}
+			],
+			"array_links": [
+				{
+					"order": 0,
+					"title": "Mitigating the impact of climate change and flooding in Italy",
+					"url": "https:\/\/www.preventionweb.net\/news\/mitigating-impact-climate-change-and-flooding-italy"
+				},
+				{
+					"order": 1,
+					"title": "G20 Climate Risk Atlas: Italy",
+					"url": "https:\/\/www.preventionweb.net\/publication\/g20-climate-risk-atlas-italy"
+				},
+				...
 			]
 		},
 	...
@@ -134,6 +143,10 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 | ** filesize                 	|                                                                                  	| int         	|
 | ** created                  	| Unix timestamp                                                                   	| int         	|
 | ** changed                  	| Unit timestamp                                                                   	| int         	|
+| array_links[]         	|                                                                                  	| array       	|
+| - order                      	| Sorting order                                                                 	| int         	|
+| - title                      	| Label or short description                                                       	|             	|
+| - url                      	| URL of the related link                                                            	|             	|
 
 
 # Taxonomy
