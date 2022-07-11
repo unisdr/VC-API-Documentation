@@ -138,6 +138,30 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 
 # Taxonomy
 
+
+## PreventionWeb Policy Type
+
+
+### URL: /sso-unisdr/api/integration/taxonomy/policy_type
+
+### JSON Response
+
+```shell
+[
+	{
+		"uuid": "f4d46007-9d71-4a94-a6f1-292a8020e79c",
+		"tid": 946,
+		"name": "Intergovernmental declarations"
+	},
+	{
+		"uuid": "18b64d8f-763b-4569-b56d-a59497f3e4b6",
+		"tid": 821,
+		"name": "Local policy and plans"
+	},
+	...
+]
+```
+
 ## PreventionWeb Countries and Regions
 
 See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/arise-v2.md#preventionweb-countries-and-regions
