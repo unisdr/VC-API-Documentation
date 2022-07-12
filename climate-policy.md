@@ -126,7 +126,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 | nid                         	| ID, primary key                                                                  	| int         	|
 | title                       	| Title of the publication                                                         	| text        	|
 | langcode                    	| 2 characters language code                                                       	|             	|
-| field_policy_type_target_id 	| Policy type ID                                                                   	| int         	|
+| field_policy_type_target_id 	| Policy type ID (see taxonomy policy type)                                            	| int         	|
 | changed                     	| Unix timestamp                                                                   	| int         	|
 | created                     	| Unix timestamp                                                                   	|             	|
 | published_at                	| Unix timestamp                                                                   	|             	|
