@@ -127,9 +127,9 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 | title                       	| Title of the publication                                                         	| text        	|
 | langcode                    	| 2 characters language code                                                       	|             	|
 | field_policy_type_target_id 	| Policy type ID (see taxonomy policy type)                                            	| int         	|
-| changed                     	| Unix timestamp                                                                   	| int         	|
-| created                     	| Unix timestamp                                                                   	|             	|
-| published_at                	| Unix timestamp                                                                   	|             	|
+| changed                     	| Unix timestamp, date the record was changed                                          	| int         	|
+| created                     	| Unix timestamp, date the record was created                                          	|             	|
+| published_at                	| Unix timestamp, date the record was published online                                 	|             	|
 | image_id                    	| Reference to image source http://www.preventionweb.net/media/[image_id]/download 	| int         	|
 | summary                     	| Summary of the document                                                          	| text        	|
 | body                        	| Full content of the document in HTML format                                      	| text (html) 	|
