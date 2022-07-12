@@ -241,7 +241,7 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 
 ## PreventionWeb Countries and Regions
 
-This endpoint lists all countries and regions. Record with parent_target_id = 0 while parent_target_id != 0 are countries. 
+This endpoint lists all countries and regions. Regions are record with parent_target_id = 0 while parent_target_id != 0 are countries. 
 
 ### URL: /sso-unisdr/api/integration/taxonomy/country_region
 
