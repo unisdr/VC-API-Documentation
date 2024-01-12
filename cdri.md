@@ -1,9 +1,5 @@
 # Content Type / Content / Rosources
 
-## Images
-
-See documentation for more details https://github.com/unisdr/VC-API-Documentation/blob/master/unwomen.md#images
-
 ## Publications
 
 ### Authentication:
@@ -77,7 +73,7 @@ The result is filtered by the following PW theme:
   "last_page": 1,
   "last_page_url": "https:\/\/program.unisdr.org\/sso-unisdr\/api\/integration\/pw\/publications-theme-infra?page=1",
   "next_page_url": null,
-  "path": "https:\/\/program.unisdr.org\/sso-unisdr\/api\/integration\/arise\/pw\/publications-theme-infra",
+  "path": "https:\/\/program.unisdr.org\/sso-unisdr\/api\/integration\/pw\/publications-theme-infra",
   "per_page": 200,
   "prev_page_url": null,
   "to": 113,
@@ -86,6 +82,16 @@ The result is filtered by the following PW theme:
   "success": 1
 }
 ```
+
+| Field        	| Description                                                                      	 	 	| Type/Value       	|
+|--------------	|----------------------------------------------------------------------------------	 	 	|------------------	|
+| nid          	| ID, primary key                                                                     	 	 	| int           	|
+| title        	| Title of the publication                                                         	 	 	| text             	|
+| langcode     	| 2 characters language code                                                       	 	 	|                  	|
+| changed      	| Unix timestamp                                                                   	 	 	| int              	|
+| created      	| Unix timestamp                                                                   	 	 	| int              	|
+| published_at 	| Unix timestamp                                                                   	 	 	| int              	|
+| image_id     	| Reference to image source http://www.preventionweb.net/media/[image_id]/download?startDownload=true 	| int              	|
 
 
 
