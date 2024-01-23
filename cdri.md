@@ -1,6 +1,6 @@
 # Content Type / Content / Rosources
 
-## Publications
+## Publications: Documents & Publications
 
 ### Authentication:
 
@@ -16,13 +16,20 @@ oAuth2 client credentials, please refer to other documentation how to get the cl
 * page integer (optional), page number
 * per_page integer (optional), number of records per page (200 is the default and maximum value)
 
-### URL: /sso-unisdr/api/integration/pw/publications-theme-infra
+### URL: /sso-unisdr/api/integration/pw/publications-docs-theme-infra
 
 The result is filtered by the following PW theme:
 * Critical Infrastructure (313)
 * Urban risk and planning (339)
 * Social impacts and resilience (336)
 * Structural safety (338)
+* Education & School Safety (318)
+* Health & Health Facilities (325)
+* Early Warning (316)
+* Risk Identification & Assessment (333)
+* Small Island Developing States (335)
+* Systemic Risk (1013)
+* Recovery (332)
 
 ### JSON Response
 
@@ -57,23 +64,18 @@ The result is filtered by the following PW theme:
 			"url": "https:\/\/www.preventionweb.net\/publication\/flooded-credit-markets-physical-climate-risk-and-small-business-lending",
 			"image_id": 92143,
 			"field_title_original": null,
-			"field_publication_type": "Documents and publications",
+			"sub_type": "Documents and publications",
 			"field_year_of_publication": 2023,
-			"body_trimmed": "This publication documents how European banks charge higher interest rates on loans granted to firms in areas at high risk of flooding. ",
-			"array_authors": [
-				"Caterina Rho ",
-				"Luca Barbaglia",
-				"Serena Fatica"
-			]
+			"summary": "This publication documents how European banks charge higher interest rates on loans granted to firms in areas at high risk of flooding. "
 		},
     ...
   ],
-  "first_page_url": "https:\/\/program.unisdr.org\/sso-unisdr\/api\/integration\/pw\/publications-theme-infra?page=1",
+  "first_page_url": "https:\/\/program.unisdr.org\/sso-unisdr\/api\/integration\/pw\/publications-docs-theme-infra?page=1",
   "from": 1,
   "last_page": 1,
-  "last_page_url": "https:\/\/program.unisdr.org\/sso-unisdr\/api\/integration\/pw\/publications-theme-infra?page=1",
+  "last_page_url": "https:\/\/program.unisdr.org\/sso-unisdr\/api\/integration\/pw\/publications-docs-theme-infra?page=1",
   "next_page_url": null,
-  "path": "https:\/\/program.unisdr.org\/sso-unisdr\/api\/integration\/pw\/publications-theme-infra",
+  "path": "https:\/\/program.unisdr.org\/sso-unisdr\/api\/integration\/pw\/publications-docs-theme-infra",
   "per_page": 200,
   "prev_page_url": null,
   "to": 113,
@@ -92,7 +94,202 @@ The result is filtered by the following PW theme:
 | created      	| Unix timestamp                                                                   	 	 	| int              	|
 | published_at 	| Unix timestamp                                                                   	 	 	| int              	|
 | image_id     	| Reference to image source http://www.preventionweb.net/media/[image_id]/download?startDownload=true 	| int              	|
+| field_year_of_publication | Year of publication                                                                      	| int              	|
+| type     	|                                                                                                	| text              	|
+| sub_type     	|                                                                                                	| text              	|
+| summary     	|                                                                                                	| text              	|
 
+
+
+## News: Research Brief
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+### Query String Parameter:
+
+* page integer (optional), page number
+* per_page integer (optional), number of records per page (200 is the default and maximum value)
+
+### URL: /sso-unisdr/api/integration/pw/news-reseach-theme-infra
+
+The result is filtered by the following PW theme:
+* Critical Infrastructure (313)
+* Urban risk and planning (339)
+* Social impacts and resilience (336)
+* Structural safety (338)
+* Education & School Safety (318)
+* Health & Health Facilities (325)
+* Early Warning (316)
+* Risk Identification & Assessment (333)
+* Small Island Developing States (335)
+* Systemic Risk (1013)
+* Recovery (332)
+
+### JSON Response
+
+```shell
+{
+  "current_page": 1,
+  "data": [
+		{
+			"nid": 81611,
+			"type": "news",
+			"title": "Wildfire, drought cause $11.2 billion in damage to private timberland in three Pacific states, study finds",
+			"langcode": "en",
+			"changed": 1699980535,
+			"created": 1699875484,
+			"published_at": 1699876982,
+			"array_organization_id": [
+				"81608"
+			],
+			"array_organization_name": [
+				"Journal of Environmental Economics and Management"
+			],
+			"array_themes": [
+				"317",
+				"331",
+				"333"
+			],
+			"array_hazards": [
+				"344",
+				"357"
+			],
+			"array_countries_regions": [
+				"289"
+			],
+			"url": "https:\/\/www.preventionweb.net\/news\/wildfire-drought-cause-112-billion-damage-private-timberland-three-pacific-states-study-finds",
+			"image_id": null,
+			"field_release_date": "2023-11-12",
+			"sub_type": "Research briefs",
+			"summary": "Wildfires and drought have led to $11.2 billion in damages to privately held timberland in California, Oregon and Washington over the past two decades, a new Oregon State University study found."
+		},
+    ...
+  ],
+  "first_page_url": "https:\/\/program.unisdr.org\/sso-unisdr\/api\/integration\/pw\/news-reseach-theme-infra?page=1",
+  "from": 1,
+  "last_page": 1,
+  "last_page_url": "https:\/\/program.unisdr.org\/sso-unisdr\/api\/integration\/pw\/news-reseach-theme-infra?page=1",
+  "next_page_url": null,
+  "path": "https:\/\/program.unisdr.org\/sso-unisdr\/api\/integration\/pw\/news-reseach-theme-infra",
+  "per_page": 200,
+  "prev_page_url": null,
+  "to": 113,
+  "total": 113,
+  "status": 200,
+  "success": 1
+}
+```
+
+| Field        	| Description                                                                      	 	 	| Type/Value       	|
+|--------------	|----------------------------------------------------------------------------------	 	 	|------------------	|
+| nid          	| ID, primary key                                                                     	 	 	| int           	|
+| title        	| Title of the publication                                                         	 	 	| text             	|
+| langcode     	| 2 characters language code                                                       	 	 	|                  	|
+| changed      	| Unix timestamp                                                                   	 	 	| int              	|
+| created      	| Unix timestamp                                                                   	 	 	| int              	|
+| published_at 	| Unix timestamp                                                                   	 	 	| int              	|
+| image_id     	| Reference to image source http://www.preventionweb.net/media/[image_id]/download?startDownload=true 	| int              	|
+| field_release_date |                                                                                                	| date              	|
+| type     	|                                                                                                	| text              	|
+| sub_type     	|                                                                                                	| text              	|
+| summary     	|                                                                                                	| text              	|
+
+
+
+
+## DRR Community Voices
+
+### Authentication:
+
+oAuth2 client credentials, please refer to other documentation how to get the client access token.
+
+### Header Parameters:
+
+* Accept string, value "application/json"
+* Authorization string, value "Bearer [Client: ACCESS TOKEN]"
+
+### Query String Parameter:
+
+* page integer (optional), page number
+* per_page integer (optional), number of records per page (200 is the default and maximum value)
+
+### URL: /sso-unisdr/api/integration/pw/blog-theme-infra
+
+The result is filtered by the following PW theme:
+* Critical Infrastructure (313)
+* Urban risk and planning (339)
+* Social impacts and resilience (336)
+* Structural safety (338)
+* Education & School Safety (318)
+* Health & Health Facilities (325)
+* Early Warning (316)
+* Risk Identification & Assessment (333)
+* Small Island Developing States (335)
+* Systemic Risk (1013)
+* Recovery (332)
+
+### JSON Response
+
+```shell
+{
+  "current_page": 1,
+  "data": [
+		{
+			"nid": 74650,
+			"type": "blog",
+			"title": "Acting early before disasters hit: how business help scale up anticipatory action",
+			"langcode": "en",
+			"changed": 1665589993,
+			"created": 1665587001,
+			"published_at": 1665587413,
+			"array_themes": [
+				"331"
+			],
+			"array_hazards": [],
+			"array_countries_regions": [],
+			"url": "https:\/\/www.preventionweb.net\/blog\/acting-early-disasters-hit-how-business-help-scale-anticipatory-action",
+			"image_id": 49079,
+			"field_publication_date": "2022-10-11",
+			"sub_type": "Blog",
+			"summary": "To ensure access to early action for all, more needs to be done to scale up the approach, in particular by involving the private sector. "
+		},
+    ...
+  ],
+  "first_page_url": "https:\/\/program.unisdr.org\/sso-unisdr\/api\/integration\/pw\/blog-theme-infra?page=1",
+  "from": 1,
+  "last_page": 1,
+  "last_page_url": "https:\/\/program.unisdr.org\/sso-unisdr\/api\/integration\/pw\/blog-theme-infra?page=1",
+  "next_page_url": null,
+  "path": "https:\/\/program.unisdr.org\/sso-unisdr\/api\/integration\/pw\/blog-theme-infra",
+  "per_page": 200,
+  "prev_page_url": null,
+  "to": 113,
+  "total": 113,
+  "status": 200,
+  "success": 1
+}
+```
+
+| Field        	| Description                                                                      	 	 	| Type/Value       	|
+|--------------	|----------------------------------------------------------------------------------	 	 	|------------------	|
+| nid          	| ID, primary key                                                                     	 	 	| int           	|
+| title        	| Title of the publication                                                         	 	 	| text             	|
+| langcode     	| 2 characters language code                                                       	 	 	|                  	|
+| changed      	| Unix timestamp                                                                   	 	 	| int              	|
+| created      	| Unix timestamp                                                                   	 	 	| int              	|
+| published_at 	| Unix timestamp                                                                   	 	 	| int              	|
+| image_id     	| Reference to image source http://www.preventionweb.net/media/[image_id]/download?startDownload=true 	| int              	|
+| field_release_date |                                                                                                	| date              	|
+| type     	|                                                                                                	| text              	|
+| sub_type     	|                                                                                                	| text              	|
+| summary     	|                                                                                                	| text              	|
 
 
 # Taxonomy
