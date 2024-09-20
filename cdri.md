@@ -99,6 +99,7 @@ The result is filtered by the following PW theme:
 | type     	|                                                                                                	| text              	|
 | sub_type     	|                                                                                                	| text              	|
 | summary     	|                                                                                                	| text              	|
+| body     	|                                                                                                	| html              	|
 
 
 
